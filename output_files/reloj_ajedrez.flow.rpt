@@ -1,5 +1,5 @@
 Flow report for reloj_ajedrez
-Wed Jun 26 09:35:30 2024
+Wed Jun 26 11:21:09 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -41,17 +41,17 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Wed Jun 26 09:35:30 2024          ;
+; Flow Status                        ; Successful - Wed Jun 26 11:21:09 2024          ;
 ; Quartus Prime Version              ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name                      ; reloj_ajedrez                                  ;
 ; Top-level Entity Name              ; reloj_ajedrez                                  ;
 ; Family                             ; MAX 10                                         ;
 ; Device                             ; 10M50DAF484C7G                                 ;
 ; Timing Models                      ; Final                                          ;
-; Total logic elements               ; 640                                            ;
-;     Total combinational functions  ; 638                                            ;
-;     Dedicated logic registers      ; 154                                            ;
-; Total registers                    ; 154                                            ;
+; Total logic elements               ; 645                                            ;
+;     Total combinational functions  ; 643                                            ;
+;     Dedicated logic registers      ; 156                                            ;
+; Total registers                    ; 156                                            ;
 ; Total pins                         ; 61                                             ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 0                                              ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/26/2024 09:35:19 ;
+; Start date & time ; 06/26/2024 11:20:58 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; reloj_ajedrez       ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                        ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +----------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                  ; 268537869124735.171941251803064        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                  ; 268537869124735.171941885808400        ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME               ; NA                                     ; --            ; --          ; reloj_ajedrez_tb                  ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST        ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST        ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
@@ -109,8 +109,8 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4870 MB             ; 00:00:13                           ;
-; Total                ; 00:00:11     ; --                      ; --                  ; 00:00:13                           ;
+; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4874 MB             ; 00:00:12                           ;
+; Total                ; 00:00:12     ; --                      ; --                  ; 00:00:12                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

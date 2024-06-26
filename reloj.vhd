@@ -12,7 +12,7 @@ signal sel:in std_logic_vector(1 downto 0);
 signal ini_pausa: in std_logic;
 signal borrar: in std_logic;
 signal reset_1h: in std_logic;
-signal time_gt40: out std_logic;
+signal time_gt1h: out std_logic;
 signal min_value: out std_logic;
 signal display_0: out std_logic_vector(6 downto 0);
 signal display_1: out std_logic_vector(6 downto 0);
@@ -133,7 +133,7 @@ hexa4: hexa port map (a => aux2(7 downto 4), f => display_3);
 contador3: counter generic map ( width => 6, N => 24 ) port map( reset_n => g_reset_n, clk => clk, en => en_hor,q => hor, start => start_hor );
 comparator3:  comparator generic map(width => 6) port map (A => hor, B => numero_0, EQ => min_hor);
 comparator30:  comparator generic map(width => 6) port map (A => hor, B => numero_23, EQ => max_hor);
-comparato_1h: comparator_gt generic map(width => 6) port map(A => hor, B => numero_1, gt => time_gt40);
+comparato_1h: comparator_gt generic map(width => 6) port map(A => hor, B => numero_1, gt => time_gt1h);
 
 
 bin3: bintobcd port map ( a => hor, f => aux3);

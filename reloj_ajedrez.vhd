@@ -27,8 +27,10 @@ end reloj_ajedrez;
 
 architecture arq of reloj_ajedrez is
 signal min_value_j0, min_value_j1, borrar_j0, ini_pausa_j0, ini_pausa_j1, borrar_j1, mov_j0_gt40,mov_j1_gt40, en_j0, en_j1 :std_logic;
-signal reset_1h_j0, reset_1h_j1, time_gt40_j0, time_gt40_j1:std_logic;
+signal reset_1h_j0, reset_1h_j1, time_gt1h_j0, time_gt1h_j1:std_logic;
 signal en, en_sel, aux_con_0, aux_con_1:std_logic; 
+signal gt_16_j0,gt_16_j1:std_logic;
+signal en_light,looser_sel:std_logic;
 
 
 
@@ -46,7 +48,7 @@ clk => clk,
 sel => mode_reg, 
 ini_pausa => ini_pausa_j0, 
 borrar => borrar_j0,
-time_gt40 => time_gt40_j0,
+time_gt1h => time_gt1h_j0,
 reset_1h => reset_1h_j0,
 min_Value => min_value_j0, 
 display_0 => display_0_i0, 
@@ -61,7 +63,7 @@ clk => clk,
 sel => mode_reg, 
 ini_pausa => ini_pausa_j1, 
 borrar => borrar_j1, 
-time_gt40 => time_gt40_j1,
+time_gt1h => time_gt1h_j1,
 reset_1h => reset_1h_j1,
 min_Value => min_value_j1, 
 display_0 => display_0_i1, 
@@ -149,7 +151,14 @@ en_j0 => en_j0,
 mov_j0_gt40 => mov_j0_gt40,
 mov_j1_gt40 => mov_j1_gt40,
 en_sel => en_sel,
-leds=>leds);
+gt_1h_j0 => time_gt1h_j0,
+gt_1h_j1 => time_gt1h_j1,
+gt_16_j1 => gt_16_j1,
+gt_16_j0 => gt_16_j0,
+reset_1h_j0 => reset_1h_j0,
+reset_1h_j1 => reset_1h_j1,
+looser_sel => looser_sel,
+en_light => en_light);
 
 
 con1: contador_ace port map(
@@ -173,6 +182,9 @@ mov_gt40 => mov_j0_gt40);
 
 aux_con_0 <= en and en_j0;
 aux_con_1 <= en and en_j1;
+
+
+ligth_controller1: light_controller port map(clk => clk, reset_n => reset_n, leds => leds,en => en_light, jugador=>looser_sel );
 
 
 

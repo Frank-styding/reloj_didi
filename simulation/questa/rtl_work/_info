@@ -1,143 +1,272 @@
 m255
 K4
 z2
-!s12c _opt2
-Z0 !s99 nomlopt
-R0
-R0
-R0
-R0
-R0
-R0
-R0
-R0
-R0
-R0
-R0
-R0
-R0
-R0
-R0
-R0
-R0
-R0
-R0
-R0
-R0
-R0
-Z1 !s12c _opt1
+Z0 !s12c _opt2
+Z1 !s99 nomlopt
 R0
 R1
-R0
 R1
-R0
 R1
-R0
 R1
-R0
 R1
-R0
 R1
-R0
 R1
-R0
 R1
-R0
 R1
-R0
 R1
-R0
 R1
-R0
 R1
-R0
 R1
-R0
 R1
-R0
 R1
-R0
 R1
-R0
 R1
-R0
 R1
-R0
 R1
-R0
 R1
-R0
+R1
+R1
+R1
+Z2 !s12c _opt1
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
+R2
+R1
 !s11e MIXED_VERSIONS
-R0
+R1
 13
 !s112 1.1
 !i10d 8192
 !i10e 25
 !i10f 100
 cModel Technology
-Z2 dC:/temp/IEE04/H4434/lab8/ep1/simulation/questa
+Z3 dC:/temp/IEE04/H4434/lab8/ep1/simulation/questa
 T_opt
 !s110 1718332486
 VIQLFa9[e53__eG:L65:dB1
-Z3 04 16 18 work reloj_ajedrez_tb reloj_ajedrez_arch 1
+Z4 04 16 18 work reloj_ajedrez_tb reloj_ajedrez_arch 1
 =1-d8bbc1e7ca0c-666bac46-149-1ef8
 !s124 OEM10U51 
-Z4 o-quiet -auto_acc_if_foreign -work work -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work +acc
-Z5 tCvgOpt 0
+Z5 o-quiet -auto_acc_if_foreign -work work -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work +acc
+Z6 tCvgOpt 0
 n@_opt
-Z6 OL;O;2021.2;73
-R2
+Z7 OL;O;2021.2;73
+R3
 T_opt1
 !s110 1718934368
 VHdm[VfGP^J`RSOmN96FSe0
-R3
+R4
 =1-d8bbc1e7ca0c-6674db60-bb-27b8
 !s124 OEM10U59 
-R4
 R5
-n@_opt1
 R6
-R2
-T_opt2
-!s110 1719412040
-V<PK@L:onZoYJWPlWZ]JIS2
+n@_opt1
+R7
 R3
-=1-f43bd84c447e-667c2548-61-2268
-R0
+T_opt2
+!s110 1719418426
+Vj7YRQbo0h1_gFdB<n2^Ma2
+R4
+=1-f43bd84c447e-667c3e3a-142-22c8
+R1
 !s12b OEM100
 !s124 OEM10U61 
-R4
 R5
+R6
 n@_opt2
 OL;O;2023.3;77
-R2
-Ecounter
-Z7 w1719363830
-Z8 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+R3
+Ebintobcd
+Z8 w1719413570
 Z9 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
-Z10 DPx4 ieee 11 numeric_std 0 22 F8@]:i<mFK7<TjIzKcTGi0
+Z10 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 10
+Z11 dC:/Users/Frank/Documents/GitHub/reloj_didi/simulation/questa
+Z12 8../../bintobcd.vhd
+Z13 F../../bintobcd.vhd
+l0
+L20 1
+VCffTJUY>EK39VTeVoBBKc2
+!s100 h3k9P=^3<bb<BiHTl:`GM2
+Z14 OL;C;2023.3;77
+31
+Z15 !s110 1719418436
+!i10b 1
+Z16 !s108 1719418436.000000
+Z17 !s90 -reportprogress|300|-93|-work|work|../../bintobcd.vhd|
+Z18 !s107 ../../bintobcd.vhd|
+!i113 0
+Z19 o-93 -work work
+Z20 tExplicit 1 CvgOpt 0
+Astructural
+R9
+R10
+DEx4 work 8 bintobcd 0 22 CffTJUY>EK39VTeVoBBKc2
+!i122 10
+l31
+L25 78
+VB?IRedYB;^hYiHJ95lfG=0
+!s100 ?M@6AFOoLPC^hA;zI<X;=1
+R14
+31
+R15
+!i10b 1
+R16
+R17
+R18
+!i113 0
+R19
+R20
+Ecomparator
+R8
+R10
+R9
+Z21 DPx4 ieee 11 numeric_std 0 22 F8@]:i<mFK7<TjIzKcTGi0
+!i122 7
+R11
+Z22 8../../comparator.vhd
+Z23 F../../comparator.vhd
+l0
+L5 1
+V6>DS5lEHh?go=<0UYRWTV0
+!s100 fNbbLAlggJU@HQT06W]Sc2
+R14
+31
+Z24 !s110 1719418435
+!i10b 1
+Z25 !s108 1719418435.000000
+Z26 !s90 -reportprogress|300|-93|-work|work|../../comparator.vhd|
+Z27 !s107 ../../comparator.vhd|
+!i113 0
+R19
+R20
+Aarq
+R10
+R9
+R21
+DEx4 work 10 comparator 0 22 6>DS5lEHh?go=<0UYRWTV0
+!i122 7
+l17
+L16 12
+V>zMmL2GREfnJf]XEKiKa80
+!s100 ENEgEkRehCIEiM=7hUA1K2
+R14
+31
+R24
+!i10b 1
+R25
+R26
+R27
+!i113 0
+R19
+R20
+Ecomparator_gt
+R8
+R21
+R9
+R10
+!i122 8
+R11
+Z28 8../../comparator_gt.vhd
+Z29 F../../comparator_gt.vhd
+l0
+L4 1
+V15:gNV>WGkBS0FE_9W[jI0
+!s100 99]G:lho;R]Fi@Bo<;6XQ3
+R14
+31
+R24
+!i10b 1
+R25
+Z30 !s90 -reportprogress|300|-93|-work|work|../../comparator_gt.vhd|
+Z31 !s107 ../../comparator_gt.vhd|
+!i113 0
+R19
+R20
+Aarq
+R21
+R9
+R10
+DEx4 work 13 comparator_gt 0 22 15:gNV>WGkBS0FE_9W[jI0
+!i122 8
+l13
+L12 4
+V0]INJW4Jb4DR<8jA`ZVa90
+!s100 LJC[LU@EkI5@>NaIeJZe;1
+R14
+31
+R24
+!i10b 1
+R25
+R30
+R31
+!i113 0
+R19
+R20
+Ecounter
+R8
+R10
+R9
+R21
 !i122 6
-Z11 dC:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/simulation/questa
-Z12 8../../counter.vhd
-Z13 F../../counter.vhd
+R11
+Z32 8../../counter.vhd
+Z33 F../../counter.vhd
 l0
 L5 1
 VfGR]:F[oJ8G6n0ZkNg^PS0
 !s100 1;J>cS?b1^9XPAPnBL:j83
-Z14 OL;C;2023.3;77
+R14
 31
-Z15 !s110 1719412048
+R24
 !i10b 1
-Z16 !s108 1719412048.000000
-Z17 !s90 -reportprogress|300|-93|-work|work|../../counter.vhd|
-!s107 ../../counter.vhd|
+R25
+Z34 !s90 -reportprogress|300|-93|-work|work|../../counter.vhd|
+Z35 !s107 ../../counter.vhd|
 !i113 0
-Z18 o-93 -work work
-Z19 tExplicit 1 CvgOpt 0
+R19
+R20
 Aarq
-R8
-R9
 R10
+R9
+R21
 DEx4 work 7 counter 0 22 fGR]:F[oJ8G6n0ZkNg^PS0
 !i122 6
 l18
@@ -146,41 +275,41 @@ VnThQDek5]D3^nJ7U_El@53
 !s100 4gnmQ8OCVga8g`FHC<aV^3
 R14
 31
-R15
+R24
 !i10b 1
-R16
-R17
-Z20 !s107 ../../counter.vhd|
+R25
+R34
+R35
 !i113 0
-R18
 R19
+R20
 Edivisor_freq
-R7
-R10
-R9
 R8
+R21
+R9
+R10
 !i122 1
 R11
-Z21 8../../divisor_freq.vhd
-Z22 F../../divisor_freq.vhd
+Z36 8../../divisor_freq.vhd
+Z37 F../../divisor_freq.vhd
 l0
 L21 1
 V:o0jM^PNC:@E5EP@QVjn=1
 !s100 [VD>Y1e_AlgUbkDX>XJ>A0
 R14
 31
-Z23 !s110 1719412047
+Z38 !s110 1719418434
 !i10b 1
-Z24 !s108 1719412047.000000
-Z25 !s90 -reportprogress|300|-93|-work|work|../../divisor_freq.vhd|
-Z26 !s107 ../../divisor_freq.vhd|
+Z39 !s108 1719418434.000000
+Z40 !s90 -reportprogress|300|-93|-work|work|../../divisor_freq.vhd|
+Z41 !s107 ../../divisor_freq.vhd|
 !i113 0
-R18
 R19
+R20
 Astructural
-R10
+R21
 R9
-R8
+R10
 DEx4 work 12 divisor_freq 0 22 :o0jM^PNC:@E5EP@QVjn=1
 !i122 1
 l36
@@ -189,82 +318,82 @@ VA1l3N6FZ3zHjX_GgS4C1Y3
 !s100 Gl?Ej5[gncD0?0]`ESODN2
 R14
 31
-R23
+R38
 !i10b 1
-R24
-R25
-R26
+R39
+R40
+R41
 !i113 0
-R18
 R19
+R20
 Efsm
-R7
-R10
+Z42 w1719415465
+R21
 R9
-R8
+R10
 !i122 0
 R11
-Z27 8../../fsm.vhd
-Z28 F../../fsm.vhd
+Z43 8../../fsm.vhd
+Z44 F../../fsm.vhd
 l0
 L5 1
-VSoWgHV?8cFMmARBSS=4gc2
-!s100 98F919ko`m>g_SUhRUbd]3
+V7M8:?jaaMdYcnHS<9KW]d2
+!s100 RMQfXf6ko7EI9g4fWf6;c1
 R14
 31
-Z29 !s110 1719412046
+Z45 !s110 1719418433
 !i10b 1
-Z30 !s108 1719412046.000000
-Z31 !s90 -reportprogress|300|-93|-work|work|../../fsm.vhd|
-Z32 !s107 ../../fsm.vhd|
+Z46 !s108 1719418432.000000
+Z47 !s90 -reportprogress|300|-93|-work|work|../../fsm.vhd|
+Z48 !s107 ../../fsm.vhd|
 !i113 0
-R18
 R19
+R20
 Astrc_1
-R10
+R21
 R9
-R8
-DEx4 work 3 fsm 0 22 SoWgHV?8cFMmARBSS=4gc2
+R10
+DEx4 work 3 fsm 0 22 7M8:?jaaMdYcnHS<9KW]d2
 !i122 0
-l45
-L42 294
-VfP3:Xe63m2Im^U5RU1V6d1
-!s100 bZOYBTJMD;YDe0TghnjD52
+l49
+L46 369
+VB^TjJ>5ADGAcUzLVojN;D1
+!s100 ijdQSHVD89Bo80=Jkkb8a1
 R14
 31
-R29
+R45
 !i10b 1
-R30
-R31
-R32
+R46
+R47
+R48
 !i113 0
-R18
 R19
+R20
 Ehexa
-R7
-R9
 R8
+R9
+R10
 !i122 5
 R11
-Z33 8../../hexa.vhd
-Z34 F../../hexa.vhd
+Z49 8../../hexa.vhd
+Z50 F../../hexa.vhd
 l0
 L23 1
 VII5>LR[_LgeZUF2AgU8Xa3
 !s100 HD]nU6XZ@0oYghPlO`[K>3
 R14
 31
-R15
+R24
 !i10b 1
-R16
-Z35 !s90 -reportprogress|300|-93|-work|work|../../hexa.vhd|
-Z36 !s107 ../../hexa.vhd|
+R25
+Z51 !s90 -reportprogress|300|-93|-work|work|../../hexa.vhd|
+Z52 !s107 ../../hexa.vhd|
 !i113 0
-R18
 R19
+R20
 Astructural_0
 R9
-R8
+R10
 DEx4 work 4 hexa 0 22 II5>LR[_LgeZUF2AgU8Xa3
 !i122 5
 l32
@@ -273,41 +402,86 @@ VZ2Z]9mU:AJ3mXSaMm[O8R1
 !s100 H<2XEMA8In_=<hSj0<bXB2
 R14
 31
+R24
+!i10b 1
+R25
+R51
+R52
+!i113 0
+R19
+R20
+Elight_controller
+Z53 w1719418013
+Z54 DPx4 work 13 my_components 0 22 `9H19Eg[;>3WH?hBcU2dW0
+R21
+R9
+R10
+!i122 9
+R11
+Z55 8../../light_controller.vhd
+Z56 F../../light_controller.vhd
+l0
+L6 1
+V`<>Bkl826DA>5IYJP>=nz2
+!s100 ON<C4UW3kFJd:T0U]fV5U0
+R14
+31
 R15
 !i10b 1
-R16
-R35
-R36
+R25
+Z57 !s90 -reportprogress|300|-93|-work|work|../../light_controller.vhd|
+Z58 !s107 ../../light_controller.vhd|
 !i113 0
-R18
 R19
-Emux4a1
-R7
-R10
+R20
+Astruct_0
+R54
+R21
 R9
+R10
+DEx4 work 16 light_controller 0 22 `<>Bkl826DA>5IYJP>=nz2
+!i122 9
+l21
+L14 49
+VTzM`Q[MRnaRn_Q`>O58Q83
+!s100 J<bIGD0WQB3AejEflkf=23
+R14
+31
+R15
+!i10b 1
+R25
+R57
+R58
+!i113 0
+R19
+R20
+Emux4a1
 R8
+R21
+R9
+R10
 !i122 3
 R11
-Z37 8../../mux4a1.vhd
-Z38 F../../mux4a1.vhd
+Z59 8../../mux4a1.vhd
+Z60 F../../mux4a1.vhd
 l0
 L5 1
 V2DidzEmNTHFVO2KWA47MM0
 !s100 =^hUXaMIS1Bmm68S^0PzM3
 R14
 31
-R15
+R24
 !i10b 1
-R16
-Z39 !s90 -reportprogress|300|-93|-work|work|../../mux4a1.vhd|
-Z40 !s107 ../../mux4a1.vhd|
+R39
+Z61 !s90 -reportprogress|300|-93|-work|work|../../mux4a1.vhd|
+Z62 !s107 ../../mux4a1.vhd|
 !i113 0
-R18
 R19
+R20
 Astructural
-R10
+R21
 R9
-R8
+R10
 DEx4 work 6 mux4a1 0 22 2DidzEmNTHFVO2KWA47MM0
 !i122 3
 l16
@@ -316,20 +490,20 @@ VaHm_0mIYlodiQg^RhXXn=2
 !s100 <9:k;Ana>G7_hKXbQd?YN3
 R14
 31
-R15
+R24
 !i10b 1
-R16
 R39
-R40
+R61
+R62
 !i113 0
-R18
 R19
+R20
 Pmy_components
-R10
+R21
 R9
-R8
+R10
 !i122 4
-w1719405134
+R8
 R11
 8../../my_components.vhd
 F../../my_components.vhd
@@ -339,34 +513,77 @@ V`9H19Eg[;>3WH?hBcU2dW0
 !s100 <lD1O_SilESCSE3Xc0JUO0
 R14
 31
-R15
+R24
 !i10b 1
-R16
+R25
 !s90 -reportprogress|300|-93|-work|work|../../my_components.vhd|
 !s107 ../../my_components.vhd|
 !i113 0
-R18
 R19
+R20
 Pmy_components_reloj
-R10
+R21
 R9
-R8
+R10
 !i122 2
-w1719405902
+w1719418306
 R11
 8../../my_components_reloj.vhd
 F../../my_components_reloj.vhd
 l0
-L5 80
-VW[MB_IiPI4LWH@=:c`hfI3
-!s100 [GGH:edh7mK^jF<nD<fW=3
+L5 97
+Vl6Pl68RlBo9lPD:;oP>@n2
+!s100 KaG?[DP1f1U:9TXR_6Y?P0
+R14
+31
+R38
+!i10b 1
+R39
+!s90 -reportprogress|300|-93|-work|work|../../my_components_reloj.vhd|
+!s107 ../../my_components_reloj.vhd|
+!i113 0
+R19
+R20
+Ereg
+R8
+R21
+R9
+R10
+!i122 11
+R11
+Z63 8../../reg.vhd
+Z64 F../../reg.vhd
+l0
+L4 1
+Vf8Pzal0_j9RPLA3LRFVaf3
+!s100 Vb@O13K^V>CYfP_CJKKG?1
 R14
 31
 R15
 !i10b 1
-R24
-!s90 -reportprogress|300|-93|-work|work|../../my_components_reloj.vhd|
-!s107 ../../my_components_reloj.vhd|
+R16
+Z65 !s90 -reportprogress|300|-93|-work|work|../../reg.vhd|
+!s107 ../../reg.vhd|
 !i113 0
-R18
 R19
+R20
+Aarq
+R21
+R9
+R10
+DEx4 work 3 reg 0 22 f8Pzal0_j9RPLA3LRFVaf3
+!i122 11
+l15
+L13 24
+VZcLLHR_AWKLj[C7HnmUOI1
+!s100 VSe9>e;hz_S0B?BM8]1hb0
+R14
+31
+R15
+!i10b 1
+R16
+R65
+Z66 !s107 ../../reg.vhd|
+!i113 0
+R19
+R20

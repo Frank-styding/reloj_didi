@@ -12,6 +12,8 @@
 9 BUS_WIDTH
 8
 5 width
+1
+69 C:/Users/Frank/Documents/GitHub/reloj_didi/simulation/questa/rtl_work
 5
 2 x1
 4
@@ -22,8 +24,6 @@
 5 reloj
 3
 10 structural
-1
-74 C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/simulation/questa/rtl_work
 12
 12 divisor_freq
 6

@@ -12,7 +12,7 @@ signal sel:in std_logic_vector(1 downto 0);
 signal ini_pausa: in std_logic;
 signal borrar: in std_logic;
 signal reset_1h: in std_logic;
-signal time_gt40: out std_logic;
+signal time_gt1h: out std_logic;
 signal min_value: out std_logic;
 signal display_0: out std_logic_vector(6 downto 0);
 signal display_1: out std_logic_vector(6 downto 0);
@@ -54,15 +54,32 @@ port(signal modo: in std_logic_vector(1 downto 0);
 	  signal ini_pausa: in std_logic;
 	  signal reset_n: in std_logic;
 	  signal jugador_act: in std_logic;
+----------------------------------------------------	  
+	  signal gt_16_j0: in std_Logic;
+	  signal gt_1h_j0: in std_Logic;
 	  
+	  signal gt_16_j1: in std_Logic;
+	  signal gt_1h_j1: in std_Logic;
+	
+
+	  signal reset_1h_j0: out std_logic;
+	  signal reset_1h_j1: out std_logic;
+
+	  signal act_16_j0: out std_logic;
+	  signal act_16_j1: out std_logic;
+	  
+	
+	  
+	  signal looser_sel: out std_logic;
+	  signal en_light: out std_logic;
+--------------------------------------------------	  
 	  signal ini_pausa_j0: out std_logic;
 	  signal borrar_j0: out std_logic;
 	  signal en_j0: out std_logic;
 	  signal ini_pausa_j1: out std_logic;
 	  signal borrar_j1: out std_logic;
 	  signal en_j1: out std_logic;
-	  signal en_sel: out std_logic;
-	  signal leds: out std_logic_vector(9 downto 0));
+	  signal en_sel: out std_logic);
 	
 end component;
 
@@ -81,4 +98,12 @@ signal mov_c: out std_logic_vector(6 downto 0);
 signal mov_gt40: out std_logic);
 end component;
 
+
+component light_controller is
+port(signal reset_n: in std_logic;
+	  signal clk: in std_logic;
+	  signal en: in std_logic;
+	  signal jugador: in std_logic;
+	  signal leds: out std_logic_vector(9 downto 0));
+end component;
 end package;
