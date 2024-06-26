@@ -1,5 +1,5 @@
 Analysis & Synthesis report for reloj_ajedrez
-Wed Jun 26 07:45:17 2024
+Wed Jun 26 09:27:05 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -15,52 +15,53 @@ Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. State Machine - |reloj_ajedrez|fsm:fsm1|state_reg
   9. User-Specified and Inferred Latches
- 10. Registers Removed During Synthesis
- 11. General Register Statistics
- 12. Multiplexer Restructuring Statistics (Restructuring Performed)
- 13. Parameter Settings for User Entity Instance: divisor_freq:div
- 14. Parameter Settings for User Entity Instance: reloj:jugador_0
- 15. Parameter Settings for User Entity Instance: reloj:jugador_0|divisor_freq:divisor1
- 16. Parameter Settings for User Entity Instance: reloj:jugador_0|counter:contador1
- 17. Parameter Settings for User Entity Instance: reloj:jugador_0|comparator:comporador1
- 18. Parameter Settings for User Entity Instance: reloj:jugador_0|comparator:comporador10
- 19. Parameter Settings for User Entity Instance: reloj:jugador_0|counter:contador2
- 20. Parameter Settings for User Entity Instance: reloj:jugador_0|comparator:comporador2
- 21. Parameter Settings for User Entity Instance: reloj:jugador_0|comparator:comporador20
- 22. Parameter Settings for User Entity Instance: reloj:jugador_0|counter:contador3
- 23. Parameter Settings for User Entity Instance: reloj:jugador_0|comparator:comparator3
- 24. Parameter Settings for User Entity Instance: reloj:jugador_0|comparator:comparator30
- 25. Parameter Settings for User Entity Instance: reloj:jugador_0|comparator_gt:comparato_1h
- 26. Parameter Settings for User Entity Instance: reloj:jugador_1
- 27. Parameter Settings for User Entity Instance: reloj:jugador_1|divisor_freq:divisor1
- 28. Parameter Settings for User Entity Instance: reloj:jugador_1|counter:contador1
- 29. Parameter Settings for User Entity Instance: reloj:jugador_1|comparator:comporador1
- 30. Parameter Settings for User Entity Instance: reloj:jugador_1|comparator:comporador10
- 31. Parameter Settings for User Entity Instance: reloj:jugador_1|counter:contador2
- 32. Parameter Settings for User Entity Instance: reloj:jugador_1|comparator:comporador2
- 33. Parameter Settings for User Entity Instance: reloj:jugador_1|comparator:comporador20
- 34. Parameter Settings for User Entity Instance: reloj:jugador_1|counter:contador3
- 35. Parameter Settings for User Entity Instance: reloj:jugador_1|comparator:comparator3
- 36. Parameter Settings for User Entity Instance: reloj:jugador_1|comparator:comparator30
- 37. Parameter Settings for User Entity Instance: reloj:jugador_1|comparator_gt:comparato_1h
- 38. Port Connectivity Checks: "mux4a1:mu5"
- 39. Port Connectivity Checks: "mux4a1:mu4"
- 40. Port Connectivity Checks: "mux4a1:mu3"
- 41. Port Connectivity Checks: "reloj:jugador_1"
- 42. Port Connectivity Checks: "reloj:jugador_0|comparator_gt:comparato_1h"
- 43. Port Connectivity Checks: "reloj:jugador_0|comparator:comparator30"
- 44. Port Connectivity Checks: "reloj:jugador_0|comparator:comparator3"
- 45. Port Connectivity Checks: "reloj:jugador_0|counter:contador3"
- 46. Port Connectivity Checks: "reloj:jugador_0|comparator:comporador20"
- 47. Port Connectivity Checks: "reloj:jugador_0|comparator:comporador2"
- 48. Port Connectivity Checks: "reloj:jugador_0|counter:contador2"
- 49. Port Connectivity Checks: "reloj:jugador_0|comparator:comporador10"
- 50. Port Connectivity Checks: "reloj:jugador_0|comparator:comporador1"
- 51. Port Connectivity Checks: "reloj:jugador_0|counter:contador1"
- 52. Port Connectivity Checks: "reloj:jugador_0"
- 53. Post-Synthesis Netlist Statistics for Top Partition
- 54. Elapsed Time Per Partition
- 55. Analysis & Synthesis Messages
+ 10. Logic Cells Representing Combinational Loops
+ 11. Registers Removed During Synthesis
+ 12. General Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Parameter Settings for User Entity Instance: divisor_freq:div
+ 15. Parameter Settings for User Entity Instance: reloj:jugador_0
+ 16. Parameter Settings for User Entity Instance: reloj:jugador_0|divisor_freq:divisor1
+ 17. Parameter Settings for User Entity Instance: reloj:jugador_0|counter:contador1
+ 18. Parameter Settings for User Entity Instance: reloj:jugador_0|comparator:comporador1
+ 19. Parameter Settings for User Entity Instance: reloj:jugador_0|comparator:comporador10
+ 20. Parameter Settings for User Entity Instance: reloj:jugador_0|counter:contador2
+ 21. Parameter Settings for User Entity Instance: reloj:jugador_0|comparator:comporador2
+ 22. Parameter Settings for User Entity Instance: reloj:jugador_0|comparator:comporador20
+ 23. Parameter Settings for User Entity Instance: reloj:jugador_0|counter:contador3
+ 24. Parameter Settings for User Entity Instance: reloj:jugador_0|comparator:comparator3
+ 25. Parameter Settings for User Entity Instance: reloj:jugador_0|comparator:comparator30
+ 26. Parameter Settings for User Entity Instance: reloj:jugador_0|comparator_gt:comparato_1h
+ 27. Parameter Settings for User Entity Instance: reloj:jugador_1
+ 28. Parameter Settings for User Entity Instance: reloj:jugador_1|divisor_freq:divisor1
+ 29. Parameter Settings for User Entity Instance: reloj:jugador_1|counter:contador1
+ 30. Parameter Settings for User Entity Instance: reloj:jugador_1|comparator:comporador1
+ 31. Parameter Settings for User Entity Instance: reloj:jugador_1|comparator:comporador10
+ 32. Parameter Settings for User Entity Instance: reloj:jugador_1|counter:contador2
+ 33. Parameter Settings for User Entity Instance: reloj:jugador_1|comparator:comporador2
+ 34. Parameter Settings for User Entity Instance: reloj:jugador_1|comparator:comporador20
+ 35. Parameter Settings for User Entity Instance: reloj:jugador_1|counter:contador3
+ 36. Parameter Settings for User Entity Instance: reloj:jugador_1|comparator:comparator3
+ 37. Parameter Settings for User Entity Instance: reloj:jugador_1|comparator:comparator30
+ 38. Parameter Settings for User Entity Instance: reloj:jugador_1|comparator_gt:comparato_1h
+ 39. Port Connectivity Checks: "mux4a1:mu5"
+ 40. Port Connectivity Checks: "mux4a1:mu4"
+ 41. Port Connectivity Checks: "mux4a1:mu3"
+ 42. Port Connectivity Checks: "reloj:jugador_1"
+ 43. Port Connectivity Checks: "reloj:jugador_0|comparator_gt:comparato_1h"
+ 44. Port Connectivity Checks: "reloj:jugador_0|comparator:comparator30"
+ 45. Port Connectivity Checks: "reloj:jugador_0|comparator:comparator3"
+ 46. Port Connectivity Checks: "reloj:jugador_0|counter:contador3"
+ 47. Port Connectivity Checks: "reloj:jugador_0|comparator:comporador20"
+ 48. Port Connectivity Checks: "reloj:jugador_0|comparator:comporador2"
+ 49. Port Connectivity Checks: "reloj:jugador_0|counter:contador2"
+ 50. Port Connectivity Checks: "reloj:jugador_0|comparator:comporador10"
+ 51. Port Connectivity Checks: "reloj:jugador_0|comparator:comporador1"
+ 52. Port Connectivity Checks: "reloj:jugador_0|counter:contador1"
+ 53. Port Connectivity Checks: "reloj:jugador_0"
+ 54. Post-Synthesis Netlist Statistics for Top Partition
+ 55. Elapsed Time Per Partition
+ 56. Analysis & Synthesis Messages
 
 
 
@@ -87,15 +88,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jun 26 07:45:17 2024          ;
+; Analysis & Synthesis Status        ; Successful - Wed Jun 26 09:27:05 2024          ;
 ; Quartus Prime Version              ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name                      ; reloj_ajedrez                                  ;
 ; Top-level Entity Name              ; reloj_ajedrez                                  ;
 ; Family                             ; MAX 10                                         ;
-; Total logic elements               ; 580                                            ;
-;     Total combinational functions  ; 580                                            ;
-;     Dedicated logic registers      ; 152                                            ;
-; Total registers                    ; 152                                            ;
+; Total logic elements               ; 640                                            ;
+;     Total combinational functions  ; 638                                            ;
+;     Dedicated logic registers      ; 154                                            ;
+; Total registers                    ; 154                                            ;
 ; Total pins                         ; 61                                             ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 0                                              ;
@@ -205,7 +206,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
+;     Processor 2            ;   0.1%      ;
 ;     Processors 3-12        ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -237,20 +238,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 580       ;
+; Estimated Total logic elements              ; 640       ;
 ;                                             ;           ;
-; Total combinational functions               ; 580       ;
+; Total combinational functions               ; 638       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 314       ;
-;     -- 3 input functions                    ; 102       ;
-;     -- <=2 input functions                  ; 164       ;
+;     -- 4 input functions                    ; 341       ;
+;     -- 3 input functions                    ; 109       ;
+;     -- <=2 input functions                  ; 188       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 475       ;
+;     -- normal mode                          ; 533       ;
 ;     -- arithmetic mode                      ; 105       ;
 ;                                             ;           ;
-; Total registers                             ; 152       ;
-;     -- Dedicated logic registers            ; 152       ;
+; Total registers                             ; 154       ;
+;     -- Dedicated logic registers            ; 154       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 61        ;
@@ -258,8 +259,8 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 152       ;
-; Total fan-out                               ; 2498      ;
+; Maximum fan-out                             ; 154       ;
+; Total fan-out                               ; 2681      ;
 ; Average fan-out                             ; 2.93      ;
 +---------------------------------------------+-----------+
 
@@ -269,7 +270,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------+---------------+--------------+
 ; Compilation Hierarchy Node     ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                   ; Entity Name   ; Library Name ;
 +--------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+-------------------------------------------------------+---------------+--------------+
-; |reloj_ajedrez                 ; 580 (2)             ; 152 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 61   ; 0            ; 0          ; |reloj_ajedrez                                        ; reloj_ajedrez ; work         ;
+; |reloj_ajedrez                 ; 638 (2)             ; 154 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 61   ; 0            ; 0          ; |reloj_ajedrez                                        ; reloj_ajedrez ; work         ;
 ;    |contador_ace:con0|         ; 57 (36)             ; 12 (12)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|contador_ace:con0                      ; contador_ace  ; work         ;
 ;       |hexa:hexa_c|            ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|contador_ace:con0|hexa:hexa_c          ; hexa          ; work         ;
 ;       |hexa:hexa_d|            ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|contador_ace:con0|hexa:hexa_d          ; hexa          ; work         ;
@@ -279,22 +280,23 @@ https://fpgasoftware.intel.com/eula.
 ;       |hexa:hexa_d|            ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|contador_ace:con1|hexa:hexa_d          ; hexa          ; work         ;
 ;       |hexa:hexa_u|            ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|contador_ace:con1|hexa:hexa_u          ; hexa          ; work         ;
 ;    |divisor_freq:div|          ; 47 (47)             ; 27 (27)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|divisor_freq:div                       ; divisor_freq  ; work         ;
-;    |fsm:fsm1|                  ; 18 (18)             ; 11 (11)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|fsm:fsm1                               ; fsm           ; work         ;
-;    |mux4a1:mu0|                ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|mux4a1:mu0                             ; mux4a1        ; work         ;
-;    |mux4a1:mu1|                ; 25 (25)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|mux4a1:mu1                             ; mux4a1        ; work         ;
-;    |mux4a1:mu2|                ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|mux4a1:mu2                             ; mux4a1        ; work         ;
-;    |mux4a1:mu3|                ; 22 (22)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|mux4a1:mu3                             ; mux4a1        ; work         ;
+;    |fsm:fsm1|                  ; 16 (16)             ; 11 (11)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|fsm:fsm1                               ; fsm           ; work         ;
+;    |mux4a1:mu0|                ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|mux4a1:mu0                             ; mux4a1        ; work         ;
+;    |mux4a1:mu1|                ; 24 (24)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|mux4a1:mu1                             ; mux4a1        ; work         ;
+;    |mux4a1:mu2|                ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|mux4a1:mu2                             ; mux4a1        ; work         ;
+;    |mux4a1:mu3|                ; 21 (21)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|mux4a1:mu3                             ; mux4a1        ; work         ;
 ;    |mux4a1:mu4|                ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|mux4a1:mu4                             ; mux4a1        ; work         ;
 ;    |mux4a1:mu5|                ; 24 (24)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|mux4a1:mu5                             ; mux4a1        ; work         ;
-;    |reloj:jugador_0|           ; 146 (5)             ; 45 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_0                        ; reloj         ; work         ;
+;    |reg:reg0|                  ; 0 (0)               ; 2 (2)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reg:reg0                               ; reg           ; work         ;
+;    |reloj:jugador_0|           ; 177 (16)            ; 45 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_0                        ; reloj         ; work         ;
 ;       |bintobcd:bin1|          ; 13 (13)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_0|bintobcd:bin1          ; bintobcd      ; work         ;
 ;       |bintobcd:bin2|          ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_0|bintobcd:bin2          ; bintobcd      ; work         ;
 ;       |bintobcd:bin3|          ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_0|bintobcd:bin3          ; bintobcd      ; work         ;
 ;       |comparator:comporador1| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_0|comparator:comporador1 ; comparator    ; work         ;
 ;       |comparator:comporador2| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_0|comparator:comporador2 ; comparator    ; work         ;
-;       |counter:contador1|      ; 7 (7)               ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_0|counter:contador1      ; counter       ; work         ;
-;       |counter:contador2|      ; 7 (7)               ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_0|counter:contador2      ; counter       ; work         ;
-;       |counter:contador3|      ; 10 (10)             ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_0|counter:contador3      ; counter       ; work         ;
+;       |counter:contador1|      ; 12 (12)             ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_0|counter:contador1      ; counter       ; work         ;
+;       |counter:contador2|      ; 17 (17)             ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_0|counter:contador2      ; counter       ; work         ;
+;       |counter:contador3|      ; 15 (15)             ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_0|counter:contador3      ; counter       ; work         ;
 ;       |divisor_freq:divisor1|  ; 47 (47)             ; 27 (27)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_0|divisor_freq:divisor1  ; divisor_freq  ; work         ;
 ;       |hexa:hexa1|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_0|hexa:hexa1             ; hexa          ; work         ;
 ;       |hexa:hexa2|             ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_0|hexa:hexa2             ; hexa          ; work         ;
@@ -302,15 +304,15 @@ https://fpgasoftware.intel.com/eula.
 ;       |hexa:hexa4|             ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_0|hexa:hexa4             ; hexa          ; work         ;
 ;       |hexa:hexa5|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_0|hexa:hexa5             ; hexa          ; work         ;
 ;       |hexa:hexa6|             ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_0|hexa:hexa6             ; hexa          ; work         ;
-;    |reloj:jugador_1|           ; 146 (5)             ; 45 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_1                        ; reloj         ; work         ;
+;    |reloj:jugador_1|           ; 177 (16)            ; 45 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_1                        ; reloj         ; work         ;
 ;       |bintobcd:bin1|          ; 13 (13)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_1|bintobcd:bin1          ; bintobcd      ; work         ;
 ;       |bintobcd:bin2|          ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_1|bintobcd:bin2          ; bintobcd      ; work         ;
 ;       |bintobcd:bin3|          ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_1|bintobcd:bin3          ; bintobcd      ; work         ;
 ;       |comparator:comporador1| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_1|comparator:comporador1 ; comparator    ; work         ;
 ;       |comparator:comporador2| ; 2 (2)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_1|comparator:comporador2 ; comparator    ; work         ;
-;       |counter:contador1|      ; 7 (7)               ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_1|counter:contador1      ; counter       ; work         ;
-;       |counter:contador2|      ; 7 (7)               ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_1|counter:contador2      ; counter       ; work         ;
-;       |counter:contador3|      ; 10 (10)             ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_1|counter:contador3      ; counter       ; work         ;
+;       |counter:contador1|      ; 12 (12)             ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_1|counter:contador1      ; counter       ; work         ;
+;       |counter:contador2|      ; 17 (17)             ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_1|counter:contador2      ; counter       ; work         ;
+;       |counter:contador3|      ; 15 (15)             ; 6 (6)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_1|counter:contador3      ; counter       ; work         ;
 ;       |divisor_freq:divisor1|  ; 47 (47)             ; 27 (27)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_1|divisor_freq:divisor1  ; divisor_freq  ; work         ;
 ;       |hexa:hexa1|             ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_1|hexa:hexa1             ; hexa          ; work         ;
 ;       |hexa:hexa2|             ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_1|hexa:hexa2             ; hexa          ; work         ;
@@ -370,15 +372,26 @@ Encoding Type:  One-Hot
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
++------------------------------------------------------------+
+; Logic Cells Representing Combinational Loops               ;
++--------------------------------------------------------+---+
+; Logic Cell Name                                        ;   ;
++--------------------------------------------------------+---+
+; reloj:jugador_0|start_hor[1]~0                         ;   ;
+; reloj:jugador_1|start_hor[1]~0                         ;   ;
+; Number of logic cells representing combinational loops ; 2 ;
++--------------------------------------------------------+---+
+Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
 +---------------------------------------------------------------------------------------+
 ; Registers Removed During Synthesis                                                    ;
 +---------------------------------------+-----------------------------------------------+
 ; Register name                         ; Reason for Removal                            ;
 +---------------------------------------+-----------------------------------------------+
-; reg:reg0|q_reg_1[0,1]                 ; Lost fanout                                   ;
 ; fsm:fsm1|state_reg.ST_PLAYER_1_L1     ; Merged with fsm:fsm1|state_reg.ST_PLAYER_0_L1 ;
 ; fsm:fsm1|state_reg.ST_PLAYER_0_L1     ; Stuck at GND due to stuck port data_in        ;
-; Total Number of Removed Registers = 4 ;                                               ;
+; Total Number of Removed Registers = 2 ;                                               ;
 +---------------------------------------+-----------------------------------------------+
 
 
@@ -387,12 +400,12 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 152   ;
+; Total registers                              ; 154   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 152   ;
+; Number of registers using Asynchronous Clear ; 154   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 52    ;
+; Number of registers using Clock Enable       ; 54    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -402,14 +415,14 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                   ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |reloj_ajedrez|contador_ace:con0|q_reg_u[1]  ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |reloj_ajedrez|contador_ace:con1|q_reg_u[1]  ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |reloj_ajedrez|contador_ace:con0|q_next_c[3] ;
-; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |reloj_ajedrez|contador_ace:con1|q_next_c[0] ;
-; 5:1                ; 9 bits    ; 27 LEs        ; 18 LEs               ; 9 LEs                  ; No         ; |reloj_ajedrez|mux4a1:mu4|y[3]               ;
-; 5:1                ; 15 bits   ; 45 LEs        ; 30 LEs               ; 15 LEs                 ; No         ; |reloj_ajedrez|mux4a1:mu0|y[1]               ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |reloj_ajedrez|contador_ace:con0|q_reg_u[0]  ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |reloj_ajedrez|contador_ace:con1|q_reg_u[0]  ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |reloj_ajedrez|contador_ace:con0|q_next_c[0] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |reloj_ajedrez|contador_ace:con1|q_next_c[3] ;
+; 5:1                ; 9 bits    ; 27 LEs        ; 18 LEs               ; 9 LEs                  ; No         ; |reloj_ajedrez|mux4a1:mu4|y[2]               ;
+; 5:1                ; 15 bits   ; 45 LEs        ; 30 LEs               ; 15 LEs                 ; No         ; |reloj_ajedrez|mux4a1:mu2|y[5]               ;
 ; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |reloj_ajedrez|contador_ace:con0|q_next_d[0] ;
-; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |reloj_ajedrez|contador_ace:con1|q_next_d[3] ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 8 LEs                ; 0 LEs                  ; No         ; |reloj_ajedrez|contador_ace:con1|q_next_d[2] ;
 ; 18:1               ; 6 bits    ; 72 LEs        ; 36 LEs               ; 36 LEs                 ; No         ; |reloj_ajedrez|mux4a1:mu1|y[6]               ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------+
 
@@ -829,21 +842,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 61                          ;
-; cycloneiii_ff         ; 152                         ;
+; cycloneiii_ff         ; 154                         ;
 ;     CLR               ; 100                         ;
-;     ENA CLR           ; 52                          ;
-; cycloneiii_lcell_comb ; 581                         ;
+;     ENA CLR           ; 54                          ;
+; cycloneiii_lcell_comb ; 639                         ;
 ;     arith             ; 105                         ;
 ;         2 data inputs ; 105                         ;
-;     normal            ; 476                         ;
+;     normal            ; 534                         ;
 ;         0 data inputs ; 1                           ;
-;         1 data inputs ; 9                           ;
-;         2 data inputs ; 50                          ;
-;         3 data inputs ; 102                         ;
-;         4 data inputs ; 314                         ;
+;         1 data inputs ; 11                          ;
+;         2 data inputs ; 72                          ;
+;         3 data inputs ; 109                         ;
+;         4 data inputs ; 341                         ;
 ;                       ;                             ;
-; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 3.59                        ;
+; Max LUT depth         ; 7.00                        ;
+; Average LUT depth     ; 4.25                        ;
 +-----------------------+-----------------------------+
 
 
@@ -862,7 +875,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Wed Jun 26 07:45:03 2024
+    Info: Processing started: Wed Jun 26 09:26:53 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off reloj_ajedrez -c reloj_ajedrez
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
@@ -916,12 +929,14 @@ Warning (10036): Verilog HDL or VHDL warning at reloj_ajedrez.vhd(30): object "t
 Warning (10036): Verilog HDL or VHDL warning at reloj_ajedrez.vhd(30): object "time_gt40_j1" assigned a value but never read File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reloj_ajedrez.vhd Line: 30
 Info (12128): Elaborating entity "divisor_freq" for hierarchy "divisor_freq:div" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reloj_ajedrez.vhd Line: 41
 Info (12128): Elaborating entity "reloj" for hierarchy "reloj:jugador_0" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reloj_ajedrez.vhd Line: 44
-Info (12128): Elaborating entity "counter" for hierarchy "reloj:jugador_0|counter:contador1" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reloj.vhd Line: 113
-Info (12128): Elaborating entity "comparator" for hierarchy "reloj:jugador_0|comparator:comporador1" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reloj.vhd Line: 114
-Info (12128): Elaborating entity "bintobcd" for hierarchy "reloj:jugador_0|bintobcd:bin1" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reloj.vhd Line: 116
-Info (12128): Elaborating entity "hexa" for hierarchy "reloj:jugador_0|hexa:hexa1" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reloj.vhd Line: 117
-Info (12128): Elaborating entity "counter" for hierarchy "reloj:jugador_0|counter:contador3" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reloj.vhd Line: 130
-Info (12128): Elaborating entity "comparator_gt" for hierarchy "reloj:jugador_0|comparator_gt:comparato_1h" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reloj.vhd Line: 133
+Warning (10492): VHDL Process Statement warning at reloj.vhd(84): signal "active_1h" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reloj.vhd Line: 84
+Warning (10492): VHDL Process Statement warning at reloj.vhd(84): signal "reset_n" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reloj.vhd Line: 84
+Info (12128): Elaborating entity "counter" for hierarchy "reloj:jugador_0|counter:contador1" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reloj.vhd Line: 116
+Info (12128): Elaborating entity "comparator" for hierarchy "reloj:jugador_0|comparator:comporador1" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reloj.vhd Line: 117
+Info (12128): Elaborating entity "bintobcd" for hierarchy "reloj:jugador_0|bintobcd:bin1" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reloj.vhd Line: 119
+Info (12128): Elaborating entity "hexa" for hierarchy "reloj:jugador_0|hexa:hexa1" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reloj.vhd Line: 120
+Info (12128): Elaborating entity "counter" for hierarchy "reloj:jugador_0|counter:contador3" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reloj.vhd Line: 133
+Info (12128): Elaborating entity "comparator_gt" for hierarchy "reloj:jugador_0|comparator_gt:comparato_1h" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reloj.vhd Line: 136
 Info (12128): Elaborating entity "mux4a1" for hierarchy "mux4a1:mu0" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reloj_ajedrez.vhd Line: 76
 Info (12128): Elaborating entity "reg" for hierarchy "reg:reg0" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reloj_ajedrez.vhd Line: 125
 Info (12128): Elaborating entity "fsm" for hierarchy "fsm:fsm1" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reloj_ajedrez.vhd Line: 133
@@ -968,26 +983,39 @@ Warning (13012): Latch contador_ace:con1|q_next_c[2] has unsafe behavior File: C
     Warning (13013): Ports D and ENA on the latch are fed by the same signal contador_ace:con1|q_reg_c[2] File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/contador_ace.vhd Line: 24
 Warning (13012): Latch contador_ace:con1|q_next_c[3] has unsafe behavior File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/contador_ace.vhd Line: 36
     Warning (13013): Ports D and ENA on the latch are fed by the same signal contador_ace:con1|q_reg_c[3] File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/contador_ace.vhd Line: 24
+Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
+    Warning (13310): Register "reloj:jugador_0|counter:contador1|q_reg[0]" is converted into an equivalent circuit using register "reloj:jugador_0|counter:contador1|q_reg[0]~_emulated" and latch "reloj:jugador_0|counter:contador1|q_reg[0]~1" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/counter.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_0|counter:contador1|q_reg[2]" is converted into an equivalent circuit using register "reloj:jugador_0|counter:contador1|q_reg[2]~_emulated" and latch "reloj:jugador_0|counter:contador1|q_reg[0]~1" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/counter.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_1|counter:contador1|q_reg[0]" is converted into an equivalent circuit using register "reloj:jugador_1|counter:contador1|q_reg[0]~_emulated" and latch "reloj:jugador_1|counter:contador1|q_reg[0]~1" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/counter.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_1|counter:contador1|q_reg[2]" is converted into an equivalent circuit using register "reloj:jugador_1|counter:contador1|q_reg[2]~_emulated" and latch "reloj:jugador_1|counter:contador1|q_reg[0]~1" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/counter.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_0|counter:contador2|q_reg[0]" is converted into an equivalent circuit using register "reloj:jugador_0|counter:contador2|q_reg[0]~_emulated" and latch "reloj:jugador_0|counter:contador2|q_reg[0]~1" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/counter.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_0|counter:contador2|q_reg[2]" is converted into an equivalent circuit using register "reloj:jugador_0|counter:contador2|q_reg[2]~_emulated" and latch "reloj:jugador_0|counter:contador2|q_reg[2]~5" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/counter.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_0|counter:contador2|q_reg[3]" is converted into an equivalent circuit using register "reloj:jugador_0|counter:contador2|q_reg[3]~_emulated" and latch "reloj:jugador_0|counter:contador2|q_reg[3]~9" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/counter.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_0|counter:contador2|q_reg[4]" is converted into an equivalent circuit using register "reloj:jugador_0|counter:contador2|q_reg[4]~_emulated" and latch "reloj:jugador_0|counter:contador2|q_reg[3]~9" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/counter.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_1|counter:contador2|q_reg[0]" is converted into an equivalent circuit using register "reloj:jugador_1|counter:contador2|q_reg[0]~_emulated" and latch "reloj:jugador_1|counter:contador2|q_reg[0]~1" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/counter.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_1|counter:contador2|q_reg[2]" is converted into an equivalent circuit using register "reloj:jugador_1|counter:contador2|q_reg[2]~_emulated" and latch "reloj:jugador_1|counter:contador2|q_reg[2]~5" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/counter.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_1|counter:contador2|q_reg[3]" is converted into an equivalent circuit using register "reloj:jugador_1|counter:contador2|q_reg[3]~_emulated" and latch "reloj:jugador_1|counter:contador2|q_reg[3]~9" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/counter.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_1|counter:contador2|q_reg[4]" is converted into an equivalent circuit using register "reloj:jugador_1|counter:contador2|q_reg[4]~_emulated" and latch "reloj:jugador_1|counter:contador2|q_reg[3]~9" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/counter.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_0|counter:contador3|q_reg[0]" is converted into an equivalent circuit using register "reloj:jugador_0|counter:contador3|q_reg[0]~_emulated" and latch "reloj:jugador_0|counter:contador3|q_reg[0]~1" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/counter.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_0|counter:contador3|q_reg[1]" is converted into an equivalent circuit using register "reloj:jugador_0|counter:contador3|q_reg[1]~_emulated" and latch "reloj:jugador_0|counter:contador3|q_reg[1]~5" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/counter.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_1|counter:contador3|q_reg[0]" is converted into an equivalent circuit using register "reloj:jugador_1|counter:contador3|q_reg[0]~_emulated" and latch "reloj:jugador_1|counter:contador3|q_reg[0]~1" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/counter.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_1|counter:contador3|q_reg[1]" is converted into an equivalent circuit using register "reloj:jugador_1|counter:contador3|q_reg[1]~_emulated" and latch "reloj:jugador_1|counter:contador3|q_reg[1]~5" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/counter.vhd Line: 24
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "leds[1]" is stuck at GND File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reloj_ajedrez.vhd Line: 25
     Warning (13410): Pin "leds[3]" is stuck at GND File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reloj_ajedrez.vhd Line: 25
     Warning (13410): Pin "leds[6]" is stuck at GND File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reloj_ajedrez.vhd Line: 25
     Warning (13410): Pin "leds[8]" is stuck at GND File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reloj_ajedrez.vhd Line: 25
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 2 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 2 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "modo[1]" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reloj_ajedrez.vhd Line: 13
-    Warning (15610): No output dependent on input pin "modo[0]" File: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reloj_ajedrez.vhd Line: 13
-Info (21057): Implemented 660 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 720 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 599 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 47 warnings
-    Info: Peak virtual memory: 4873 megabytes
-    Info: Processing ended: Wed Jun 26 07:45:17 2024
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:16
+    Info (21061): Implemented 659 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 63 warnings
+    Info: Peak virtual memory: 4874 megabytes
+    Info: Processing ended: Wed Jun 26 09:27:05 2024
+    Info: Elapsed time: 00:00:12
+    Info: Total CPU time (on all processors): 00:00:12
 
 

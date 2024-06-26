@@ -25,6 +25,7 @@ end reloj;
 architecture arq of reloj is 
 signal clk_en, en_seg, g_reset_n, en_min,en_hor, min_seg, min_min, min_hor,max_seg,max_min, max_hor,reset_n,max_value: std_logic;
 signal aux1,aux2,aux3: std_logic_vector(7 downto 0);
+signal active_1h:std_logic;
 signal seg,min,hor,start_hor,start_min,start_seg: std_logic_vector(5 downto 0);
 
 constant numero_0: std_logic_vector(5 downto 0)  := "000000";
@@ -72,7 +73,7 @@ en_hor <= ( en_min and min_min );
 max_value <= max_hor and max_min and max_seg;
 min_value <= (min_seg and min_min and min_hor);
  
-reset_n <= ((ini_pausa) or (not borrar)) and ((not max_value) or (not reset_1h));
+reset_n <= ((ini_pausa) or (not borrar)) and ((not max_value) and (not reset_1h));
 
 
 ------
@@ -80,11 +81,13 @@ reset_n <= ((ini_pausa) or (not borrar)) and ((not max_value) or (not reset_1h))
 process(sel,reset_1h)
 begin
 
-if reset_1h = '1' then
+if (reset_1h = '1' or active_1h = '1' ) and reset_n = '0' then
 start_hor <= numero_1;
 start_min <= numero_0;
 start_seg <= numero_0;
+active_1h <= '1';
 else
+active_1h <= '0';
 if sel = "00" then
 start_hor <= blitz_hor;
 start_min <= blitz_min;

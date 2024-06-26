@@ -1,0 +1,353 @@
+# Reading pref.tcl
+# //  Questa Intel Starter FPGA Edition-64
+# //  Version 2023.3 win64 Jul 17 2023
+# //
+# //  Copyright 1991-2023 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do reloj_ajedrez_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is u_electro@C081466.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is u_electro@C081466.
+# vlib rtl_work
+# ** Warning: (vlib-34) Library already exists at "rtl_work".
+# Errors: 0, Warnings: 1
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2023.3 Lib Mapping Utility 2023.07 Jul 17 2023
+# vmap work rtl_work 
+# Copying c:/intelfpga_lite/23.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/comparator.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 09:27:16 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/comparator.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity comparator
+# -- Compiling architecture arq of comparator
+# End time: 09:27:17 on Jun 26,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/fsm.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 09:27:17 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/fsm.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity fsm
+# -- Compiling architecture strc_1 of fsm
+# End time: 09:27:17 on Jun 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/divisor_freq.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 09:27:17 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/divisor_freq.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity divisor_freq
+# -- Compiling architecture structural of divisor_freq
+# End time: 09:27:17 on Jun 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/my_components_reloj.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 09:27:17 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/my_components_reloj.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package my_components_reloj
+# End time: 09:27:17 on Jun 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/mux4a1.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 09:27:17 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/mux4a1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mux4a1
+# -- Compiling architecture structural of mux4a1
+# End time: 09:27:17 on Jun 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/my_components.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 09:27:17 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/my_components.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package my_components
+# End time: 09:27:17 on Jun 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/hexa.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 09:27:18 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/hexa.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity hexa
+# -- Compiling architecture structural_0 of hexa
+# End time: 09:27:18 on Jun 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/counter.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 09:27:18 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity counter
+# -- Compiling architecture arq of counter
+# End time: 09:27:18 on Jun 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/bintobcd.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 09:27:18 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/bintobcd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity bintobcd
+# -- Compiling architecture structural of bintobcd
+# End time: 09:27:18 on Jun 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reg.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 09:27:18 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity reg
+# -- Compiling architecture arq of reg
+# End time: 09:27:18 on Jun 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/comparator_gt.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 09:27:18 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/comparator_gt.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity comparator_gt
+# -- Compiling architecture arq of comparator_gt
+# End time: 09:27:18 on Jun 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reloj_ajedrez.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 09:27:18 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reloj_ajedrez.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_components_reloj
+# -- Loading package my_components
+# -- Compiling entity reloj_ajedrez
+# -- Compiling architecture arq of reloj_ajedrez
+# End time: 09:27:18 on Jun 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reloj.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 09:27:18 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/reloj.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_components
+# -- Compiling entity reloj
+# -- Compiling architecture arq of reloj
+# End time: 09:27:19 on Jun 26,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/contador_ace.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 09:27:19 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/contador_ace.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package my_components
+# -- Compiling entity contador_ace
+# -- Compiling architecture arq of contador_ace
+# End time: 09:27:19 on Jun 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/simulation/questa/reloj_ajedrez.vht}
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 09:27:19 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/simulation/questa/reloj_ajedrez.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reloj_ajedrez_tb
+# -- Compiling architecture reloj_ajedrez_arch of reloj_ajedrez_tb
+# ** Warning: C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/simulation/questa/reloj_ajedrez.vht(35): (vcom-1207) An abstract literal and an identifier must have a separator between them.
+# End time: 09:27:19 on Jun 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  reloj_ajedrez_tb
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" reloj_ajedrez_tb 
+# Start time: 09:27:19 on Jun 26,2024
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in architecture body "fsm(strc_1)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.reloj_ajedrez_tb(reloj_ajedrez_arch)#1
+# Loading ieee.numeric_std(body)
+# Loading work.my_components_reloj
+# Loading work.my_components
+# Loading work.reloj_ajedrez(arq)#1
+# Loading work.divisor_freq(structural)#1
+# Loading work.reloj(arq)#1
+# Loading work.counter(arq)#1
+# Loading work.comparator(arq)#1
+# Loading work.bintobcd(structural)#1
+# Loading work.hexa(structural_0)#1
+# Loading work.counter(arq)#2
+# Loading work.comparator_gt(arq)#1
+# Loading work.mux4a1(structural)#1
+# Loading work.mux4a1(structural)#2
+# Loading work.reg(arq)#1
+# Loading work.fsm(strc_1)#1
+# Loading work.contador_ace(arq)#1
+# 
+# do C:/Users/Frank/Desktop/25JUNIO/25JUNIO/lab9/ep1/start.do
+# transcript on
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is u_electro@C081466.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is u_electro@C081466.
+# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt2".  Locker is Frank@LAPTOP-8T02M9KL.
+# vlib rtl_work
+# ** Warning: (vlib-34) Library already exists at "rtl_work".
+# Errors: 0, Warnings: 1
+# vmap work rtl_work
+# Questa Intel Starter FPGA Edition-64 vmap 2023.3 Lib Mapping Utility 2023.07 Jul 17 2023
+# vmap work rtl_work 
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {../../fsm.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 09:27:26 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work ../../fsm.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity fsm
+# -- Compiling architecture strc_1 of fsm
+# End time: 09:27:26 on Jun 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {../../divisor_freq.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 09:27:27 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work ../../divisor_freq.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity divisor_freq
+# -- Compiling architecture structural of divisor_freq
+# End time: 09:27:27 on Jun 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {../../my_components_reloj.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 09:27:27 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work ../../my_components_reloj.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package my_components_reloj
+# End time: 09:27:28 on Jun 26,2024, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {../../mux4a1.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 09:27:28 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work ../../mux4a1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity mux4a1
+# -- Compiling architecture structural of mux4a1
+# End time: 09:27:28 on Jun 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {../../my_components.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 09:27:28 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work ../../my_components.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package my_components
+# End time: 09:27:28 on Jun 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {../../hexa.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 09:27:28 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work ../../hexa.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity hexa
+# -- Compiling architecture structural_0 of hexa
+# End time: 09:27:28 on Jun 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {../../counter.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 09:27:28 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work ../../counter.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity counter
+# -- Compiling architecture arq of counter
+# End time: 09:27:28 on Jun 26,2024, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {../../comparador.vhd}
+# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
+# Start time: 09:27:28 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work ../../comparador.vhd 
+# ** Error: (vcom-7) Failed to open design unit file "../../comparador.vhd" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 09:27:28 on Jun 26,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: c:/intelfpga_lite/23.1std/questa_fse/win64/vcom failed.
+# Error in macro C:\Users\Frank\Desktop\25JUNIO\25JUNIO\lab9\ep1\start.do line 15
+# c:/intelfpga_lite/23.1std/questa_fse/win64/vcom failed.
+#     while executing
+# "vcom -93 -work work {../../comparador.vhd}"
+# End time: 09:29:40 on Jun 26,2024, Elapsed time: 0:02:21
+# Errors: 1, Warnings: 1

@@ -216,11 +216,19 @@
 					"strict" : false
 				},
 				{
+					"name" : "jugador_act",
+					"strict" : false
+				},
+				{
 					"name" : "config",
 					"strict" : false
 				},
 				{
-					"name" : "jugador_act",
+					"name" : "modo[1]",
+					"strict" : false
+				},
+				{
+					"name" : "modo[0]",
 					"strict" : false
 				}
 			]
