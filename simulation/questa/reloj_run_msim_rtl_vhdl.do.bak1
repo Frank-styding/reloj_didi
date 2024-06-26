@@ -1,0 +1,16 @@
+transcript on
+if {[file exists rtl_work]} {
+	vdel -lib rtl_work -all
+}
+vlib rtl_work
+vmap work rtl_work
+
+vcom -93 -work work {C:/Users/Frank/Desktop/reloj_prueva/bintobcd.vhd}
+vcom -93 -work work {C:/Users/Frank/Desktop/reloj_prueva/my_components.vhd}
+vcom -93 -work work {C:/Users/Frank/Desktop/reloj_prueva/hexa.vhd}
+vcom -93 -work work {C:/Users/Frank/Desktop/reloj_prueva/divisor_freq.vhd}
+vcom -93 -work work {C:/Users/Frank/Desktop/reloj_prueva/counter.vhd}
+vcom -93 -work work {C:/Users/Frank/Desktop/reloj_prueva/comparator_gt.vhd}
+vcom -93 -work work {C:/Users/Frank/Desktop/reloj_prueva/comparator.vhd}
+vcom -93 -work work {C:/Users/Frank/Desktop/reloj_prueva/reloj.vhd}
+
