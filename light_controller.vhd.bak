@@ -1,0 +1,12 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use work.my_components.all;
+
+entity light_controller is
+port(signal reset_n: in std_logic;
+	  signal clk: in std_logic;
+	  signal en: in std_logic;
+	  signal jugador: in std_logic;
+	  signal leds: out std_logic_vector(9 downto 0));
+end light_controller;

@@ -1,0 +1,16 @@
+
+State Machine - |reloj_ajedrez|fsm:fsm1|state_reg
+Name state_reg.ST_PLAYER_1_L1 state_reg.ST_PLAYER_0_L1 state_reg.ST_PLAYER_1_M state_reg.ST_PLAYER_0_M state_reg.ST_PLAYER_1_L state_reg.ST_PLAYER_0_L state_reg.ST_PLAYER_1_P state_reg.ST_PLAYER_1 state_reg.ST_PLAYER_0 state_reg.ST_PLAYER_0_P state_reg.ST_PLAYERS_CONFIG state_reg.ST_WAIT_CONFIG state_reg.ST_IDLE 
+state_reg.ST_IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state_reg.ST_WAIT_CONFIG 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state_reg.ST_PLAYERS_CONFIG 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state_reg.ST_PLAYER_0_P 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state_reg.ST_PLAYER_0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state_reg.ST_PLAYER_1 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state_reg.ST_PLAYER_1_P 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state_reg.ST_PLAYER_0_L 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state_reg.ST_PLAYER_1_L 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state_reg.ST_PLAYER_0_M 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state_reg.ST_PLAYER_1_M 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state_reg.ST_PLAYER_0_L1 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state_reg.ST_PLAYER_1_L1 1 0 0 0 0 0 0 0 0 0 0 0 1 

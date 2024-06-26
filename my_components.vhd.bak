@@ -1,0 +1,49 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+package my_components is
+
+component hexa is 
+  port(signal a  :  in std_logic_vector(3 downto 0);
+	    signal f  : out std_logic_vector(6 downto 0)) ;
+end component;
+
+component divisor_freq is
+  generic (N         : natural := 50000000;        
+           BUS_WIDTH : natural := 26);
+  port (signal reset_n :  in std_logic;
+        signal clk     :  in std_logic;
+        signal clk_o   : out std_logic);
+end component;
+
+
+component bintobcd is
+  port(signal a  :  in std_logic_vector(5 downto 0);
+	   signal f  : out std_logic_vector(7 downto 0)) ;
+end component;
+
+
+component counter is
+generic(
+width: natural := 5;
+N:natural := 24);
+port(
+signal reset_n: in std_logic;
+signal en: in std_logic;
+signal clk: in std_logic;
+signal start: in std_logic_vector(width - 1 downto 0);
+signal q: out std_logic_vector(width - 1 downto 0));
+end component;
+
+
+component comparador is 
+generic( width:natural := 5 );
+port(
+signal A: in std_logic_vector(width - 1 downto 0);
+signal B: in std_logic_vector(width -1 downto 0);
+signal EQ: out std_logic);
+
+end component;
+
+end package;
