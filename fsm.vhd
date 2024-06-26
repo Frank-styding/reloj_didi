@@ -25,11 +25,6 @@ port(signal modo: in std_logic_vector(1 downto 0);
 	  signal reset_1h_j0: out std_logic;
 	  signal reset_1h_j1: out std_logic;
 
-	  signal act_16_j0: out std_logic;
-	  signal act_16_j1: out std_logic;
-	  
-	
-	  
 	  signal looser_sel: out std_logic;
 	  signal en_light: out std_logic;
 --------------------------------------------------	  
@@ -63,7 +58,7 @@ begin
 	
 end process seq;
 
-comb:process(state_reg,config,modo,min_value_j0,min_value_j1,ini_pausa,jugador_act)
+comb:process(state_reg,config,modo,min_value_j0,min_value_j1,ini_pausa,jugador_act,gt_16_j0,gt_16_j1,mov_j0_gt40,mov_j1_gt40,gt_1h_j1,gt_1h_j0)
 begin
 case state_reg is
 	when ST_IDLE =>
@@ -332,7 +327,7 @@ case state_reg is
 --		reset_1h_j1<=gt_1h_j1;
 
 		when st_plaYER_1_M_0 =>
-		state_next<=ST_PLAYER_1;
+		state_next<=ST_PLAYER_0;
 		ini_pausa_j0<='0';
 		ini_pausa_j1<='0';
 		en_j0<='0';
@@ -346,7 +341,7 @@ case state_reg is
 		reset_1h_j0<='0';
 
 	when ST_PLAYER_1_M_1 =>
-		state_next<=ST_PLAYER_1;
+		state_next<=ST_PLAYER_0;
 		ini_pausa_j0<='0';
 		ini_pausa_j1<='0';
 		en_j0<='0';

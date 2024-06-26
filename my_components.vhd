@@ -24,7 +24,12 @@ component bintobcd is
 end component;
 
 
-component counter is
+component bintobcd255 is
+  port(signal a  :  in std_logic_vector(7 downto 0);
+	   signal f  : out std_logic_vector(11 downto 0)) ;
+end component;
+
+component counter_dec is
 generic(
 width: natural := 5;
 N:natural := 24);
@@ -34,14 +39,6 @@ signal en: in std_logic;
 signal clk: in std_logic;
 signal start: in std_logic_vector(width - 1 downto 0);
 signal q: out std_logic_vector(width - 1 downto 0));
-end component;
-
-component comparator_gt is
-generic(width: natural := 6);
-port(
-signal a: in std_logic_vector(width - 1 downto 0);
-signal b: in std_logic_vector(width - 1 downto 0);
-signal gt: out std_logic);
 end component;
 
 component comparator is 

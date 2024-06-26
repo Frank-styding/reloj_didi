@@ -57,19 +57,10 @@ port(signal modo: in std_logic_vector(1 downto 0);
 ----------------------------------------------------	  
 	  signal gt_16_j0: in std_Logic;
 	  signal gt_1h_j0: in std_Logic;
-	  
 	  signal gt_16_j1: in std_Logic;
 	  signal gt_1h_j1: in std_Logic;
-	
-
 	  signal reset_1h_j0: out std_logic;
 	  signal reset_1h_j1: out std_logic;
-
-	  signal act_16_j0: out std_logic;
-	  signal act_16_j1: out std_logic;
-	  
-	
-	  
 	  signal looser_sel: out std_logic;
 	  signal en_light: out std_logic;
 --------------------------------------------------	  
@@ -87,7 +78,7 @@ end component;
 
 
 
-component contador_ace is
+component counter_ace is
 port(
 signal clk : in std_logic;
 signal en: in std_logic;
@@ -96,6 +87,16 @@ signal mov_u: out std_logic_vector(6 downto 0);
 signal mov_d: out std_logic_vector(6 downto 0);
 signal mov_c: out std_logic_vector(6 downto 0);
 signal mov_gt40: out std_logic);
+end component;
+
+component counter_dect is
+generic(N:natural := 16);
+port(
+	signal clk: in std_logic;
+	signal en: in std_logic;
+	signal reset_n: in std_logic;
+	signal detected: out std_logic;
+	signal f: out std_logic_vector(7 downto 0));
 end component;
 
 

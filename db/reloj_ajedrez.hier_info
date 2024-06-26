@@ -2,16 +2,20 @@
 reset_n => divisor_freq:div.reset_n
 reset_n => reg:reg0.reset_n
 reset_n => fsm:fsm1.reset_n
-reset_n => contador_ace:con1.reset_n
-reset_n => contador_ace:con0.reset_n
+reset_n => counter_ace:con_j1.reset_n
+reset_n => counter_ace:con_j0.reset_n
+reset_n => counter_dect:con1_j0.reset_n
+reset_n => counter_dect:con1_j1.reset_n
 reset_n => light_controller:ligth_controller1.reset_n
 clk => divisor_freq:div.clk
 clk => reloj:jugador_0.clk
 clk => reloj:jugador_1.clk
 clk => reg:reg0.clk
 clk => fsm:fsm1.clk
-clk => contador_ace:con1.clk
-clk => contador_ace:con0.clk
+clk => counter_ace:con_j1.clk
+clk => counter_ace:con_j0.clk
+clk => counter_dect:con1_j0.clk
+clk => counter_dect:con1_j1.clk
 clk => light_controller:ligth_controller1.clk
 config => fsm:fsm1.config
 ini_pausa => fsm:fsm1.ini_pausa
@@ -146,9 +150,9 @@ clk_o <= clk_o_reg.DB_MAX_OUTPUT_PORT_TYPE
 
 |reloj_ajedrez|reloj:jugador_0
 clk => divisor_freq:divisor1.clk
-clk => counter:contador1.clk
-clk => counter:contador2.clk
-clk => counter:contador3.clk
+clk => counter_dec:contador1.clk
+clk => counter_dec:contador2.clk
+clk => counter_dec:contador3.clk
 sel[0] => Equal0.IN1
 sel[0] => Equal1.IN0
 sel[0] => Equal2.IN1
@@ -164,7 +168,7 @@ borrar => g_reset_n.IN1
 borrar => reset_n.IN1
 reset_1h => process_0.IN0
 reset_1h => reset_n.IN1
-time_gt1h <= comparator_gt:comparato_1h.gt
+time_gt1h <= comparator:comparato_1h.EQ
 min_value <= min_value.DB_MAX_OUTPUT_PORT_TYPE
 display_0[0] <= hexa:hexa1.f[0]
 display_0[1] <= hexa:hexa1.f[1]
@@ -268,7 +272,7 @@ clk => clk_o_reg.CLK
 clk_o <= clk_o_reg.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|reloj_ajedrez|reloj:jugador_0|counter:contador1
+|reloj_ajedrez|reloj:jugador_0|counter_dec:contador1
 reset_n => q_reg[0].ALOAD
 reset_n => q_reg[1].ALOAD
 reset_n => q_reg[2].ALOAD
@@ -448,7 +452,7 @@ f[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 f[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|reloj_ajedrez|reloj:jugador_0|counter:contador2
+|reloj_ajedrez|reloj:jugador_0|counter_dec:contador2
 reset_n => q_reg[0].ALOAD
 reset_n => q_reg[1].ALOAD
 reset_n => q_reg[2].ALOAD
@@ -628,7 +632,7 @@ f[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 f[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|reloj_ajedrez|reloj:jugador_0|counter:contador3
+|reloj_ajedrez|reloj:jugador_0|counter_dec:contador3
 reset_n => q_reg[0].ALOAD
 reset_n => q_reg[1].ALOAD
 reset_n => q_reg[2].ALOAD
@@ -693,20 +697,20 @@ B[5] => Equal0.IN6
 EQ <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|reloj_ajedrez|reloj:jugador_0|comparator_gt:comparato_1h
-a[0] => LessThan0.IN6
-a[1] => LessThan0.IN5
-a[2] => LessThan0.IN4
-a[3] => LessThan0.IN3
-a[4] => LessThan0.IN2
-a[5] => LessThan0.IN1
-b[0] => LessThan0.IN12
-b[1] => LessThan0.IN11
-b[2] => LessThan0.IN10
-b[3] => LessThan0.IN9
-b[4] => LessThan0.IN8
-b[5] => LessThan0.IN7
-gt <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+|reloj_ajedrez|reloj:jugador_0|comparator:comparato_1h
+A[0] => Equal0.IN5
+A[1] => Equal0.IN4
+A[2] => Equal0.IN3
+A[3] => Equal0.IN2
+A[4] => Equal0.IN1
+A[5] => Equal0.IN0
+B[0] => Equal0.IN11
+B[1] => Equal0.IN10
+B[2] => Equal0.IN9
+B[3] => Equal0.IN8
+B[4] => Equal0.IN7
+B[5] => Equal0.IN6
+EQ <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |reloj_ajedrez|reloj:jugador_0|bintobcd:bin3
@@ -826,9 +830,9 @@ f[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 |reloj_ajedrez|reloj:jugador_1
 clk => divisor_freq:divisor1.clk
-clk => counter:contador1.clk
-clk => counter:contador2.clk
-clk => counter:contador3.clk
+clk => counter_dec:contador1.clk
+clk => counter_dec:contador2.clk
+clk => counter_dec:contador3.clk
 sel[0] => Equal0.IN1
 sel[0] => Equal1.IN0
 sel[0] => Equal2.IN1
@@ -844,7 +848,7 @@ borrar => g_reset_n.IN1
 borrar => reset_n.IN1
 reset_1h => process_0.IN0
 reset_1h => reset_n.IN1
-time_gt1h <= comparator_gt:comparato_1h.gt
+time_gt1h <= comparator:comparato_1h.EQ
 min_value <= min_value.DB_MAX_OUTPUT_PORT_TYPE
 display_0[0] <= hexa:hexa1.f[0]
 display_0[1] <= hexa:hexa1.f[1]
@@ -948,7 +952,7 @@ clk => clk_o_reg.CLK
 clk_o <= clk_o_reg.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|reloj_ajedrez|reloj:jugador_1|counter:contador1
+|reloj_ajedrez|reloj:jugador_1|counter_dec:contador1
 reset_n => q_reg[0].ALOAD
 reset_n => q_reg[1].ALOAD
 reset_n => q_reg[2].ALOAD
@@ -1128,7 +1132,7 @@ f[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 f[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|reloj_ajedrez|reloj:jugador_1|counter:contador2
+|reloj_ajedrez|reloj:jugador_1|counter_dec:contador2
 reset_n => q_reg[0].ALOAD
 reset_n => q_reg[1].ALOAD
 reset_n => q_reg[2].ALOAD
@@ -1308,7 +1312,7 @@ f[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 f[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|reloj_ajedrez|reloj:jugador_1|counter:contador3
+|reloj_ajedrez|reloj:jugador_1|counter_dec:contador3
 reset_n => q_reg[0].ALOAD
 reset_n => q_reg[1].ALOAD
 reset_n => q_reg[2].ALOAD
@@ -1373,20 +1377,20 @@ B[5] => Equal0.IN6
 EQ <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|reloj_ajedrez|reloj:jugador_1|comparator_gt:comparato_1h
-a[0] => LessThan0.IN6
-a[1] => LessThan0.IN5
-a[2] => LessThan0.IN4
-a[3] => LessThan0.IN3
-a[4] => LessThan0.IN2
-a[5] => LessThan0.IN1
-b[0] => LessThan0.IN12
-b[1] => LessThan0.IN11
-b[2] => LessThan0.IN10
-b[3] => LessThan0.IN9
-b[4] => LessThan0.IN8
-b[5] => LessThan0.IN7
-gt <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+|reloj_ajedrez|reloj:jugador_1|comparator:comparato_1h
+A[0] => Equal0.IN5
+A[1] => Equal0.IN4
+A[2] => Equal0.IN3
+A[3] => Equal0.IN2
+A[4] => Equal0.IN1
+A[5] => Equal0.IN0
+B[0] => Equal0.IN11
+B[1] => Equal0.IN10
+B[2] => Equal0.IN9
+B[3] => Equal0.IN8
+B[4] => Equal0.IN7
+B[5] => Equal0.IN6
+EQ <= Equal0.DB_MAX_OUTPUT_PORT_TYPE
 
 
 |reloj_ajedrez|reloj:jugador_1|bintobcd:bin3
@@ -1863,7 +1867,7 @@ config => state_next.ST_IDLE.DATAB
 config => Selector0.IN1
 ini_pausa => state_next.OUTPUTSELECT
 ini_pausa => state_next.OUTPUTSELECT
-ini_pausa => Selector2.IN4
+ini_pausa => Selector2.IN6
 ini_pausa => Selector3.IN6
 ini_pausa => state_next.OUTPUTSELECT
 ini_pausa => state_next.OUTPUTSELECT
@@ -1891,8 +1895,6 @@ gt_1h_j1 => state_next.DATAB
 gt_1h_j1 => state_next.DATAB
 reset_1h_j0 <= reset_1h_j0.DB_MAX_OUTPUT_PORT_TYPE
 reset_1h_j1 <= reset_1h_j1.DB_MAX_OUTPUT_PORT_TYPE
-act_16_j0 <= act_16_j0.DB_MAX_OUTPUT_PORT_TYPE
-act_16_j1 <= comb.DB_MAX_OUTPUT_PORT_TYPE
 looser_sel <= looser_sel.DB_MAX_OUTPUT_PORT_TYPE
 en_light <= en_light.DB_MAX_OUTPUT_PORT_TYPE
 ini_pausa_j0 <= ini_pausa_j0.DB_MAX_OUTPUT_PORT_TYPE
@@ -1904,70 +1906,145 @@ en_j1 <= en_j1.DB_MAX_OUTPUT_PORT_TYPE
 en_sel <= en_sel.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|reloj_ajedrez|contador_ace:con1
-clk => q_reg_c[0].CLK
-clk => q_reg_c[1].CLK
-clk => q_reg_c[2].CLK
-clk => q_reg_c[3].CLK
-clk => q_reg_d[0].CLK
-clk => q_reg_d[1].CLK
-clk => q_reg_d[2].CLK
-clk => q_reg_d[3].CLK
-clk => q_reg_u[0].CLK
-clk => q_reg_u[1].CLK
-clk => q_reg_u[2].CLK
-clk => q_reg_u[3].CLK
-en => q_next_c[0].OUTPUTSELECT
-en => q_next_c[1].OUTPUTSELECT
-en => q_next_c[1].IN1
-en => q_next_c[2].OUTPUTSELECT
-en => q_next_c[3].OUTPUTSELECT
-en => q_next_d[0].OUTPUTSELECT
-en => q_next_d[0].IN1
-en => q_next_d[1].OUTPUTSELECT
-en => q_next_d[2].OUTPUTSELECT
-en => q_next_d[3].OUTPUTSELECT
-en => q_reg_u[3].ENA
-en => q_reg_u[2].ENA
-en => q_reg_u[1].ENA
-en => q_reg_u[0].ENA
-reset_n => q_reg_c[0].ACLR
-reset_n => q_reg_c[1].ACLR
-reset_n => q_reg_c[2].ACLR
-reset_n => q_reg_c[3].ACLR
-reset_n => q_reg_d[0].ACLR
-reset_n => q_reg_d[1].ACLR
-reset_n => q_reg_d[2].ACLR
-reset_n => q_reg_d[3].ACLR
-reset_n => q_reg_u[0].ACLR
-reset_n => q_reg_u[1].ACLR
-reset_n => q_reg_u[2].ACLR
-reset_n => q_reg_u[3].ACLR
-mov_u[0] <= hexa:hexa_u.f[0]
-mov_u[1] <= hexa:hexa_u.f[1]
-mov_u[2] <= hexa:hexa_u.f[2]
-mov_u[3] <= hexa:hexa_u.f[3]
-mov_u[4] <= hexa:hexa_u.f[4]
-mov_u[5] <= hexa:hexa_u.f[5]
-mov_u[6] <= hexa:hexa_u.f[6]
-mov_d[0] <= hexa:hexa_d.f[0]
-mov_d[1] <= hexa:hexa_d.f[1]
-mov_d[2] <= hexa:hexa_d.f[2]
-mov_d[3] <= hexa:hexa_d.f[3]
-mov_d[4] <= hexa:hexa_d.f[4]
-mov_d[5] <= hexa:hexa_d.f[5]
-mov_d[6] <= hexa:hexa_d.f[6]
-mov_c[0] <= hexa:hexa_c.f[0]
-mov_c[1] <= hexa:hexa_c.f[1]
-mov_c[2] <= hexa:hexa_c.f[2]
-mov_c[3] <= hexa:hexa_c.f[3]
-mov_c[4] <= hexa:hexa_c.f[4]
-mov_c[5] <= hexa:hexa_c.f[5]
-mov_c[6] <= hexa:hexa_c.f[6]
-mov_gt40 <= process_2.DB_MAX_OUTPUT_PORT_TYPE
+|reloj_ajedrez|counter_ace:con_j1
+clk => counter_dect:counter_1.clk
+en => counter_dect:counter_1.en
+reset_n => counter_dect:counter_1.reset_n
+mov_u[0] <= hexa:hexa0.f[0]
+mov_u[1] <= hexa:hexa0.f[1]
+mov_u[2] <= hexa:hexa0.f[2]
+mov_u[3] <= hexa:hexa0.f[3]
+mov_u[4] <= hexa:hexa0.f[4]
+mov_u[5] <= hexa:hexa0.f[5]
+mov_u[6] <= hexa:hexa0.f[6]
+mov_d[0] <= hexa:hexa1.f[0]
+mov_d[1] <= hexa:hexa1.f[1]
+mov_d[2] <= hexa:hexa1.f[2]
+mov_d[3] <= hexa:hexa1.f[3]
+mov_d[4] <= hexa:hexa1.f[4]
+mov_d[5] <= hexa:hexa1.f[5]
+mov_d[6] <= hexa:hexa1.f[6]
+mov_c[0] <= hexa:hexa2.f[0]
+mov_c[1] <= hexa:hexa2.f[1]
+mov_c[2] <= hexa:hexa2.f[2]
+mov_c[3] <= hexa:hexa2.f[3]
+mov_c[4] <= hexa:hexa2.f[4]
+mov_c[5] <= hexa:hexa2.f[5]
+mov_c[6] <= hexa:hexa2.f[6]
+mov_gt40 <= counter_dect:counter_1.detected
 
 
-|reloj_ajedrez|contador_ace:con1|hexa:hexa_u
+|reloj_ajedrez|counter_ace:con_j1|counter_dect:counter_1
+clk => q_reg[0].CLK
+clk => q_reg[1].CLK
+clk => q_reg[2].CLK
+clk => q_reg[3].CLK
+clk => q_reg[4].CLK
+clk => q_reg[5].CLK
+clk => q_reg[6].CLK
+clk => q_reg[7].CLK
+en => detected$latch.LATCH_ENABLE
+en => q_reg[7].ENA
+en => q_reg[6].ENA
+en => q_reg[5].ENA
+en => q_reg[4].ENA
+en => q_reg[3].ENA
+en => q_reg[2].ENA
+en => q_reg[1].ENA
+en => q_reg[0].ENA
+reset_n => q_reg[0].ACLR
+reset_n => q_reg[1].ACLR
+reset_n => q_reg[2].ACLR
+reset_n => q_reg[3].ACLR
+reset_n => q_reg[4].ACLR
+reset_n => q_reg[5].ACLR
+reset_n => q_reg[6].ACLR
+reset_n => q_reg[7].ACLR
+detected <= detected$latch.DB_MAX_OUTPUT_PORT_TYPE
+f[0] <= q_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+f[1] <= q_reg[1].DB_MAX_OUTPUT_PORT_TYPE
+f[2] <= q_reg[2].DB_MAX_OUTPUT_PORT_TYPE
+f[3] <= q_reg[3].DB_MAX_OUTPUT_PORT_TYPE
+f[4] <= q_reg[4].DB_MAX_OUTPUT_PORT_TYPE
+f[5] <= q_reg[5].DB_MAX_OUTPUT_PORT_TYPE
+f[6] <= q_reg[6].DB_MAX_OUTPUT_PORT_TYPE
+f[7] <= q_reg[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|reloj_ajedrez|counter_ace:con_j1|bintobcd255:binto1
+a[0] => f[0].DATAIN
+a[1] => Mux5.IN134
+a[1] => Mux6.IN134
+a[1] => Mux7.IN134
+a[1] => Mux8.IN134
+a[2] => Mux1.IN69
+a[2] => Mux2.IN69
+a[2] => Mux3.IN69
+a[2] => Mux4.IN69
+a[2] => Mux5.IN133
+a[2] => Mux6.IN133
+a[2] => Mux7.IN133
+a[2] => Mux8.IN133
+a[3] => Mux0.IN36
+a[3] => Mux1.IN68
+a[3] => Mux2.IN68
+a[3] => Mux3.IN68
+a[3] => Mux4.IN68
+a[3] => Mux5.IN132
+a[3] => Mux6.IN132
+a[3] => Mux7.IN132
+a[3] => Mux8.IN132
+a[4] => Mux0.IN35
+a[4] => Mux1.IN67
+a[4] => Mux2.IN67
+a[4] => Mux3.IN67
+a[4] => Mux4.IN67
+a[4] => Mux5.IN131
+a[4] => Mux6.IN131
+a[4] => Mux7.IN131
+a[4] => Mux8.IN131
+a[5] => Mux0.IN34
+a[5] => Mux1.IN66
+a[5] => Mux2.IN66
+a[5] => Mux3.IN66
+a[5] => Mux4.IN66
+a[5] => Mux5.IN130
+a[5] => Mux6.IN130
+a[5] => Mux7.IN130
+a[5] => Mux8.IN130
+a[6] => Mux0.IN33
+a[6] => Mux1.IN65
+a[6] => Mux2.IN65
+a[6] => Mux3.IN65
+a[6] => Mux4.IN65
+a[6] => Mux5.IN129
+a[6] => Mux6.IN129
+a[6] => Mux7.IN129
+a[6] => Mux8.IN129
+a[7] => Mux0.IN32
+a[7] => Mux1.IN64
+a[7] => Mux2.IN64
+a[7] => Mux3.IN64
+a[7] => Mux4.IN64
+a[7] => Mux5.IN128
+a[7] => Mux6.IN128
+a[7] => Mux7.IN128
+a[7] => Mux8.IN128
+f[0] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
+f[1] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+f[2] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+f[3] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+f[4] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+f[5] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+f[6] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+f[7] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+f[8] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+f[9] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+f[10] <= <GND>
+f[11] <= <GND>
+
+
+|reloj_ajedrez|counter_ace:con_j1|hexa:hexa0
 a[0] => Mux0.IN19
 a[0] => Mux1.IN19
 a[0] => Mux2.IN19
@@ -2005,7 +2082,7 @@ f[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 f[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|reloj_ajedrez|contador_ace:con1|hexa:hexa_d
+|reloj_ajedrez|counter_ace:con_j1|hexa:hexa1
 a[0] => Mux0.IN19
 a[0] => Mux1.IN19
 a[0] => Mux2.IN19
@@ -2043,7 +2120,7 @@ f[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 f[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|reloj_ajedrez|contador_ace:con1|hexa:hexa_c
+|reloj_ajedrez|counter_ace:con_j1|hexa:hexa2
 a[0] => Mux0.IN19
 a[0] => Mux1.IN19
 a[0] => Mux2.IN19
@@ -2081,70 +2158,145 @@ f[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 f[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|reloj_ajedrez|contador_ace:con0
-clk => q_reg_c[0].CLK
-clk => q_reg_c[1].CLK
-clk => q_reg_c[2].CLK
-clk => q_reg_c[3].CLK
-clk => q_reg_d[0].CLK
-clk => q_reg_d[1].CLK
-clk => q_reg_d[2].CLK
-clk => q_reg_d[3].CLK
-clk => q_reg_u[0].CLK
-clk => q_reg_u[1].CLK
-clk => q_reg_u[2].CLK
-clk => q_reg_u[3].CLK
-en => q_next_c[0].OUTPUTSELECT
-en => q_next_c[1].OUTPUTSELECT
-en => q_next_c[1].IN1
-en => q_next_c[2].OUTPUTSELECT
-en => q_next_c[3].OUTPUTSELECT
-en => q_next_d[0].OUTPUTSELECT
-en => q_next_d[0].IN1
-en => q_next_d[1].OUTPUTSELECT
-en => q_next_d[2].OUTPUTSELECT
-en => q_next_d[3].OUTPUTSELECT
-en => q_reg_u[3].ENA
-en => q_reg_u[2].ENA
-en => q_reg_u[1].ENA
-en => q_reg_u[0].ENA
-reset_n => q_reg_c[0].ACLR
-reset_n => q_reg_c[1].ACLR
-reset_n => q_reg_c[2].ACLR
-reset_n => q_reg_c[3].ACLR
-reset_n => q_reg_d[0].ACLR
-reset_n => q_reg_d[1].ACLR
-reset_n => q_reg_d[2].ACLR
-reset_n => q_reg_d[3].ACLR
-reset_n => q_reg_u[0].ACLR
-reset_n => q_reg_u[1].ACLR
-reset_n => q_reg_u[2].ACLR
-reset_n => q_reg_u[3].ACLR
-mov_u[0] <= hexa:hexa_u.f[0]
-mov_u[1] <= hexa:hexa_u.f[1]
-mov_u[2] <= hexa:hexa_u.f[2]
-mov_u[3] <= hexa:hexa_u.f[3]
-mov_u[4] <= hexa:hexa_u.f[4]
-mov_u[5] <= hexa:hexa_u.f[5]
-mov_u[6] <= hexa:hexa_u.f[6]
-mov_d[0] <= hexa:hexa_d.f[0]
-mov_d[1] <= hexa:hexa_d.f[1]
-mov_d[2] <= hexa:hexa_d.f[2]
-mov_d[3] <= hexa:hexa_d.f[3]
-mov_d[4] <= hexa:hexa_d.f[4]
-mov_d[5] <= hexa:hexa_d.f[5]
-mov_d[6] <= hexa:hexa_d.f[6]
-mov_c[0] <= hexa:hexa_c.f[0]
-mov_c[1] <= hexa:hexa_c.f[1]
-mov_c[2] <= hexa:hexa_c.f[2]
-mov_c[3] <= hexa:hexa_c.f[3]
-mov_c[4] <= hexa:hexa_c.f[4]
-mov_c[5] <= hexa:hexa_c.f[5]
-mov_c[6] <= hexa:hexa_c.f[6]
-mov_gt40 <= process_2.DB_MAX_OUTPUT_PORT_TYPE
+|reloj_ajedrez|counter_ace:con_j0
+clk => counter_dect:counter_1.clk
+en => counter_dect:counter_1.en
+reset_n => counter_dect:counter_1.reset_n
+mov_u[0] <= hexa:hexa0.f[0]
+mov_u[1] <= hexa:hexa0.f[1]
+mov_u[2] <= hexa:hexa0.f[2]
+mov_u[3] <= hexa:hexa0.f[3]
+mov_u[4] <= hexa:hexa0.f[4]
+mov_u[5] <= hexa:hexa0.f[5]
+mov_u[6] <= hexa:hexa0.f[6]
+mov_d[0] <= hexa:hexa1.f[0]
+mov_d[1] <= hexa:hexa1.f[1]
+mov_d[2] <= hexa:hexa1.f[2]
+mov_d[3] <= hexa:hexa1.f[3]
+mov_d[4] <= hexa:hexa1.f[4]
+mov_d[5] <= hexa:hexa1.f[5]
+mov_d[6] <= hexa:hexa1.f[6]
+mov_c[0] <= hexa:hexa2.f[0]
+mov_c[1] <= hexa:hexa2.f[1]
+mov_c[2] <= hexa:hexa2.f[2]
+mov_c[3] <= hexa:hexa2.f[3]
+mov_c[4] <= hexa:hexa2.f[4]
+mov_c[5] <= hexa:hexa2.f[5]
+mov_c[6] <= hexa:hexa2.f[6]
+mov_gt40 <= counter_dect:counter_1.detected
 
 
-|reloj_ajedrez|contador_ace:con0|hexa:hexa_u
+|reloj_ajedrez|counter_ace:con_j0|counter_dect:counter_1
+clk => q_reg[0].CLK
+clk => q_reg[1].CLK
+clk => q_reg[2].CLK
+clk => q_reg[3].CLK
+clk => q_reg[4].CLK
+clk => q_reg[5].CLK
+clk => q_reg[6].CLK
+clk => q_reg[7].CLK
+en => detected$latch.LATCH_ENABLE
+en => q_reg[7].ENA
+en => q_reg[6].ENA
+en => q_reg[5].ENA
+en => q_reg[4].ENA
+en => q_reg[3].ENA
+en => q_reg[2].ENA
+en => q_reg[1].ENA
+en => q_reg[0].ENA
+reset_n => q_reg[0].ACLR
+reset_n => q_reg[1].ACLR
+reset_n => q_reg[2].ACLR
+reset_n => q_reg[3].ACLR
+reset_n => q_reg[4].ACLR
+reset_n => q_reg[5].ACLR
+reset_n => q_reg[6].ACLR
+reset_n => q_reg[7].ACLR
+detected <= detected$latch.DB_MAX_OUTPUT_PORT_TYPE
+f[0] <= q_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+f[1] <= q_reg[1].DB_MAX_OUTPUT_PORT_TYPE
+f[2] <= q_reg[2].DB_MAX_OUTPUT_PORT_TYPE
+f[3] <= q_reg[3].DB_MAX_OUTPUT_PORT_TYPE
+f[4] <= q_reg[4].DB_MAX_OUTPUT_PORT_TYPE
+f[5] <= q_reg[5].DB_MAX_OUTPUT_PORT_TYPE
+f[6] <= q_reg[6].DB_MAX_OUTPUT_PORT_TYPE
+f[7] <= q_reg[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|reloj_ajedrez|counter_ace:con_j0|bintobcd255:binto1
+a[0] => f[0].DATAIN
+a[1] => Mux5.IN134
+a[1] => Mux6.IN134
+a[1] => Mux7.IN134
+a[1] => Mux8.IN134
+a[2] => Mux1.IN69
+a[2] => Mux2.IN69
+a[2] => Mux3.IN69
+a[2] => Mux4.IN69
+a[2] => Mux5.IN133
+a[2] => Mux6.IN133
+a[2] => Mux7.IN133
+a[2] => Mux8.IN133
+a[3] => Mux0.IN36
+a[3] => Mux1.IN68
+a[3] => Mux2.IN68
+a[3] => Mux3.IN68
+a[3] => Mux4.IN68
+a[3] => Mux5.IN132
+a[3] => Mux6.IN132
+a[3] => Mux7.IN132
+a[3] => Mux8.IN132
+a[4] => Mux0.IN35
+a[4] => Mux1.IN67
+a[4] => Mux2.IN67
+a[4] => Mux3.IN67
+a[4] => Mux4.IN67
+a[4] => Mux5.IN131
+a[4] => Mux6.IN131
+a[4] => Mux7.IN131
+a[4] => Mux8.IN131
+a[5] => Mux0.IN34
+a[5] => Mux1.IN66
+a[5] => Mux2.IN66
+a[5] => Mux3.IN66
+a[5] => Mux4.IN66
+a[5] => Mux5.IN130
+a[5] => Mux6.IN130
+a[5] => Mux7.IN130
+a[5] => Mux8.IN130
+a[6] => Mux0.IN33
+a[6] => Mux1.IN65
+a[6] => Mux2.IN65
+a[6] => Mux3.IN65
+a[6] => Mux4.IN65
+a[6] => Mux5.IN129
+a[6] => Mux6.IN129
+a[6] => Mux7.IN129
+a[6] => Mux8.IN129
+a[7] => Mux0.IN32
+a[7] => Mux1.IN64
+a[7] => Mux2.IN64
+a[7] => Mux3.IN64
+a[7] => Mux4.IN64
+a[7] => Mux5.IN128
+a[7] => Mux6.IN128
+a[7] => Mux7.IN128
+a[7] => Mux8.IN128
+f[0] <= a[0].DB_MAX_OUTPUT_PORT_TYPE
+f[1] <= Mux8.DB_MAX_OUTPUT_PORT_TYPE
+f[2] <= Mux7.DB_MAX_OUTPUT_PORT_TYPE
+f[3] <= Mux6.DB_MAX_OUTPUT_PORT_TYPE
+f[4] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+f[5] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+f[6] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+f[7] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+f[8] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+f[9] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+f[10] <= <GND>
+f[11] <= <GND>
+
+
+|reloj_ajedrez|counter_ace:con_j0|hexa:hexa0
 a[0] => Mux0.IN19
 a[0] => Mux1.IN19
 a[0] => Mux2.IN19
@@ -2182,7 +2334,7 @@ f[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 f[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|reloj_ajedrez|contador_ace:con0|hexa:hexa_d
+|reloj_ajedrez|counter_ace:con_j0|hexa:hexa1
 a[0] => Mux0.IN19
 a[0] => Mux1.IN19
 a[0] => Mux2.IN19
@@ -2220,7 +2372,7 @@ f[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 f[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|reloj_ajedrez|contador_ace:con0|hexa:hexa_c
+|reloj_ajedrez|counter_ace:con_j0|hexa:hexa2
 a[0] => Mux0.IN19
 a[0] => Mux1.IN19
 a[0] => Mux2.IN19
@@ -2256,6 +2408,80 @@ f[3] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
 f[4] <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
 f[5] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
 f[6] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|reloj_ajedrez|counter_dect:con1_j0
+clk => q_reg[0].CLK
+clk => q_reg[1].CLK
+clk => q_reg[2].CLK
+clk => q_reg[3].CLK
+clk => q_reg[4].CLK
+clk => q_reg[5].CLK
+clk => q_reg[6].CLK
+clk => q_reg[7].CLK
+en => detected$latch.LATCH_ENABLE
+en => q_reg[7].ENA
+en => q_reg[6].ENA
+en => q_reg[5].ENA
+en => q_reg[4].ENA
+en => q_reg[3].ENA
+en => q_reg[2].ENA
+en => q_reg[1].ENA
+en => q_reg[0].ENA
+reset_n => q_reg[0].ACLR
+reset_n => q_reg[1].ACLR
+reset_n => q_reg[2].ACLR
+reset_n => q_reg[3].ACLR
+reset_n => q_reg[4].ACLR
+reset_n => q_reg[5].ACLR
+reset_n => q_reg[6].ACLR
+reset_n => q_reg[7].ACLR
+detected <= detected$latch.DB_MAX_OUTPUT_PORT_TYPE
+f[0] <= q_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+f[1] <= q_reg[1].DB_MAX_OUTPUT_PORT_TYPE
+f[2] <= q_reg[2].DB_MAX_OUTPUT_PORT_TYPE
+f[3] <= q_reg[3].DB_MAX_OUTPUT_PORT_TYPE
+f[4] <= q_reg[4].DB_MAX_OUTPUT_PORT_TYPE
+f[5] <= q_reg[5].DB_MAX_OUTPUT_PORT_TYPE
+f[6] <= q_reg[6].DB_MAX_OUTPUT_PORT_TYPE
+f[7] <= q_reg[7].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|reloj_ajedrez|counter_dect:con1_j1
+clk => q_reg[0].CLK
+clk => q_reg[1].CLK
+clk => q_reg[2].CLK
+clk => q_reg[3].CLK
+clk => q_reg[4].CLK
+clk => q_reg[5].CLK
+clk => q_reg[6].CLK
+clk => q_reg[7].CLK
+en => detected$latch.LATCH_ENABLE
+en => q_reg[7].ENA
+en => q_reg[6].ENA
+en => q_reg[5].ENA
+en => q_reg[4].ENA
+en => q_reg[3].ENA
+en => q_reg[2].ENA
+en => q_reg[1].ENA
+en => q_reg[0].ENA
+reset_n => q_reg[0].ACLR
+reset_n => q_reg[1].ACLR
+reset_n => q_reg[2].ACLR
+reset_n => q_reg[3].ACLR
+reset_n => q_reg[4].ACLR
+reset_n => q_reg[5].ACLR
+reset_n => q_reg[6].ACLR
+reset_n => q_reg[7].ACLR
+detected <= detected$latch.DB_MAX_OUTPUT_PORT_TYPE
+f[0] <= q_reg[0].DB_MAX_OUTPUT_PORT_TYPE
+f[1] <= q_reg[1].DB_MAX_OUTPUT_PORT_TYPE
+f[2] <= q_reg[2].DB_MAX_OUTPUT_PORT_TYPE
+f[3] <= q_reg[3].DB_MAX_OUTPUT_PORT_TYPE
+f[4] <= q_reg[4].DB_MAX_OUTPUT_PORT_TYPE
+f[5] <= q_reg[5].DB_MAX_OUTPUT_PORT_TYPE
+f[6] <= q_reg[6].DB_MAX_OUTPUT_PORT_TYPE
+f[7] <= q_reg[7].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |reloj_ajedrez|light_controller:ligth_controller1

@@ -2,7 +2,7 @@ library ieee;
 use ieee.numeric_std.all;
 use ieee.std_logic_1164.all;
 
-entity counter is
+entity counter_dec is
 generic(
 width: natural := 5;
 N:natural := 24);
@@ -12,8 +12,8 @@ signal en: in std_logic;
 signal clk: in std_logic;
 signal start: in std_logic_vector(width - 1 downto 0);
 signal q: out std_logic_vector(width - 1 downto 0));
-end counter;
-architecture arq of counter is
+end counter_dec;
+architecture arq of counter_dec is
 signal q_reg, q_next: unsigned(width - 1 downto 0);
 begin
 

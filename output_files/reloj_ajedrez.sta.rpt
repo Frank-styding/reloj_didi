@@ -1,6 +1,6 @@
 Timing Analyzer report for reloj_ajedrez
-Thu Jun 20 20:32:21 2024
-Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
+Wed Jun 26 16:41:56 2024
+Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
 ---------------------
@@ -55,7 +55,7 @@ Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2022  Intel Corporation. All rights reserved.
+Copyright (C) 2023  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
@@ -75,7 +75,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------+
 ; Timing Analyzer Summary                                                        ;
 +-----------------------+--------------------------------------------------------+
-; Quartus Prime Version ; Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
+; Quartus Prime Version ; Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Timing Analyzer       ; Legacy Timing Analyzer                                 ;
 ; Revision Name         ; reloj_ajedrez                                          ;
 ; Device Family         ; MAX 10                                                 ;
@@ -92,62 +92,62 @@ https://fpgasoftware.intel.com/eula.
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
 ; Number detected on machine ; 16          ;
-; Maximum allowed            ; 8           ;
+; Maximum allowed            ; 12          ;
 ;                            ;             ;
-; Average used               ; 1.25        ;
-; Maximum used               ; 8           ;
+; Average used               ; 1.36        ;
+; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   3.8%      ;
-;     Processor 3            ;   3.8%      ;
-;     Processor 4            ;   3.7%      ;
-;     Processors 5-8         ;   3.3%      ;
+;     Processor 3            ;   3.6%      ;
+;     Processor 4            ;   3.4%      ;
+;     Processors 5-12        ;   3.2%      ;
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Clocks                                                                                                                                                                                                                 ;
-+----------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------------------------+
-; Clock Name                 ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                        ;
-+----------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------------------------+
-; clk                        ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk }                        ;
-; divisor_freq:div|clk_o_reg ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { divisor_freq:div|clk_o_reg } ;
-; fsm:fsm1|state_reg.ST_IDLE ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { fsm:fsm1|state_reg.ST_IDLE } ;
-+----------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clocks                                                                                                                                                                                                                                                                                       ;
++---------------------------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------------------------------------------------+
+; Clock Name                                                    ; Type ; Period ; Frequency  ; Rise  ; Fall  ; Duty Cycle ; Divide by ; Multiply by ; Phase ; Offset ; Edge List ; Edge Shift ; Inverted ; Master ; Source ; Targets                                                           ;
++---------------------------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------------------------------------------------+
+; clk                                                           ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { clk }                                                           ;
+; fsm:fsm1|state_reg.ST_IDLE                                    ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { fsm:fsm1|state_reg.ST_IDLE }                                    ;
+; light_controller:ligth_controller1|divisor_freq:div|clk_o_reg ; Base ; 1.000  ; 1000.0 MHz ; 0.000 ; 0.500 ;            ;           ;             ;       ;        ;           ;            ;          ;        ;        ; { light_controller:ligth_controller1|divisor_freq:div|clk_o_reg } ;
++---------------------------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------+
-; Slow 1200mV 85C Model Fmax Summary                               ;
-+------------+-----------------+----------------------------+------+
-; Fmax       ; Restricted Fmax ; Clock Name                 ; Note ;
-+------------+-----------------+----------------------------+------+
-; 72.84 MHz  ; 72.84 MHz       ; clk                        ;      ;
-; 117.48 MHz ; 117.48 MHz      ; divisor_freq:div|clk_o_reg ;      ;
-+------------+-----------------+----------------------------+------+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary                                                                                                            ;
++------------+-----------------+---------------------------------------------------------------+------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name                                                    ; Note                                           ;
++------------+-----------------+---------------------------------------------------------------+------------------------------------------------+
+; 65.16 MHz  ; 65.16 MHz       ; clk                                                           ;                                                ;
+; 1424.5 MHz ; 416.15 MHz      ; light_controller:ligth_controller1|divisor_freq:div|clk_o_reg ; limit due to minimum period restriction (tmin) ;
++------------+-----------------+---------------------------------------------------------------+------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
-+------------------------------------------------------+
-; Slow 1200mV 85C Model Setup Summary                  ;
-+----------------------------+---------+---------------+
-; Clock                      ; Slack   ; End Point TNS ;
-+----------------------------+---------+---------------+
-; clk                        ; -12.729 ; -737.835      ;
-; divisor_freq:div|clk_o_reg ; -6.532  ; -89.500       ;
-; fsm:fsm1|state_reg.ST_IDLE ; -2.900  ; -24.581       ;
-+----------------------------+---------+---------------+
++-----------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Setup Summary                                                     ;
++---------------------------------------------------------------+---------+---------------+
+; Clock                                                         ; Slack   ; End Point TNS ;
++---------------------------------------------------------------+---------+---------------+
+; clk                                                           ; -14.348 ; -684.186      ;
+; fsm:fsm1|state_reg.ST_IDLE                                    ; -2.844  ; -24.422       ;
+; light_controller:ligth_controller1|divisor_freq:div|clk_o_reg ; 0.298   ; 0.000         ;
++---------------------------------------------------------------+---------+---------------+
 
 
-+----------------------------------------------------+
-; Slow 1200mV 85C Model Hold Summary                 ;
-+----------------------------+-------+---------------+
-; Clock                      ; Slack ; End Point TNS ;
-+----------------------------+-------+---------------+
-; clk                        ; 0.271 ; 0.000         ;
-; divisor_freq:div|clk_o_reg ; 0.348 ; 0.000         ;
-; fsm:fsm1|state_reg.ST_IDLE ; 1.517 ; 0.000         ;
-+----------------------------+-------+---------------+
++---------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Hold Summary                                                    ;
++---------------------------------------------------------------+-------+---------------+
+; Clock                                                         ; Slack ; End Point TNS ;
++---------------------------------------------------------------+-------+---------------+
+; clk                                                           ; 0.340 ; 0.000         ;
+; light_controller:ligth_controller1|divisor_freq:div|clk_o_reg ; 0.393 ; 0.000         ;
+; fsm:fsm1|state_reg.ST_IDLE                                    ; 1.555 ; 0.000         ;
++---------------------------------------------------------------+-------+---------------+
 
 
 +----------------------------------------+
@@ -155,7 +155,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+-----------------------+
 ; Clock ; Slack  ; End Point TNS         ;
 +-------+--------+-----------------------+
-; clk   ; -8.461 ; -751.712              ;
+; clk   ; -9.606 ; -792.680              ;
 +-------+--------+-----------------------+
 
 
@@ -164,58 +164,64 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+----------------------+
 ; Clock ; Slack  ; End Point TNS        ;
 +-------+--------+----------------------+
-; clk   ; -0.111 ; -1.452               ;
+; clk   ; -0.625 ; -31.175              ;
 +-------+--------+----------------------+
 
 
-+-----------------------------------------------------+
-; Slow 1200mV 85C Model Minimum Pulse Width Summary   ;
-+----------------------------+--------+---------------+
-; Clock                      ; Slack  ; End Point TNS ;
-+----------------------------+--------+---------------+
-; clk                        ; -3.000 ; -216.256      ;
-; divisor_freq:div|clk_o_reg ; 0.424  ; 0.000         ;
-; fsm:fsm1|state_reg.ST_IDLE ; 0.426  ; 0.000         ;
-+----------------------------+--------+---------------+
++----------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Minimum Pulse Width Summary                                      ;
++---------------------------------------------------------------+--------+---------------+
+; Clock                                                         ; Slack  ; End Point TNS ;
++---------------------------------------------------------------+--------+---------------+
+; clk                                                           ; -3.000 ; -183.987      ;
+; light_controller:ligth_controller1|divisor_freq:div|clk_o_reg ; -1.403 ; -1.403        ;
+; fsm:fsm1|state_reg.ST_IDLE                                    ; 0.387  ; 0.000         ;
++---------------------------------------------------------------+--------+---------------+
 
 
 -----------------------------------------------
 ; Slow 1200mV 85C Model Metastability Summary ;
 -----------------------------------------------
-No synchronizer chains to report.
+The design MTBF is not calculated because there are no specified synchronizers in the design.
+Number of Synchronizer Chains Found: 1
+Shortest Synchronizer Chain: 2 Registers
+Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
+Worst Case Available Settling Time: 0.298 ns
 
 
-+-----------------------------------------------------------------+
-; Slow 1200mV 0C Model Fmax Summary                               ;
-+-----------+-----------------+----------------------------+------+
-; Fmax      ; Restricted Fmax ; Clock Name                 ; Note ;
-+-----------+-----------------+----------------------------+------+
-; 78.12 MHz ; 78.12 MHz       ; clk                        ;      ;
-; 131.1 MHz ; 131.1 MHz       ; divisor_freq:div|clk_o_reg ;      ;
-+-----------+-----------------+----------------------------+------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Fmax Summary                                                                                                             ;
++------------+-----------------+---------------------------------------------------------------+------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name                                                    ; Note                                           ;
++------------+-----------------+---------------------------------------------------------------+------------------------------------------------+
+; 71.1 MHz   ; 71.1 MHz        ; clk                                                           ;                                                ;
+; 1567.4 MHz ; 416.15 MHz      ; light_controller:ligth_controller1|divisor_freq:div|clk_o_reg ; limit due to minimum period restriction (tmin) ;
++------------+-----------------+---------------------------------------------------------------+------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
-+------------------------------------------------------+
-; Slow 1200mV 0C Model Setup Summary                   ;
-+----------------------------+---------+---------------+
-; Clock                      ; Slack   ; End Point TNS ;
-+----------------------------+---------+---------------+
-; clk                        ; -11.801 ; -667.337      ;
-; divisor_freq:div|clk_o_reg ; -6.075  ; -82.216       ;
-; fsm:fsm1|state_reg.ST_IDLE ; -2.613  ; -22.025       ;
-+----------------------------+---------+---------------+
++-----------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Setup Summary                                                      ;
++---------------------------------------------------------------+---------+---------------+
+; Clock                                                         ; Slack   ; End Point TNS ;
++---------------------------------------------------------------+---------+---------------+
+; clk                                                           ; -13.064 ; -617.188      ;
+; fsm:fsm1|state_reg.ST_IDLE                                    ; -2.576  ; -22.038       ;
+; light_controller:ligth_controller1|divisor_freq:div|clk_o_reg ; 0.362   ; 0.000         ;
++---------------------------------------------------------------+---------+---------------+
 
 
-+----------------------------------------------------+
-; Slow 1200mV 0C Model Hold Summary                  ;
-+----------------------------+-------+---------------+
-; Clock                      ; Slack ; End Point TNS ;
-+----------------------------+-------+---------------+
-; clk                        ; 0.261 ; 0.000         ;
-; divisor_freq:div|clk_o_reg ; 0.282 ; 0.000         ;
-; fsm:fsm1|state_reg.ST_IDLE ; 1.403 ; 0.000         ;
-+----------------------------+-------+---------------+
++---------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Hold Summary                                                     ;
++---------------------------------------------------------------+-------+---------------+
+; Clock                                                         ; Slack ; End Point TNS ;
++---------------------------------------------------------------+-------+---------------+
+; clk                                                           ; 0.306 ; 0.000         ;
+; light_controller:ligth_controller1|divisor_freq:div|clk_o_reg ; 0.355 ; 0.000         ;
+; fsm:fsm1|state_reg.ST_IDLE                                    ; 1.475 ; 0.000         ;
++---------------------------------------------------------------+-------+---------------+
 
 
 +---------------------------------------+
@@ -223,7 +229,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+----------------------+
 ; Clock ; Slack  ; End Point TNS        ;
 +-------+--------+----------------------+
-; clk   ; -7.730 ; -682.137             ;
+; clk   ; -8.644 ; -713.133             ;
 +-------+--------+----------------------+
 
 
@@ -232,47 +238,53 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+---------------------+
 ; Clock ; Slack  ; End Point TNS       ;
 +-------+--------+---------------------+
-; clk   ; -0.119 ; -1.702              ;
+; clk   ; -0.599 ; -31.349             ;
 +-------+--------+---------------------+
 
 
-+-----------------------------------------------------+
-; Slow 1200mV 0C Model Minimum Pulse Width Summary    ;
-+----------------------------+--------+---------------+
-; Clock                      ; Slack  ; End Point TNS ;
-+----------------------------+--------+---------------+
-; clk                        ; -3.000 ; -216.256      ;
-; divisor_freq:div|clk_o_reg ; 0.322  ; 0.000         ;
-; fsm:fsm1|state_reg.ST_IDLE ; 0.435  ; 0.000         ;
-+----------------------------+--------+---------------+
++----------------------------------------------------------------------------------------+
+; Slow 1200mV 0C Model Minimum Pulse Width Summary                                       ;
++---------------------------------------------------------------+--------+---------------+
+; Clock                                                         ; Slack  ; End Point TNS ;
++---------------------------------------------------------------+--------+---------------+
+; clk                                                           ; -3.000 ; -183.987      ;
+; light_controller:ligth_controller1|divisor_freq:div|clk_o_reg ; -1.403 ; -1.403        ;
+; fsm:fsm1|state_reg.ST_IDLE                                    ; 0.379  ; 0.000         ;
++---------------------------------------------------------------+--------+---------------+
 
 
 ----------------------------------------------
 ; Slow 1200mV 0C Model Metastability Summary ;
 ----------------------------------------------
-No synchronizer chains to report.
+The design MTBF is not calculated because there are no specified synchronizers in the design.
+Number of Synchronizer Chains Found: 1
+Shortest Synchronizer Chain: 2 Registers
+Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
+Worst Case Available Settling Time: 0.362 ns
 
 
-+-----------------------------------------------------+
-; Fast 1200mV 0C Model Setup Summary                  ;
-+----------------------------+--------+---------------+
-; Clock                      ; Slack  ; End Point TNS ;
-+----------------------------+--------+---------------+
-; clk                        ; -5.221 ; -250.861      ;
-; divisor_freq:div|clk_o_reg ; -2.822 ; -36.923       ;
-; fsm:fsm1|state_reg.ST_IDLE ; -0.580 ; -4.355        ;
-+----------------------------+--------+---------------+
 
 
-+----------------------------------------------------+
-; Fast 1200mV 0C Model Hold Summary                  ;
-+----------------------------+-------+---------------+
-; Clock                      ; Slack ; End Point TNS ;
-+----------------------------+-------+---------------+
-; clk                        ; 0.100 ; 0.000         ;
-; divisor_freq:div|clk_o_reg ; 0.216 ; 0.000         ;
-; fsm:fsm1|state_reg.ST_IDLE ; 0.553 ; 0.000         ;
-+----------------------------+-------+---------------+
++----------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Setup Summary                                                     ;
++---------------------------------------------------------------+--------+---------------+
+; Clock                                                         ; Slack  ; End Point TNS ;
++---------------------------------------------------------------+--------+---------------+
+; clk                                                           ; -5.972 ; -239.895      ;
+; fsm:fsm1|state_reg.ST_IDLE                                    ; -0.580 ; -4.310        ;
+; light_controller:ligth_controller1|divisor_freq:div|clk_o_reg ; 0.694  ; 0.000         ;
++---------------------------------------------------------------+--------+---------------+
+
+
++---------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Hold Summary                                                     ;
++---------------------------------------------------------------+-------+---------------+
+; Clock                                                         ; Slack ; End Point TNS ;
++---------------------------------------------------------------+-------+---------------+
+; clk                                                           ; 0.123 ; 0.000         ;
+; light_controller:ligth_controller1|divisor_freq:div|clk_o_reg ; 0.170 ; 0.000         ;
+; fsm:fsm1|state_reg.ST_IDLE                                    ; 0.599 ; 0.000         ;
++---------------------------------------------------------------+-------+---------------+
 
 
 +---------------------------------------+
@@ -280,7 +292,7 @@ No synchronizer chains to report.
 +-------+--------+----------------------+
 ; Clock ; Slack  ; End Point TNS        ;
 +-------+--------+----------------------+
-; clk   ; -3.386 ; -301.321             ;
+; clk   ; -3.854 ; -316.098             ;
 +-------+--------+----------------------+
 
 
@@ -289,41 +301,47 @@ No synchronizer chains to report.
 +-------+--------+---------------------+
 ; Clock ; Slack  ; End Point TNS       ;
 +-------+--------+---------------------+
-; clk   ; -0.039 ; -0.456              ;
+; clk   ; -0.297 ; -17.222             ;
 +-------+--------+---------------------+
 
 
-+-----------------------------------------------------+
-; Fast 1200mV 0C Model Minimum Pulse Width Summary    ;
-+----------------------------+--------+---------------+
-; Clock                      ; Slack  ; End Point TNS ;
-+----------------------------+--------+---------------+
-; clk                        ; -3.000 ; -157.966      ;
-; divisor_freq:div|clk_o_reg ; 0.158  ; 0.000         ;
-; fsm:fsm1|state_reg.ST_IDLE ; 0.440  ; 0.000         ;
-+----------------------------+--------+---------------+
++----------------------------------------------------------------------------------------+
+; Fast 1200mV 0C Model Minimum Pulse Width Summary                                       ;
++---------------------------------------------------------------+--------+---------------+
+; Clock                                                         ; Slack  ; End Point TNS ;
++---------------------------------------------------------------+--------+---------------+
+; clk                                                           ; -3.000 ; -135.003      ;
+; light_controller:ligth_controller1|divisor_freq:div|clk_o_reg ; -1.000 ; -1.000        ;
+; fsm:fsm1|state_reg.ST_IDLE                                    ; 0.446  ; 0.000         ;
++---------------------------------------------------------------+--------+---------------+
 
 
 ----------------------------------------------
 ; Fast 1200mV 0C Model Metastability Summary ;
 ----------------------------------------------
-No synchronizer chains to report.
+The design MTBF is not calculated because there are no specified synchronizers in the design.
+Number of Synchronizer Chains Found: 1
+Shortest Synchronizer Chain: 2 Registers
+Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
+Worst Case Available Settling Time: 0.694 ns
 
 
-+-------------------------------------------------------------------------------------------+
-; Multicorner Timing Analysis Summary                                                       ;
-+-----------------------------+----------+-------+----------+---------+---------------------+
-; Clock                       ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
-+-----------------------------+----------+-------+----------+---------+---------------------+
-; Worst-case Slack            ; -12.729  ; 0.100 ; -8.461   ; -0.119  ; -3.000              ;
-;  clk                        ; -12.729  ; 0.100 ; -8.461   ; -0.119  ; -3.000              ;
-;  divisor_freq:div|clk_o_reg ; -6.532   ; 0.216 ; N/A      ; N/A     ; 0.158               ;
-;  fsm:fsm1|state_reg.ST_IDLE ; -2.900   ; 0.553 ; N/A      ; N/A     ; 0.426               ;
-; Design-wide TNS             ; -851.916 ; 0.0   ; -751.712 ; -1.702  ; -216.256            ;
-;  clk                        ; -737.835 ; 0.000 ; -751.712 ; -1.702  ; -216.256            ;
-;  divisor_freq:div|clk_o_reg ; -89.500  ; 0.000 ; N/A      ; N/A     ; 0.000               ;
-;  fsm:fsm1|state_reg.ST_IDLE ; -24.581  ; 0.000 ; N/A      ; N/A     ; 0.000               ;
-+-----------------------------+----------+-------+----------+---------+---------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------+
+; Multicorner Timing Analysis Summary                                                                                          ;
++----------------------------------------------------------------+----------+-------+----------+---------+---------------------+
+; Clock                                                          ; Setup    ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
++----------------------------------------------------------------+----------+-------+----------+---------+---------------------+
+; Worst-case Slack                                               ; -14.348  ; 0.123 ; -9.606   ; -0.625  ; -3.000              ;
+;  clk                                                           ; -14.348  ; 0.123 ; -9.606   ; -0.625  ; -3.000              ;
+;  fsm:fsm1|state_reg.ST_IDLE                                    ; -2.844   ; 0.599 ; N/A      ; N/A     ; 0.379               ;
+;  light_controller:ligth_controller1|divisor_freq:div|clk_o_reg ; 0.298    ; 0.170 ; N/A      ; N/A     ; -1.403              ;
+; Design-wide TNS                                                ; -708.608 ; 0.0   ; -792.68  ; -31.349 ; -185.39             ;
+;  clk                                                           ; -684.186 ; 0.000 ; -792.680 ; -31.349 ; -183.987            ;
+;  fsm:fsm1|state_reg.ST_IDLE                                    ; -24.422  ; 0.000 ; N/A      ; N/A     ; 0.000               ;
+;  light_controller:ligth_controller1|divisor_freq:div|clk_o_reg ; 0.000    ; 0.000 ; N/A      ; N/A     ; -1.403              ;
++----------------------------------------------------------------+----------+-------+----------+---------+---------------------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -373,6 +391,16 @@ No synchronizer chains to report.
 ; display_5[4] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; display_5[5] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; display_5[6] ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; leds[0]      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; leds[1]      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; leds[2]      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; leds[3]      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; leds[4]      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; leds[5]      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; leds[6]      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; leds[7]      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; leds[8]      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
+; leds[9]      ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 ; ~ALTERA_TDO~ ; 2.5 V        ; 0 in              ; 0 H/in                  ; 0 F/in                  ; short         ; -                   ; open           ; open             ; open   ; 0 in             ; 0 H/in                 ; 0 F/in                 ; short        ; open          ; open            ; open  ; 0 V                 ; -                  ; n/a           ; n/a             ; n/a         ;
 +--------------+--------------+-------------------+-------------------------+-------------------------+---------------+---------------------+----------------+------------------+--------+------------------+------------------------+------------------------+--------------+---------------+-----------------+-------+---------------------+--------------------+---------------+-----------------+-------------+
 
@@ -385,9 +413,9 @@ No synchronizer chains to report.
 ; ver_disp[0]         ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; ver_disp[1]         ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; clk                 ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
-; reset_n             ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; ini_pausa           ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; jugador_act         ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
+; reset_n             ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; config              ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; modo[1]             ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
 ; modo[0]             ; 2.5 V                 ; 2000 ps         ; 2000 ps         ;
@@ -448,6 +476,16 @@ No synchronizer chains to report.
 ; display_5[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0871 V           ; 0.291 V                              ; 0.138 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0871 V          ; 0.291 V                             ; 0.138 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
 ; display_5[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0859 V           ; 0.289 V                              ; 0.136 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0859 V          ; 0.289 V                             ; 0.136 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
 ; display_5[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0859 V           ; 0.289 V                              ; 0.136 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0859 V          ; 0.289 V                             ; 0.136 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; leds[0]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0871 V           ; 0.291 V                              ; 0.138 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0871 V          ; 0.291 V                             ; 0.138 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; leds[1]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0859 V           ; 0.289 V                              ; 0.136 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0859 V          ; 0.289 V                             ; 0.136 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; leds[2]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0859 V           ; 0.289 V                              ; 0.136 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0859 V          ; 0.289 V                             ; 0.136 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; leds[3]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0871 V           ; 0.291 V                              ; 0.138 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0871 V          ; 0.291 V                             ; 0.138 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; leds[4]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0871 V           ; 0.291 V                              ; 0.138 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0871 V          ; 0.291 V                             ; 0.138 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; leds[5]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0871 V           ; 0.291 V                              ; 0.138 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0871 V          ; 0.291 V                             ; 0.138 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; leds[6]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0859 V           ; 0.289 V                              ; 0.136 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0859 V          ; 0.289 V                             ; 0.136 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; leds[7]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0871 V           ; 0.291 V                              ; 0.138 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0871 V          ; 0.291 V                             ; 0.138 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; leds[8]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0859 V           ; 0.289 V                              ; 0.136 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0859 V          ; 0.289 V                             ; 0.136 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
+; leds[9]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 8.25e-09 V                   ; 2.41 V              ; -0.0871 V           ; 0.291 V                              ; 0.138 V                              ; 3.15e-10 s                  ; 4.16e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 8.25e-09 V                  ; 2.41 V             ; -0.0871 V          ; 0.291 V                             ; 0.138 V                             ; 3.15e-10 s                 ; 4.16e-10 s                 ; No                        ; Yes                       ;
 ; ~ALTERA_TDO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.39e-08 V                   ; 2.39 V              ; -0.0409 V           ; 0.21 V                               ; 0.121 V                              ; 4.7e-10 s                   ; 5.93e-10 s                  ; No                         ; Yes                        ; 2.32 V                      ; 1.39e-08 V                  ; 2.39 V             ; -0.0409 V          ; 0.21 V                              ; 0.121 V                             ; 4.7e-10 s                  ; 5.93e-10 s                 ; No                        ; Yes                       ;
 +--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
@@ -499,6 +537,16 @@ No synchronizer chains to report.
 ; display_5[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.0508 V           ; 0.153 V                              ; 0.187 V                              ; 4.63e-10 s                  ; 4.49e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.0508 V          ; 0.153 V                             ; 0.187 V                             ; 4.63e-10 s                 ; 4.49e-10 s                 ; Yes                       ; Yes                       ;
 ; display_5[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.049 V            ; 0.154 V                              ; 0.186 V                              ; 4.63e-10 s                  ; 4.5e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.049 V           ; 0.154 V                             ; 0.186 V                             ; 4.63e-10 s                 ; 4.5e-10 s                  ; Yes                       ; Yes                       ;
 ; display_5[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.049 V            ; 0.154 V                              ; 0.186 V                              ; 4.63e-10 s                  ; 4.5e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.049 V           ; 0.154 V                             ; 0.186 V                             ; 4.63e-10 s                 ; 4.5e-10 s                  ; Yes                       ; Yes                       ;
+; leds[0]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.0508 V           ; 0.153 V                              ; 0.187 V                              ; 4.63e-10 s                  ; 4.49e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.0508 V          ; 0.153 V                             ; 0.187 V                             ; 4.63e-10 s                 ; 4.49e-10 s                 ; Yes                       ; Yes                       ;
+; leds[1]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.049 V            ; 0.154 V                              ; 0.186 V                              ; 4.63e-10 s                  ; 4.5e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.049 V           ; 0.154 V                             ; 0.186 V                             ; 4.63e-10 s                 ; 4.5e-10 s                  ; Yes                       ; Yes                       ;
+; leds[2]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.049 V            ; 0.154 V                              ; 0.186 V                              ; 4.63e-10 s                  ; 4.5e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.049 V           ; 0.154 V                             ; 0.186 V                             ; 4.63e-10 s                 ; 4.5e-10 s                  ; Yes                       ; Yes                       ;
+; leds[3]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.0508 V           ; 0.153 V                              ; 0.187 V                              ; 4.63e-10 s                  ; 4.49e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.0508 V          ; 0.153 V                             ; 0.187 V                             ; 4.63e-10 s                 ; 4.49e-10 s                 ; Yes                       ; Yes                       ;
+; leds[4]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.0508 V           ; 0.153 V                              ; 0.187 V                              ; 4.63e-10 s                  ; 4.49e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.0508 V          ; 0.153 V                             ; 0.187 V                             ; 4.63e-10 s                 ; 4.49e-10 s                 ; Yes                       ; Yes                       ;
+; leds[5]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.0508 V           ; 0.153 V                              ; 0.187 V                              ; 4.63e-10 s                  ; 4.49e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.0508 V          ; 0.153 V                             ; 0.187 V                             ; 4.63e-10 s                 ; 4.49e-10 s                 ; Yes                       ; Yes                       ;
+; leds[6]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.049 V            ; 0.154 V                              ; 0.186 V                              ; 4.63e-10 s                  ; 4.5e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.049 V           ; 0.154 V                             ; 0.186 V                             ; 4.63e-10 s                 ; 4.5e-10 s                  ; Yes                       ; Yes                       ;
+; leds[7]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.0508 V           ; 0.153 V                              ; 0.187 V                              ; 4.63e-10 s                  ; 4.49e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.0508 V          ; 0.153 V                             ; 0.187 V                             ; 4.63e-10 s                 ; 4.49e-10 s                 ; Yes                       ; Yes                       ;
+; leds[8]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.049 V            ; 0.154 V                              ; 0.186 V                              ; 4.63e-10 s                  ; 4.5e-10 s                   ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.049 V           ; 0.154 V                             ; 0.186 V                             ; 4.63e-10 s                 ; 4.5e-10 s                  ; Yes                       ; Yes                       ;
+; leds[9]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.16e-06 V                   ; 2.37 V              ; -0.0508 V           ; 0.153 V                              ; 0.187 V                              ; 4.63e-10 s                  ; 4.49e-10 s                  ; Yes                        ; Yes                        ; 2.32 V                      ; 1.16e-06 V                  ; 2.37 V             ; -0.0508 V          ; 0.153 V                             ; 0.187 V                             ; 4.63e-10 s                 ; 4.49e-10 s                 ; Yes                       ; Yes                       ;
 ; ~ALTERA_TDO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.32 V                       ; 1.97e-06 V                   ; 2.36 V              ; -0.0173 V           ; 0.144 V                              ; 0.094 V                              ; 6.44e-10 s                  ; 7.2e-10 s                   ; No                         ; Yes                        ; 2.32 V                      ; 1.97e-06 V                  ; 2.36 V             ; -0.0173 V          ; 0.144 V                             ; 0.094 V                             ; 6.44e-10 s                 ; 7.2e-10 s                  ; No                        ; Yes                       ;
 +--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
@@ -550,37 +598,43 @@ No synchronizer chains to report.
 ; display_5[4] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.94e-08 V                   ; 2.78 V              ; -0.0444 V           ; 0.25 V                               ; 0.107 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.94e-08 V                  ; 2.78 V             ; -0.0444 V          ; 0.25 V                              ; 0.107 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
 ; display_5[5] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.95e-08 V                   ; 2.78 V              ; -0.0452 V           ; 0.248 V                              ; 0.108 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.95e-08 V                  ; 2.78 V             ; -0.0452 V          ; 0.248 V                             ; 0.108 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
 ; display_5[6] ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.95e-08 V                   ; 2.78 V              ; -0.0452 V           ; 0.248 V                              ; 0.108 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.95e-08 V                  ; 2.78 V             ; -0.0452 V          ; 0.248 V                             ; 0.108 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; leds[0]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.94e-08 V                   ; 2.78 V              ; -0.0444 V           ; 0.25 V                               ; 0.107 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.94e-08 V                  ; 2.78 V             ; -0.0444 V          ; 0.25 V                              ; 0.107 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; leds[1]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.95e-08 V                   ; 2.78 V              ; -0.0452 V           ; 0.248 V                              ; 0.108 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.95e-08 V                  ; 2.78 V             ; -0.0452 V          ; 0.248 V                             ; 0.108 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; leds[2]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.95e-08 V                   ; 2.78 V              ; -0.0452 V           ; 0.248 V                              ; 0.108 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.95e-08 V                  ; 2.78 V             ; -0.0452 V          ; 0.248 V                             ; 0.108 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; leds[3]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.94e-08 V                   ; 2.78 V              ; -0.0444 V           ; 0.25 V                               ; 0.107 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.94e-08 V                  ; 2.78 V             ; -0.0444 V          ; 0.25 V                              ; 0.107 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; leds[4]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.94e-08 V                   ; 2.78 V              ; -0.0444 V           ; 0.25 V                               ; 0.107 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.94e-08 V                  ; 2.78 V             ; -0.0444 V          ; 0.25 V                              ; 0.107 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; leds[5]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.94e-08 V                   ; 2.78 V              ; -0.0444 V           ; 0.25 V                               ; 0.107 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.94e-08 V                  ; 2.78 V             ; -0.0444 V          ; 0.25 V                              ; 0.107 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; leds[6]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.95e-08 V                   ; 2.78 V              ; -0.0452 V           ; 0.248 V                              ; 0.108 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.95e-08 V                  ; 2.78 V             ; -0.0452 V          ; 0.248 V                             ; 0.108 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; leds[7]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.94e-08 V                   ; 2.78 V              ; -0.0444 V           ; 0.25 V                               ; 0.107 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.94e-08 V                  ; 2.78 V             ; -0.0444 V          ; 0.25 V                              ; 0.107 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; leds[8]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.95e-08 V                   ; 2.78 V              ; -0.0452 V           ; 0.248 V                              ; 0.108 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.95e-08 V                  ; 2.78 V             ; -0.0452 V          ; 0.248 V                             ; 0.108 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
+; leds[9]      ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 9.94e-08 V                   ; 2.78 V              ; -0.0444 V           ; 0.25 V                               ; 0.107 V                              ; 2.67e-10 s                  ; 2.75e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 9.94e-08 V                  ; 2.78 V             ; -0.0444 V          ; 0.25 V                              ; 0.107 V                             ; 2.67e-10 s                 ; 2.75e-10 s                 ; No                        ; Yes                       ;
 ; ~ALTERA_TDO~ ; 2.5 V        ; 0 s                 ; 0 s                 ; 2.62 V                       ; 1.68e-07 V                   ; 2.73 V              ; -0.0395 V           ; 0.361 V                              ; 0.109 V                              ; 3.1e-10 s                   ; 4.41e-10 s                  ; No                         ; Yes                        ; 2.62 V                      ; 1.68e-07 V                  ; 2.73 V             ; -0.0395 V          ; 0.361 V                             ; 0.109 V                             ; 3.1e-10 s                  ; 4.41e-10 s                 ; No                        ; Yes                       ;
 +--------------+--------------+---------------------+---------------------+------------------------------+------------------------------+---------------------+---------------------+--------------------------------------+--------------------------------------+-----------------------------+-----------------------------+----------------------------+----------------------------+-----------------------------+-----------------------------+--------------------+--------------------+-------------------------------------+-------------------------------------+----------------------------+----------------------------+---------------------------+---------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------+
-; Setup Transfers                                                                                     ;
-+----------------------------+----------------------------+----------+----------+----------+----------+
-; From Clock                 ; To Clock                   ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+----------------------------+----------------------------+----------+----------+----------+----------+
-; clk                        ; clk                        ; 10404    ; 0        ; 0        ; 0        ;
-; divisor_freq:div|clk_o_reg ; clk                        ; 33       ; 17       ; 0        ; 0        ;
-; fsm:fsm1|state_reg.ST_IDLE ; clk                        ; 1616     ; 202      ; 0        ; 0        ;
-; clk                        ; divisor_freq:div|clk_o_reg ; 241      ; 0        ; 0        ; 0        ;
-; divisor_freq:div|clk_o_reg ; divisor_freq:div|clk_o_reg ; 27       ; 27       ; 0        ; 0        ;
-; clk                        ; fsm:fsm1|state_reg.ST_IDLE ; 28       ; 0        ; 0        ; 0        ;
-+----------------------------+----------------------------+----------+----------+----------+----------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Setup Transfers                                                                                                                                                           ;
++---------------------------------------------------------------+---------------------------------------------------------------+----------+----------+----------+----------+
+; From Clock                                                    ; To Clock                                                      ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++---------------------------------------------------------------+---------------------------------------------------------------+----------+----------+----------+----------+
+; clk                                                           ; clk                                                           ; 9157     ; 0        ; 0        ; 0        ;
+; fsm:fsm1|state_reg.ST_IDLE                                    ; clk                                                           ; 1392     ; 174      ; 0        ; 0        ;
+; clk                                                           ; fsm:fsm1|state_reg.ST_IDLE                                    ; 28       ; 0        ; 0        ; 0        ;
+; light_controller:ligth_controller1|divisor_freq:div|clk_o_reg ; light_controller:ligth_controller1|divisor_freq:div|clk_o_reg ; 1        ; 0        ; 0        ; 0        ;
++---------------------------------------------------------------+---------------------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
-+-----------------------------------------------------------------------------------------------------+
-; Hold Transfers                                                                                      ;
-+----------------------------+----------------------------+----------+----------+----------+----------+
-; From Clock                 ; To Clock                   ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
-+----------------------------+----------------------------+----------+----------+----------+----------+
-; clk                        ; clk                        ; 10404    ; 0        ; 0        ; 0        ;
-; divisor_freq:div|clk_o_reg ; clk                        ; 33       ; 17       ; 0        ; 0        ;
-; fsm:fsm1|state_reg.ST_IDLE ; clk                        ; 1616     ; 202      ; 0        ; 0        ;
-; clk                        ; divisor_freq:div|clk_o_reg ; 241      ; 0        ; 0        ; 0        ;
-; divisor_freq:div|clk_o_reg ; divisor_freq:div|clk_o_reg ; 27       ; 27       ; 0        ; 0        ;
-; clk                        ; fsm:fsm1|state_reg.ST_IDLE ; 28       ; 0        ; 0        ; 0        ;
-+----------------------------+----------------------------+----------+----------+----------+----------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Hold Transfers                                                                                                                                                            ;
++---------------------------------------------------------------+---------------------------------------------------------------+----------+----------+----------+----------+
+; From Clock                                                    ; To Clock                                                      ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
++---------------------------------------------------------------+---------------------------------------------------------------+----------+----------+----------+----------+
+; clk                                                           ; clk                                                           ; 9157     ; 0        ; 0        ; 0        ;
+; fsm:fsm1|state_reg.ST_IDLE                                    ; clk                                                           ; 1392     ; 174      ; 0        ; 0        ;
+; clk                                                           ; fsm:fsm1|state_reg.ST_IDLE                                    ; 28       ; 0        ; 0        ; 0        ;
+; light_controller:ligth_controller1|divisor_freq:div|clk_o_reg ; light_controller:ligth_controller1|divisor_freq:div|clk_o_reg ; 1        ; 0        ; 0        ; 0        ;
++---------------------------------------------------------------+---------------------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
 
@@ -626,21 +680,21 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 8     ; 8    ;
-; Unconstrained Input Port Paths  ; 164   ; 164  ;
-; Unconstrained Output Ports      ; 42    ; 42   ;
-; Unconstrained Output Port Paths ; 2474  ; 2474 ;
+; Unconstrained Input Port Paths  ; 141   ; 141  ;
+; Unconstrained Output Ports      ; 47    ; 47   ;
+; Unconstrained Output Port Paths ; 2336  ; 2336 ;
 +---------------------------------+-------+------+
 
 
-+------------------------------------------------------------------------------+
-; Clock Status Summary                                                         ;
-+----------------------------+----------------------------+------+-------------+
-; Target                     ; Clock                      ; Type ; Status      ;
-+----------------------------+----------------------------+------+-------------+
-; clk                        ; clk                        ; Base ; Constrained ;
-; divisor_freq:div|clk_o_reg ; divisor_freq:div|clk_o_reg ; Base ; Constrained ;
-; fsm:fsm1|state_reg.ST_IDLE ; fsm:fsm1|state_reg.ST_IDLE ; Base ; Constrained ;
-+----------------------------+----------------------------+------+-------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------+
+; Clock Status Summary                                                                                                                               ;
++---------------------------------------------------------------+---------------------------------------------------------------+------+-------------+
+; Target                                                        ; Clock                                                         ; Type ; Status      ;
++---------------------------------------------------------------+---------------------------------------------------------------+------+-------------+
+; clk                                                           ; clk                                                           ; Base ; Constrained ;
+; fsm:fsm1|state_reg.ST_IDLE                                    ; fsm:fsm1|state_reg.ST_IDLE                                    ; Base ; Constrained ;
+; light_controller:ligth_controller1|divisor_freq:div|clk_o_reg ; light_controller:ligth_controller1|divisor_freq:div|clk_o_reg ; Base ; Constrained ;
++---------------------------------------------------------------+---------------------------------------------------------------+------+-------------+
 
 
 +----------------------------------------------------------------------------------------------------+
@@ -706,6 +760,11 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; display_5[4] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; display_5[5] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; display_5[6] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds[5]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds[6]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds[7]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds[8]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds[9]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +--------------+---------------------------------------------------------------------------------------+
 
 
@@ -772,6 +831,11 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; display_5[4] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; display_5[5] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 ; display_5[6] ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds[5]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds[6]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds[7]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds[8]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; leds[9]      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
 +--------------+---------------------------------------------------------------------------------------+
 
 
@@ -780,190 +844,211 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +--------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
-    Info: Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
-    Info: Processing started: Thu Jun 20 20:32:18 2024
+    Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
+    Info: Processing started: Wed Jun 26 16:41:51 2024
 Info: Command: quartus_sta reloj_ajedrez -c reloj_ajedrez
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
-Warning (335093): The Timing Analyzer is analyzing 26 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
+Warning (335093): The Timing Analyzer is analyzing 10 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'reloj_ajedrez.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name fsm:fsm1|state_reg.ST_IDLE fsm:fsm1|state_reg.ST_IDLE
     Info (332105): create_clock -period 1.000 -name clk clk
-    Info (332105): create_clock -period 1.000 -name divisor_freq:div|clk_o_reg divisor_freq:div|clk_o_reg
-Warning (332125): Found combinational loop of 30 nodes File: C:/temp/lab9/ep1/reloj.vhd Line: 22
-    Warning (332126): Node "jugador_1|g_reset_n~3|combout"
-    Warning (332126): Node "jugador_1|contador2|q_reg[0]~2|dataa"
-    Warning (332126): Node "jugador_1|contador2|q_reg[0]~2|combout"
-    Warning (332126): Node "jugador_1|max_value~2|datad"
-    Warning (332126): Node "jugador_1|max_value~2|combout"
-    Warning (332126): Node "jugador_1|g_reset_n~1|dataa"
-    Warning (332126): Node "jugador_1|g_reset_n~1|combout"
-    Warning (332126): Node "jugador_1|g_reset_n~3|dataa"
-    Warning (332126): Node "jugador_1|contador3|q_reg[1]~2|dataa"
-    Warning (332126): Node "jugador_1|contador3|q_reg[1]~2|combout"
-    Warning (332126): Node "jugador_1|g_reset_n~0|datab"
-    Warning (332126): Node "jugador_1|g_reset_n~0|combout"
-    Warning (332126): Node "jugador_1|g_reset_n~3|datac"
-    Warning (332126): Node "jugador_1|contador2|q_reg[4]~12|datab"
-    Warning (332126): Node "jugador_1|contador2|q_reg[4]~12|combout"
-    Warning (332126): Node "jugador_1|g_reset_n~0|dataa"
-    Warning (332126): Node "jugador_1|contador2|q_reg[3]~10|dataa"
-    Warning (332126): Node "jugador_1|contador2|q_reg[3]~10|combout"
-    Warning (332126): Node "jugador_1|max_value~2|dataa"
-    Warning (332126): Node "jugador_1|contador2|q_reg[2]~6|dataa"
-    Warning (332126): Node "jugador_1|contador2|q_reg[2]~6|combout"
-    Warning (332126): Node "jugador_1|max_value~2|datab"
-    Warning (332126): Node "jugador_1|contador1|q_reg[2]~4|dataa"
-    Warning (332126): Node "jugador_1|contador1|q_reg[2]~4|combout"
-    Warning (332126): Node "jugador_1|max_value~2|datac"
-    Warning (332126): Node "jugador_1|contador1|q_reg[0]~2|dataa"
-    Warning (332126): Node "jugador_1|contador1|q_reg[0]~2|combout"
-    Warning (332126): Node "jugador_1|max_value~1|datab"
-    Warning (332126): Node "jugador_1|max_value~1|combout"
-    Warning (332126): Node "jugador_1|g_reset_n~1|datac"
-Warning (332125): Found combinational loop of 30 nodes File: C:/temp/lab9/ep1/counter.vhd Line: 24
-    Warning (332126): Node "jugador_0|contador1|q_reg[0]~2|combout"
-    Warning (332126): Node "jugador_0|max_value~1|dataa"
-    Warning (332126): Node "jugador_0|max_value~1|combout"
-    Warning (332126): Node "jugador_0|g_reset_n~1|datab"
-    Warning (332126): Node "jugador_0|g_reset_n~1|combout"
-    Warning (332126): Node "jugador_0|g_reset_n~3|datab"
+    Info (332105): create_clock -period 1.000 -name light_controller:ligth_controller1|divisor_freq:div|clk_o_reg light_controller:ligth_controller1|divisor_freq:div|clk_o_reg
+Warning (332125): Found combinational loop of 30 nodes File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj.vhd Line: 26
     Warning (332126): Node "jugador_0|g_reset_n~3|combout"
     Warning (332126): Node "jugador_0|contador1|q_reg[0]~2|dataa"
+    Warning (332126): Node "jugador_0|contador1|q_reg[0]~2|combout"
+    Warning (332126): Node "jugador_0|max_value~1|datab"
+    Warning (332126): Node "jugador_0|max_value~1|combout"
+    Warning (332126): Node "jugador_0|g_reset_n~1|dataa"
+    Warning (332126): Node "jugador_0|g_reset_n~1|combout"
+    Warning (332126): Node "jugador_0|g_reset_n~3|datab"
+    Warning (332126): Node "jugador_0|contador3|q_reg[1]~2|datab"
+    Warning (332126): Node "jugador_0|contador3|q_reg[1]~2|combout"
+    Warning (332126): Node "jugador_0|g_reset_n~0|datac"
+    Warning (332126): Node "jugador_0|g_reset_n~0|combout"
+    Warning (332126): Node "jugador_0|g_reset_n~3|dataa"
     Warning (332126): Node "jugador_0|contador2|q_reg[2]~6|dataa"
     Warning (332126): Node "jugador_0|contador2|q_reg[2]~6|combout"
     Warning (332126): Node "jugador_0|max_value~2|datab"
     Warning (332126): Node "jugador_0|max_value~2|combout"
-    Warning (332126): Node "jugador_0|g_reset_n~1|dataa"
-    Warning (332126): Node "jugador_0|contador2|q_reg[4]~12|datac"
+    Warning (332126): Node "jugador_0|g_reset_n~1|datab"
+    Warning (332126): Node "jugador_0|contador2|q_reg[4]~12|dataa"
     Warning (332126): Node "jugador_0|contador2|q_reg[4]~12|combout"
-    Warning (332126): Node "jugador_0|g_reset_n~0|datab"
-    Warning (332126): Node "jugador_0|g_reset_n~0|combout"
-    Warning (332126): Node "jugador_0|g_reset_n~3|dataa"
-    Warning (332126): Node "jugador_0|contador2|q_reg[3]~10|datac"
+    Warning (332126): Node "jugador_0|g_reset_n~0|dataa"
+    Warning (332126): Node "jugador_0|contador2|q_reg[3]~10|dataa"
     Warning (332126): Node "jugador_0|contador2|q_reg[3]~10|combout"
-    Warning (332126): Node "jugador_0|max_value~2|datac"
-    Warning (332126): Node "jugador_0|contador1|q_reg[2]~4|dataa"
-    Warning (332126): Node "jugador_0|contador1|q_reg[2]~4|combout"
     Warning (332126): Node "jugador_0|max_value~2|datad"
     Warning (332126): Node "jugador_0|contador2|q_reg[0]~2|datab"
     Warning (332126): Node "jugador_0|contador2|q_reg[0]~2|combout"
     Warning (332126): Node "jugador_0|max_value~2|dataa"
-    Warning (332126): Node "jugador_0|contador3|q_reg[1]~2|datab"
-    Warning (332126): Node "jugador_0|contador3|q_reg[1]~2|combout"
-    Warning (332126): Node "jugador_0|g_reset_n~0|dataa"
+    Warning (332126): Node "jugador_0|contador1|q_reg[2]~4|dataa"
+    Warning (332126): Node "jugador_0|contador1|q_reg[2]~4|combout"
+    Warning (332126): Node "jugador_0|max_value~2|datac"
+Warning (332125): Found combinational loop of 30 nodes File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter.vhd Line: 24
+    Warning (332126): Node "jugador_1|contador1|q_reg[0]~2|combout"
+    Warning (332126): Node "jugador_1|max_value~1|dataa"
+    Warning (332126): Node "jugador_1|max_value~1|combout"
+    Warning (332126): Node "jugador_1|g_reset_n~1|datab"
+    Warning (332126): Node "jugador_1|g_reset_n~1|combout"
+    Warning (332126): Node "jugador_1|g_reset_n~3|dataa"
+    Warning (332126): Node "jugador_1|g_reset_n~3|combout"
+    Warning (332126): Node "jugador_1|contador1|q_reg[0]~2|dataa"
+    Warning (332126): Node "jugador_1|contador3|q_reg[1]~2|dataa"
+    Warning (332126): Node "jugador_1|contador3|q_reg[1]~2|combout"
+    Warning (332126): Node "jugador_1|g_reset_n~0|dataa"
+    Warning (332126): Node "jugador_1|g_reset_n~0|combout"
+    Warning (332126): Node "jugador_1|g_reset_n~3|datab"
+    Warning (332126): Node "jugador_1|contador2|q_reg[2]~6|dataa"
+    Warning (332126): Node "jugador_1|contador2|q_reg[2]~6|combout"
+    Warning (332126): Node "jugador_1|max_value~2|dataa"
+    Warning (332126): Node "jugador_1|max_value~2|combout"
+    Warning (332126): Node "jugador_1|g_reset_n~1|datac"
+    Warning (332126): Node "jugador_1|contador2|q_reg[3]~10|datab"
+    Warning (332126): Node "jugador_1|contador2|q_reg[3]~10|combout"
+    Warning (332126): Node "jugador_1|max_value~2|datac"
+    Warning (332126): Node "jugador_1|contador2|q_reg[4]~12|dataa"
+    Warning (332126): Node "jugador_1|contador2|q_reg[4]~12|combout"
+    Warning (332126): Node "jugador_1|g_reset_n~0|datab"
+    Warning (332126): Node "jugador_1|contador2|q_reg[0]~2|datab"
+    Warning (332126): Node "jugador_1|contador2|q_reg[0]~2|combout"
+    Warning (332126): Node "jugador_1|max_value~2|datab"
+    Warning (332126): Node "jugador_1|contador1|q_reg[2]~4|datab"
+    Warning (332126): Node "jugador_1|contador1|q_reg[2]~4|combout"
+    Warning (332126): Node "jugador_1|max_value~2|datad"
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
-    Info (332098): From: jugador_0|g_reset_n~3|datad  to: jugador_0|contador3|q_reg[1]~2|combout
-    Info (332098): From: jugador_1|g_reset_n~3|datad  to: jugador_1|contador1|q_reg[0]~2|combout
+    Info (332098): From: jugador_0|g_reset_n~3|datad  to: jugador_0|contador1|q_reg[2]~4|combout
+    Info (332098): From: jugador_1|g_reset_n~3|datad  to: jugador_1|contador1|q_reg[2]~4|combout
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -12.729
+Info (332146): Worst-case setup slack is -14.348
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -12.729            -737.835 clk 
-    Info (332119):    -6.532             -89.500 divisor_freq:div|clk_o_reg 
-    Info (332119):    -2.900             -24.581 fsm:fsm1|state_reg.ST_IDLE 
-Info (332146): Worst-case hold slack is 0.271
+    Info (332119):   -14.348            -684.186 clk 
+    Info (332119):    -2.844             -24.422 fsm:fsm1|state_reg.ST_IDLE 
+    Info (332119):     0.298               0.000 light_controller:ligth_controller1|divisor_freq:div|clk_o_reg 
+Info (332146): Worst-case hold slack is 0.340
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.271               0.000 clk 
-    Info (332119):     0.348               0.000 divisor_freq:div|clk_o_reg 
-    Info (332119):     1.517               0.000 fsm:fsm1|state_reg.ST_IDLE 
-Info (332146): Worst-case recovery slack is -8.461
+    Info (332119):     0.340               0.000 clk 
+    Info (332119):     0.393               0.000 light_controller:ligth_controller1|divisor_freq:div|clk_o_reg 
+    Info (332119):     1.555               0.000 fsm:fsm1|state_reg.ST_IDLE 
+Info (332146): Worst-case recovery slack is -9.606
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -8.461            -751.712 clk 
-Info (332146): Worst-case removal slack is -0.111
+    Info (332119):    -9.606            -792.680 clk 
+Info (332146): Worst-case removal slack is -0.625
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.111              -1.452 clk 
+    Info (332119):    -0.625             -31.175 clk 
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000            -216.256 clk 
-    Info (332119):     0.424               0.000 divisor_freq:div|clk_o_reg 
-    Info (332119):     0.426               0.000 fsm:fsm1|state_reg.ST_IDLE 
+    Info (332119):    -3.000            -183.987 clk 
+    Info (332119):    -1.403              -1.403 light_controller:ligth_controller1|divisor_freq:div|clk_o_reg 
+    Info (332119):     0.387               0.000 fsm:fsm1|state_reg.ST_IDLE 
+Info (332114): Report Metastability: Found 1 synchronizer chains.
+    Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
+    Info (332114): Number of Synchronizer Chains Found: 1
+    Info (332114): Shortest Synchronizer Chain: 2 Registers
+    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
+    Info (332114): Worst Case Available Settling Time: 0.298 ns
+    Info (332114): 
 Info: Analyzing Slow 1200mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
-    Info (332098): From: jugador_0|g_reset_n~3|datad  to: jugador_0|contador3|q_reg[1]~2|combout
-    Info (332098): From: jugador_1|g_reset_n~3|datad  to: jugador_1|contador1|q_reg[0]~2|combout
+    Info (332098): From: jugador_0|g_reset_n~3|datad  to: jugador_0|contador1|q_reg[2]~4|combout
+    Info (332098): From: jugador_1|g_reset_n~3|datad  to: jugador_1|contador1|q_reg[2]~4|combout
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -11.801
+Info (332146): Worst-case setup slack is -13.064
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -11.801            -667.337 clk 
-    Info (332119):    -6.075             -82.216 divisor_freq:div|clk_o_reg 
-    Info (332119):    -2.613             -22.025 fsm:fsm1|state_reg.ST_IDLE 
-Info (332146): Worst-case hold slack is 0.261
+    Info (332119):   -13.064            -617.188 clk 
+    Info (332119):    -2.576             -22.038 fsm:fsm1|state_reg.ST_IDLE 
+    Info (332119):     0.362               0.000 light_controller:ligth_controller1|divisor_freq:div|clk_o_reg 
+Info (332146): Worst-case hold slack is 0.306
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.261               0.000 clk 
-    Info (332119):     0.282               0.000 divisor_freq:div|clk_o_reg 
-    Info (332119):     1.403               0.000 fsm:fsm1|state_reg.ST_IDLE 
-Info (332146): Worst-case recovery slack is -7.730
+    Info (332119):     0.306               0.000 clk 
+    Info (332119):     0.355               0.000 light_controller:ligth_controller1|divisor_freq:div|clk_o_reg 
+    Info (332119):     1.475               0.000 fsm:fsm1|state_reg.ST_IDLE 
+Info (332146): Worst-case recovery slack is -8.644
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -7.730            -682.137 clk 
-Info (332146): Worst-case removal slack is -0.119
+    Info (332119):    -8.644            -713.133 clk 
+Info (332146): Worst-case removal slack is -0.599
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.119              -1.702 clk 
+    Info (332119):    -0.599             -31.349 clk 
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000            -216.256 clk 
-    Info (332119):     0.322               0.000 divisor_freq:div|clk_o_reg 
-    Info (332119):     0.435               0.000 fsm:fsm1|state_reg.ST_IDLE 
+    Info (332119):    -3.000            -183.987 clk 
+    Info (332119):    -1.403              -1.403 light_controller:ligth_controller1|divisor_freq:div|clk_o_reg 
+    Info (332119):     0.379               0.000 fsm:fsm1|state_reg.ST_IDLE 
+Info (332114): Report Metastability: Found 1 synchronizer chains.
+    Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
+    Info (332114): Number of Synchronizer Chains Found: 1
+    Info (332114): Shortest Synchronizer Chain: 2 Registers
+    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
+    Info (332114): Worst Case Available Settling Time: 0.362 ns
+    Info (332114): 
 Info: Analyzing Fast 1200mV 0C Model
 Info (332097): The following timing edges are non-unate.  The Timing Analyzer will assume pos-unate behavior for these edges in the clock network.
-    Info (332098): From: jugador_0|g_reset_n~3|datad  to: jugador_0|contador3|q_reg[1]~2|combout
-    Info (332098): From: jugador_1|g_reset_n~3|datad  to: jugador_1|contador1|q_reg[0]~2|combout
+    Info (332098): From: jugador_0|g_reset_n~3|datad  to: jugador_0|contador1|q_reg[2]~4|combout
+    Info (332098): From: jugador_1|g_reset_n~3|datad  to: jugador_1|contador1|q_reg[2]~4|combout
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -5.221
+Info (332146): Worst-case setup slack is -5.972
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -5.221            -250.861 clk 
-    Info (332119):    -2.822             -36.923 divisor_freq:div|clk_o_reg 
-    Info (332119):    -0.580              -4.355 fsm:fsm1|state_reg.ST_IDLE 
-Info (332146): Worst-case hold slack is 0.100
+    Info (332119):    -5.972            -239.895 clk 
+    Info (332119):    -0.580              -4.310 fsm:fsm1|state_reg.ST_IDLE 
+    Info (332119):     0.694               0.000 light_controller:ligth_controller1|divisor_freq:div|clk_o_reg 
+Info (332146): Worst-case hold slack is 0.123
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.100               0.000 clk 
-    Info (332119):     0.216               0.000 divisor_freq:div|clk_o_reg 
-    Info (332119):     0.553               0.000 fsm:fsm1|state_reg.ST_IDLE 
-Info (332146): Worst-case recovery slack is -3.386
+    Info (332119):     0.123               0.000 clk 
+    Info (332119):     0.170               0.000 light_controller:ligth_controller1|divisor_freq:div|clk_o_reg 
+    Info (332119):     0.599               0.000 fsm:fsm1|state_reg.ST_IDLE 
+Info (332146): Worst-case recovery slack is -3.854
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.386            -301.321 clk 
-Info (332146): Worst-case removal slack is -0.039
+    Info (332119):    -3.854            -316.098 clk 
+Info (332146): Worst-case removal slack is -0.297
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -0.039              -0.456 clk 
+    Info (332119):    -0.297             -17.222 clk 
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000            -157.966 clk 
-    Info (332119):     0.158               0.000 divisor_freq:div|clk_o_reg 
-    Info (332119):     0.440               0.000 fsm:fsm1|state_reg.ST_IDLE 
+    Info (332119):    -3.000            -135.003 clk 
+    Info (332119):    -1.000              -1.000 light_controller:ligth_controller1|divisor_freq:div|clk_o_reg 
+    Info (332119):     0.446               0.000 fsm:fsm1|state_reg.ST_IDLE 
+Info (332114): Report Metastability: Found 1 synchronizer chains.
+    Info (332114): The design MTBF is not calculated because there are no specified synchronizers in the design.
+    Info (332114): Number of Synchronizer Chains Found: 1
+    Info (332114): Shortest Synchronizer Chain: 2 Registers
+    Info (332114): Fraction of Chains for which MTBFs Could Not be Calculated: 1.000
+    Info (332114): Worst Case Available Settling Time: 0.694 ns
+    Info (332114): 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 68 warnings
-    Info: Peak virtual memory: 4895 megabytes
-    Info: Processing ended: Thu Jun 20 20:32:21 2024
-    Info: Elapsed time: 00:00:03
+    Info: Peak virtual memory: 4925 megabytes
+    Info: Processing ended: Wed Jun 26 16:41:56 2024
+    Info: Elapsed time: 00:00:05
     Info: Total CPU time (on all processors): 00:00:03
 
 

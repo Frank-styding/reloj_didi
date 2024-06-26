@@ -21,17 +21,16 @@ signal clk_o:std_logic;
 begin
 div: divisor_freq port map(clk => clk, clk_o => clk_o, reset_n => reset_n);
 
+sel_next <= sel_in;
 process(clk_o,sel_next,sel_in)
 begin
 
-if clk_o = '1' then
+if rising_edge(clk_o) then 
 if sel_next = '1' then
 sel_in <= '0';
-else 
+else
 sel_in <= '1';
 end if;
-else
-sel_next <= sel_in;
 end if;
 end process;
 
@@ -53,6 +52,7 @@ begin
 	else
 		x_in<=x_in_2;
 	end if;
+
 	if(en='0') then
 		leds<=x_in;
 	else

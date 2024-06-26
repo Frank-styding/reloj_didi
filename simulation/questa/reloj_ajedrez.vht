@@ -101,54 +101,55 @@ BEGIN
 reset_n <= '0';
 config <= '0';
 jugador_act <= '0';
-modo <= "11";
+modo <= "10";
 ver_disp <= "00";
 ini_pausa <= '0';
-wait for 10 * periodo;
+wait for 100 * 10 * periodo;
 
 reset_n <= '1';
 config <= '0';
 jugador_act <= '0';
-modo <= "11";
+modo <= "10";
 ver_disp <= "00";
 ini_pausa <= '0';
-wait for 10 * periodo;
+wait for 100 * 10 * periodo;
 
 
 reset_n <= '1';
 config <= '1';
 jugador_act <= '0';
-modo <= "11";
+modo <= "10";
 ver_disp <= "00";
 ini_pausa <= '0';
-wait for 30 * periodo;
+wait for 100 * 30 * periodo;
 
 
 reset_n <= '1';
 config <= '0';
 jugador_act <= '0';
-modo <= "11";
+modo <= "10";
 ver_disp <= "00";
 ini_pausa <= '0';
-wait for 30 * periodo;
+wait for 100 * 30 * periodo;
 
 
+for i in 55 downto 0 loop
 reset_n <= '1';
 config <= '0';
 jugador_act <= '0';
-modo <= "11";
+modo <= "10";
 ver_disp <= "00";
 ini_pausa <= '1';
-wait for 40 * periodo;
+wait for 100 * 40 * periodo;
 
 reset_n <= '1';
 config <= '0';
 jugador_act <= '1';
-modo <= "11";
+modo <= "10";
 ver_disp <= "00";
 ini_pausa <= '1';
-wait for 40 * periodo;
-
+wait for 100 * 60 * 60 * periodo;
+end loop;
 
 
 

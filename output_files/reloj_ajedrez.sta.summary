@@ -3,135 +3,135 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -12.729
-TNS   : -737.835
-
-Type  : Slow 1200mV 85C Model Setup 'divisor_freq:div|clk_o_reg'
-Slack : -6.532
-TNS   : -89.500
+Slack : -14.348
+TNS   : -684.186
 
 Type  : Slow 1200mV 85C Model Setup 'fsm:fsm1|state_reg.ST_IDLE'
-Slack : -2.900
-TNS   : -24.581
+Slack : -2.844
+TNS   : -24.422
 
-Type  : Slow 1200mV 85C Model Hold 'clk'
-Slack : 0.271
+Type  : Slow 1200mV 85C Model Setup 'light_controller:ligth_controller1|divisor_freq:div|clk_o_reg'
+Slack : 0.298
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'divisor_freq:div|clk_o_reg'
-Slack : 0.348
+Type  : Slow 1200mV 85C Model Hold 'clk'
+Slack : 0.340
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'light_controller:ligth_controller1|divisor_freq:div|clk_o_reg'
+Slack : 0.393
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'fsm:fsm1|state_reg.ST_IDLE'
-Slack : 1.517
+Slack : 1.555
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'clk'
-Slack : -8.461
-TNS   : -751.712
+Slack : -9.606
+TNS   : -792.680
 
 Type  : Slow 1200mV 85C Model Removal 'clk'
-Slack : -0.111
-TNS   : -1.452
+Slack : -0.625
+TNS   : -31.175
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -216.256
+TNS   : -183.987
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'divisor_freq:div|clk_o_reg'
-Slack : 0.424
-TNS   : 0.000
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'light_controller:ligth_controller1|divisor_freq:div|clk_o_reg'
+Slack : -1.403
+TNS   : -1.403
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'fsm:fsm1|state_reg.ST_IDLE'
-Slack : 0.426
+Slack : 0.387
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -11.801
-TNS   : -667.337
-
-Type  : Slow 1200mV 0C Model Setup 'divisor_freq:div|clk_o_reg'
-Slack : -6.075
-TNS   : -82.216
+Slack : -13.064
+TNS   : -617.188
 
 Type  : Slow 1200mV 0C Model Setup 'fsm:fsm1|state_reg.ST_IDLE'
-Slack : -2.613
-TNS   : -22.025
+Slack : -2.576
+TNS   : -22.038
 
-Type  : Slow 1200mV 0C Model Hold 'clk'
-Slack : 0.261
+Type  : Slow 1200mV 0C Model Setup 'light_controller:ligth_controller1|divisor_freq:div|clk_o_reg'
+Slack : 0.362
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'divisor_freq:div|clk_o_reg'
-Slack : 0.282
+Type  : Slow 1200mV 0C Model Hold 'clk'
+Slack : 0.306
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'light_controller:ligth_controller1|divisor_freq:div|clk_o_reg'
+Slack : 0.355
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'fsm:fsm1|state_reg.ST_IDLE'
-Slack : 1.403
+Slack : 1.475
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'clk'
-Slack : -7.730
-TNS   : -682.137
+Slack : -8.644
+TNS   : -713.133
 
 Type  : Slow 1200mV 0C Model Removal 'clk'
-Slack : -0.119
-TNS   : -1.702
+Slack : -0.599
+TNS   : -31.349
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -216.256
+TNS   : -183.987
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'divisor_freq:div|clk_o_reg'
-Slack : 0.322
-TNS   : 0.000
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'light_controller:ligth_controller1|divisor_freq:div|clk_o_reg'
+Slack : -1.403
+TNS   : -1.403
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'fsm:fsm1|state_reg.ST_IDLE'
-Slack : 0.435
+Slack : 0.379
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -5.221
-TNS   : -250.861
-
-Type  : Fast 1200mV 0C Model Setup 'divisor_freq:div|clk_o_reg'
-Slack : -2.822
-TNS   : -36.923
+Slack : -5.972
+TNS   : -239.895
 
 Type  : Fast 1200mV 0C Model Setup 'fsm:fsm1|state_reg.ST_IDLE'
 Slack : -0.580
-TNS   : -4.355
+TNS   : -4.310
 
-Type  : Fast 1200mV 0C Model Hold 'clk'
-Slack : 0.100
+Type  : Fast 1200mV 0C Model Setup 'light_controller:ligth_controller1|divisor_freq:div|clk_o_reg'
+Slack : 0.694
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'divisor_freq:div|clk_o_reg'
-Slack : 0.216
+Type  : Fast 1200mV 0C Model Hold 'clk'
+Slack : 0.123
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'light_controller:ligth_controller1|divisor_freq:div|clk_o_reg'
+Slack : 0.170
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'fsm:fsm1|state_reg.ST_IDLE'
-Slack : 0.553
+Slack : 0.599
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'clk'
-Slack : -3.386
-TNS   : -301.321
+Slack : -3.854
+TNS   : -316.098
 
 Type  : Fast 1200mV 0C Model Removal 'clk'
-Slack : -0.039
-TNS   : -0.456
+Slack : -0.297
+TNS   : -17.222
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
 Slack : -3.000
-TNS   : -157.966
+TNS   : -135.003
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'divisor_freq:div|clk_o_reg'
-Slack : 0.158
-TNS   : 0.000
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'light_controller:ligth_controller1|divisor_freq:div|clk_o_reg'
+Slack : -1.000
+TNS   : -1.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'fsm:fsm1|state_reg.ST_IDLE'
-Slack : 0.440
+Slack : 0.446
 TNS   : 0.000
 
 ------------------------------------------------------------

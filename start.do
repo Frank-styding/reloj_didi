@@ -11,16 +11,16 @@ vcom -93 -work work {../../my_components_reloj.vhd}
 vcom -93 -work work {../../mux4a1.vhd}
 vcom -93 -work work {../../my_components.vhd}
 vcom -93 -work work {../../hexa.vhd}
-vcom -93 -work work {../../counter.vhd}
+vcom -93 -work work {../../counter_dec.vhd}
 vcom -93 -work work {../../comparator.vhd}
-vcom -93 -work work {../../comparator_gt.vhd}
 vcom -93 -work work {../../light_controller.vhd}
 vcom -93 -work work {../../bintobcd.vhd}
 vcom -93 -work work {../../reg.vhd}
 vcom -93 -work work {../../reloj_ajedrez.vhd}
 vcom -93 -work work {../../reloj.vhd}
-vcom -93 -work work {../../contador_ace.vhd}
-
+vcom -93 -work work {../../counter_ace.vhd}
+vcom -93 -work work {../../counter_dect.vhd}
+vcom -93 -work work {../../bintobcd255.vhd}
 
 vcom -93 -work work {reloj_ajedrez.vht}
 

@@ -26,6 +26,7 @@ architecture arq of reloj is
 signal clk_en, en_seg, g_reset_n, en_min,en_hor, min_seg, min_min, min_hor,max_seg,max_min, max_hor,reset_n,max_value: std_logic;
 signal aux1,aux2,aux3: std_logic_vector(7 downto 0);
 signal active_1h:std_logic;
+signal not_time_gt1h: std_logic;
 signal seg,min,hor,start_hor,start_min,start_seg: std_logic_vector(5 downto 0);
 
 constant numero_0: std_logic_vector(5 downto 0)  := "000000";
@@ -78,7 +79,7 @@ reset_n <= ((ini_pausa) or (not borrar)) and ((not max_value) and (not reset_1h)
 
 ------
 
-process(sel,reset_1h)
+process(sel,reset_1h,active_1h,reset_n)
 begin
 
 if (reset_1h = '1' or active_1h = '1' ) and reset_n = '0' then
@@ -113,7 +114,7 @@ end if;
 end process;
 
 -------
-contador1: counter generic map ( width => 6, N => 60 ) port map( reset_n => g_reset_n, en => en_seg, clk => clk, start => start_seg, q => seg );
+contador1: counter_dec generic map ( width => 6, N => 60 ) port map( reset_n => g_reset_n, en => en_seg, clk => clk, start => start_seg, q => seg );
 comporador1:  comparator generic map(width => 6) port map (A => seg, B => numero_0, EQ => min_seg);
 comporador10:  comparator generic map(width => 6) port map (A => seg, B => numero_59, EQ => max_seg);
 bin1: bintobcd port map ( a => seg, f => aux1);
@@ -121,7 +122,7 @@ hexa1: hexa port map (a => aux1(3 downto 0), f => display_0);
 hexa2: hexa port map (a => aux1(7 downto 4), f => display_1);
 
 ---------
-contador2: counter generic map ( width => 6, N => 60 ) port map( reset_n => g_reset_n, clk => clk, en => en_min,q => min, start => start_min );
+contador2: counter_dec generic map ( width => 6, N => 60 ) port map( reset_n => g_reset_n, clk => clk, en => en_min,q => min, start => start_min );
 comporador2:  comparator generic map(width => 6) port map (A => min, B => numero_0, EQ => min_min);
 comporador20:  comparator generic map(width => 6) port map (A => min, B => numero_59, EQ => max_min);
 
@@ -130,11 +131,11 @@ hexa3: hexa port map (a => aux2(3 downto 0), f => display_2);
 hexa4: hexa port map (a => aux2(7 downto 4), f => display_3);
 
 --------
-contador3: counter generic map ( width => 6, N => 24 ) port map( reset_n => g_reset_n, clk => clk, en => en_hor,q => hor, start => start_hor );
+contador3: counter_dec generic map ( width => 6, N => 24 ) port map( reset_n => g_reset_n, clk => clk, en => en_hor,q => hor, start => start_hor );
 comparator3:  comparator generic map(width => 6) port map (A => hor, B => numero_0, EQ => min_hor);
 comparator30:  comparator generic map(width => 6) port map (A => hor, B => numero_23, EQ => max_hor);
-comparato_1h: comparator_gt generic map(width => 6) port map(A => hor, B => numero_1, gt => time_gt1h);
-
+comparato_1h: comparator generic map(width => 6) port map(A => hor, B => numero_0, EQ => not_time_gt1h);
+time_gt1h <= not not_time_gt1h;
 
 bin3: bintobcd port map ( a => hor, f => aux3);
 hexa5: hexa port map (a => aux3(3 downto 0), f => display_4);

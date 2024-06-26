@@ -212,7 +212,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "jugador_act",
+					"name" : "modo[0]",
 					"strict" : false
 				},
 				{
@@ -220,7 +220,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "modo[0]",
+					"name" : "jugador_act",
 					"strict" : false
 				},
 				{
