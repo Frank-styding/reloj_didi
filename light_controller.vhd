@@ -25,11 +25,17 @@ sel_next <= sel_in;
 process(clk_o,sel_next,sel_in)
 begin
 
-if rising_edge(clk_o) then 
+if reset_n = '0' then
+sel_in <= '0';
+else
+if rising_edge(clk_o) then
+
 if sel_next = '1' then
 sel_in <= '0';
 else
 sel_in <= '1';
+end if;
+
 end if;
 end if;
 end process;

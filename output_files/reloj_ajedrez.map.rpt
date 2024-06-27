@@ -1,5 +1,5 @@
 Analysis & Synthesis report for reloj_ajedrez
-Wed Jun 26 19:46:26 2024
+Wed Jun 26 20:12:33 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -93,7 +93,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jun 26 19:46:26 2024          ;
+; Analysis & Synthesis Status        ; Successful - Wed Jun 26 20:12:33 2024          ;
 ; Quartus Prime Version              ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name                      ; reloj_ajedrez                                  ;
 ; Top-level Entity Name              ; reloj_ajedrez                                  ;
@@ -204,15 +204,15 @@ https://fpgasoftware.intel.com/eula.
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
 ; Number detected on machine ; 16          ;
-; Maximum allowed            ; 16          ;
+; Maximum allowed            ; 12          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 16          ;
+; Maximum used               ; 12          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
-;     Processors 3-16        ;   0.0%      ;
+;     Processors 3-12        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -221,22 +221,22 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                       ; Library ;
 +----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
-; counter_dect.vhd                 ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dect.vhd        ;         ;
-; reloj_ajedrez.vhd                ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd       ;         ;
-; reloj.vhd                        ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj.vhd               ;         ;
-; reg.vhd                          ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/reg.vhd                 ;         ;
-; my_components_reloj.vhd          ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/my_components_reloj.vhd ;         ;
-; my_components.vhd                ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/my_components.vhd       ;         ;
-; mux4a1.vhd                       ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/mux4a1.vhd              ;         ;
-; light_controller.vhd             ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/light_controller.vhd    ;         ;
-; hexa.vhd                         ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/hexa.vhd                ;         ;
-; fsm.vhd                          ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/fsm.vhd                 ;         ;
-; divisor_freq.vhd                 ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/divisor_freq.vhd        ;         ;
-; counter_dec.vhd                  ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd         ;         ;
-; counter_ace.vhd                  ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_ace.vhd         ;         ;
-; bintobcd255.vhd                  ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/bintobcd255.vhd         ;         ;
-; bintobcd.vhd                     ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/bintobcd.vhd            ;         ;
-; comparator.vhd                   ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/comparator.vhd          ;         ;
+; counter_dect.vhd                 ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dect.vhd        ;         ;
+; reloj_ajedrez.vhd                ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd       ;         ;
+; reloj.vhd                        ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/reloj.vhd               ;         ;
+; reg.vhd                          ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/reg.vhd                 ;         ;
+; my_components_reloj.vhd          ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/my_components_reloj.vhd ;         ;
+; my_components.vhd                ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/my_components.vhd       ;         ;
+; mux4a1.vhd                       ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/mux4a1.vhd              ;         ;
+; light_controller.vhd             ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/light_controller.vhd    ;         ;
+; hexa.vhd                         ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/hexa.vhd                ;         ;
+; fsm.vhd                          ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/fsm.vhd                 ;         ;
+; divisor_freq.vhd                 ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/divisor_freq.vhd        ;         ;
+; counter_dec.vhd                  ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd         ;         ;
+; counter_ace.vhd                  ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/counter_ace.vhd         ;         ;
+; bintobcd255.vhd                  ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/bintobcd255.vhd         ;         ;
+; bintobcd.vhd                     ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/bintobcd.vhd            ;         ;
+; comparator.vhd                   ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/comparator.vhd          ;         ;
 +----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
 
 
@@ -267,7 +267,7 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
 ; Maximum fan-out                             ; 192       ;
-; Total fan-out                               ; 3106      ;
+; Total fan-out                               ; 3107      ;
 ; Average fan-out                             ; 2.96      ;
 +---------------------------------------------+-----------+
 
@@ -409,7 +409,7 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; Total registers                              ; 193   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 192   ;
+; Number of registers using Asynchronous Clear ; 193   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 82    ;
 ; Number of registers using Preset             ; 0     ;
@@ -898,9 +898,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; boundary_port         ; 61                          ;
 ; cycloneiii_ff         ; 193                         ;
-;     CLR               ; 110                         ;
+;     CLR               ; 111                         ;
 ;     ENA CLR           ; 82                          ;
-;     plain             ; 1                           ;
 ; cycloneiii_lcell_comb ; 735                         ;
 ;     arith             ; 157                         ;
 ;         2 data inputs ; 156                         ;
@@ -931,96 +930,97 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Wed Jun 26 19:46:17 2024
+    Info: Processing started: Wed Jun 26 20:12:26 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off reloj_ajedrez -c reloj_ajedrez
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file counter_dect.vhd
-    Info (12022): Found design unit 1: counter_dect-arq File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dect.vhd Line: 14
-    Info (12023): Found entity 1: counter_dect File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dect.vhd Line: 4
+    Info (12022): Found design unit 1: counter_dect-arq File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dect.vhd Line: 14
+    Info (12023): Found entity 1: counter_dect File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dect.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file reloj_ajedrez.vhd
-    Info (12022): Found design unit 1: reloj_ajedrez-arq File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 28
-    Info (12023): Found entity 1: reloj_ajedrez File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 7
+    Info (12022): Found design unit 1: reloj_ajedrez-arq File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 28
+    Info (12023): Found entity 1: reloj_ajedrez File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file reloj.vhd
-    Info (12022): Found design unit 1: reloj-arq File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj.vhd Line: 25
-    Info (12023): Found entity 1: reloj File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj.vhd Line: 6
+    Info (12022): Found design unit 1: reloj-arq File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj.vhd Line: 25
+    Info (12023): Found entity 1: reloj File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file reg.vhd
-    Info (12022): Found design unit 1: reg-arq File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reg.vhd Line: 13
-    Info (12023): Found entity 1: reg File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reg.vhd Line: 4
+    Info (12022): Found design unit 1: reg-arq File: C:/Users/Frank/Documents/GitHub/reloj_didi/reg.vhd Line: 13
+    Info (12023): Found entity 1: reg File: C:/Users/Frank/Documents/GitHub/reloj_didi/reg.vhd Line: 4
 Info (12021): Found 1 design units, including 0 entities, in source file my_components_reloj.vhd
-    Info (12022): Found design unit 1: my_components_reloj File: C:/Users/Juanp/Documents/GitHub/reloj_didi/my_components_reloj.vhd Line: 5
+    Info (12022): Found design unit 1: my_components_reloj File: C:/Users/Frank/Documents/GitHub/reloj_didi/my_components_reloj.vhd Line: 5
 Info (12021): Found 1 design units, including 0 entities, in source file my_components.vhd
-    Info (12022): Found design unit 1: my_components File: C:/Users/Juanp/Documents/GitHub/reloj_didi/my_components.vhd Line: 5
+    Info (12022): Found design unit 1: my_components File: C:/Users/Frank/Documents/GitHub/reloj_didi/my_components.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file mux4a1.vhd
-    Info (12022): Found design unit 1: mux4a1-structural File: C:/Users/Juanp/Documents/GitHub/reloj_didi/mux4a1.vhd Line: 15
-    Info (12023): Found entity 1: mux4a1 File: C:/Users/Juanp/Documents/GitHub/reloj_didi/mux4a1.vhd Line: 5
+    Info (12022): Found design unit 1: mux4a1-structural File: C:/Users/Frank/Documents/GitHub/reloj_didi/mux4a1.vhd Line: 15
+    Info (12023): Found entity 1: mux4a1 File: C:/Users/Frank/Documents/GitHub/reloj_didi/mux4a1.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file light_controller.vhd
-    Info (12022): Found design unit 1: light_controller-struct_0 File: C:/Users/Juanp/Documents/GitHub/reloj_didi/light_controller.vhd Line: 14
-    Info (12023): Found entity 1: light_controller File: C:/Users/Juanp/Documents/GitHub/reloj_didi/light_controller.vhd Line: 6
+    Info (12022): Found design unit 1: light_controller-struct_0 File: C:/Users/Frank/Documents/GitHub/reloj_didi/light_controller.vhd Line: 14
+    Info (12023): Found entity 1: light_controller File: C:/Users/Frank/Documents/GitHub/reloj_didi/light_controller.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file hexa.vhd
-    Info (12022): Found design unit 1: hexa-structural_0 File: C:/Users/Juanp/Documents/GitHub/reloj_didi/hexa.vhd Line: 28
-    Info (12023): Found entity 1: hexa File: C:/Users/Juanp/Documents/GitHub/reloj_didi/hexa.vhd Line: 23
+    Info (12022): Found design unit 1: hexa-structural_0 File: C:/Users/Frank/Documents/GitHub/reloj_didi/hexa.vhd Line: 28
+    Info (12023): Found entity 1: hexa File: C:/Users/Frank/Documents/GitHub/reloj_didi/hexa.vhd Line: 23
 Info (12021): Found 2 design units, including 1 entities, in source file fsm.vhd
-    Info (12022): Found design unit 1: fsm-strc_1 File: C:/Users/Juanp/Documents/GitHub/reloj_didi/fsm.vhd Line: 41
-    Info (12023): Found entity 1: fsm File: C:/Users/Juanp/Documents/GitHub/reloj_didi/fsm.vhd Line: 5
+    Info (12022): Found design unit 1: fsm-strc_1 File: C:/Users/Frank/Documents/GitHub/reloj_didi/fsm.vhd Line: 41
+    Info (12023): Found entity 1: fsm File: C:/Users/Frank/Documents/GitHub/reloj_didi/fsm.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file divisor_freq.vhd
-    Info (12022): Found design unit 1: divisor_freq-structural File: C:/Users/Juanp/Documents/GitHub/reloj_didi/divisor_freq.vhd Line: 29
-    Info (12023): Found entity 1: divisor_freq File: C:/Users/Juanp/Documents/GitHub/reloj_didi/divisor_freq.vhd Line: 21
+    Info (12022): Found design unit 1: divisor_freq-structural File: C:/Users/Frank/Documents/GitHub/reloj_didi/divisor_freq.vhd Line: 29
+    Info (12023): Found entity 1: divisor_freq File: C:/Users/Frank/Documents/GitHub/reloj_didi/divisor_freq.vhd Line: 21
 Info (12021): Found 2 design units, including 1 entities, in source file counter_dec.vhd
-    Info (12022): Found design unit 1: counter_dec-arq File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 16
-    Info (12023): Found entity 1: counter_dec File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 5
+    Info (12022): Found design unit 1: counter_dec-arq File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 16
+    Info (12023): Found entity 1: counter_dec File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file counter_ace.vhd
-    Info (12022): Found design unit 1: counter_ace-arq File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_ace.vhd Line: 17
-    Info (12023): Found entity 1: counter_ace File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_ace.vhd Line: 6
+    Info (12022): Found design unit 1: counter_ace-arq File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_ace.vhd Line: 17
+    Info (12023): Found entity 1: counter_ace File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_ace.vhd Line: 6
 Warning (12019): Can't analyze file -- file comparator_gt.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file bintobcd255.vhd
-    Info (12022): Found design unit 1: bintobcd255-structural File: C:/Users/Juanp/Documents/GitHub/reloj_didi/bintobcd255.vhd Line: 9
-    Info (12023): Found entity 1: bintobcd255 File: C:/Users/Juanp/Documents/GitHub/reloj_didi/bintobcd255.vhd Line: 4
+    Info (12022): Found design unit 1: bintobcd255-structural File: C:/Users/Frank/Documents/GitHub/reloj_didi/bintobcd255.vhd Line: 9
+    Info (12023): Found entity 1: bintobcd255 File: C:/Users/Frank/Documents/GitHub/reloj_didi/bintobcd255.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file bintobcd.vhd
-    Info (12022): Found design unit 1: bintobcd-structural File: C:/Users/Juanp/Documents/GitHub/reloj_didi/bintobcd.vhd Line: 25
-    Info (12023): Found entity 1: bintobcd File: C:/Users/Juanp/Documents/GitHub/reloj_didi/bintobcd.vhd Line: 20
+    Info (12022): Found design unit 1: bintobcd-structural File: C:/Users/Frank/Documents/GitHub/reloj_didi/bintobcd.vhd Line: 25
+    Info (12023): Found entity 1: bintobcd File: C:/Users/Frank/Documents/GitHub/reloj_didi/bintobcd.vhd Line: 20
 Info (12021): Found 2 design units, including 1 entities, in source file comparator.vhd
-    Info (12022): Found design unit 1: comparator-arq File: C:/Users/Juanp/Documents/GitHub/reloj_didi/comparator.vhd Line: 16
-    Info (12023): Found entity 1: comparator File: C:/Users/Juanp/Documents/GitHub/reloj_didi/comparator.vhd Line: 5
+    Info (12022): Found design unit 1: comparator-arq File: C:/Users/Frank/Documents/GitHub/reloj_didi/comparator.vhd Line: 16
+    Info (12023): Found entity 1: comparator File: C:/Users/Frank/Documents/GitHub/reloj_didi/comparator.vhd Line: 5
 Info (12127): Elaborating entity "reloj_ajedrez" for the top level hierarchy
-Info (12128): Elaborating entity "divisor_freq" for hierarchy "divisor_freq:div" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 43
-Info (12128): Elaborating entity "reloj" for hierarchy "reloj:jugador_0" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 46
-Info (12128): Elaborating entity "divisor_freq" for hierarchy "reloj:jugador_0|divisor_freq:divisor1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj.vhd Line: 63
-Info (12128): Elaborating entity "counter_dec" for hierarchy "reloj:jugador_0|counter_dec:contador1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj.vhd Line: 117
-Info (12128): Elaborating entity "comparator" for hierarchy "reloj:jugador_0|comparator:comporador1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj.vhd Line: 118
-Info (12128): Elaborating entity "bintobcd" for hierarchy "reloj:jugador_0|bintobcd:bin1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj.vhd Line: 120
-Info (12128): Elaborating entity "hexa" for hierarchy "reloj:jugador_0|hexa:hexa1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj.vhd Line: 121
-Info (12128): Elaborating entity "counter_dec" for hierarchy "reloj:jugador_0|counter_dec:contador3" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj.vhd Line: 134
-Info (12128): Elaborating entity "mux4a1" for hierarchy "mux4a1:mu0" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 78
-Info (12128): Elaborating entity "reg" for hierarchy "reg:reg0" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 127
-Info (12128): Elaborating entity "fsm" for hierarchy "fsm:fsm1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 135
-Info (12128): Elaborating entity "counter_ace" for hierarchy "counter_ace:con_j1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 164
-Info (12128): Elaborating entity "counter_dect" for hierarchy "counter_ace:con_j1|counter_dect:counter_1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_ace.vhd Line: 21
-Warning (10631): VHDL Process Statement warning at counter_dect.vhd(27): inferring latch(es) for signal or variable "detected", which holds its previous value in one or more paths through the process File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dect.vhd Line: 27
-Info (10041): Inferred latch for "detected" at counter_dect.vhd(27) File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dect.vhd Line: 27
-Info (12128): Elaborating entity "bintobcd255" for hierarchy "counter_ace:con_j1|bintobcd255:binto1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_ace.vhd Line: 22
-Info (12128): Elaborating entity "counter_dect" for hierarchy "counter_dect:con1_j0" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 188
-Warning (10631): VHDL Process Statement warning at counter_dect.vhd(27): inferring latch(es) for signal or variable "detected", which holds its previous value in one or more paths through the process File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dect.vhd Line: 27
-Info (10041): Inferred latch for "detected" at counter_dect.vhd(27) File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dect.vhd Line: 27
-Info (12128): Elaborating entity "light_controller" for hierarchy "light_controller:ligth_controller1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 201
-Info (12128): Elaborating entity "divisor_freq" for hierarchy "light_controller:ligth_controller1|divisor_freq:div" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/light_controller.vhd Line: 22
+Info (12128): Elaborating entity "divisor_freq" for hierarchy "divisor_freq:div" File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 43
+Info (12128): Elaborating entity "reloj" for hierarchy "reloj:jugador_0" File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 46
+Info (12128): Elaborating entity "divisor_freq" for hierarchy "reloj:jugador_0|divisor_freq:divisor1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj.vhd Line: 63
+Info (12128): Elaborating entity "counter_dec" for hierarchy "reloj:jugador_0|counter_dec:contador1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj.vhd Line: 117
+Info (12128): Elaborating entity "comparator" for hierarchy "reloj:jugador_0|comparator:comporador1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj.vhd Line: 118
+Info (12128): Elaborating entity "bintobcd" for hierarchy "reloj:jugador_0|bintobcd:bin1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj.vhd Line: 120
+Info (12128): Elaborating entity "hexa" for hierarchy "reloj:jugador_0|hexa:hexa1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj.vhd Line: 121
+Info (12128): Elaborating entity "counter_dec" for hierarchy "reloj:jugador_0|counter_dec:contador3" File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj.vhd Line: 134
+Info (12128): Elaborating entity "mux4a1" for hierarchy "mux4a1:mu0" File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 78
+Info (12128): Elaborating entity "reg" for hierarchy "reg:reg0" File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 127
+Info (12128): Elaborating entity "fsm" for hierarchy "fsm:fsm1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 135
+Info (12128): Elaborating entity "counter_ace" for hierarchy "counter_ace:con_j1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 164
+Info (12128): Elaborating entity "counter_dect" for hierarchy "counter_ace:con_j1|counter_dect:counter_1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_ace.vhd Line: 21
+Warning (10631): VHDL Process Statement warning at counter_dect.vhd(27): inferring latch(es) for signal or variable "detected", which holds its previous value in one or more paths through the process File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dect.vhd Line: 27
+Info (10041): Inferred latch for "detected" at counter_dect.vhd(27) File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dect.vhd Line: 27
+Info (12128): Elaborating entity "bintobcd255" for hierarchy "counter_ace:con_j1|bintobcd255:binto1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_ace.vhd Line: 22
+Info (12128): Elaborating entity "counter_dect" for hierarchy "counter_dect:con1_j0" File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 188
+Warning (10631): VHDL Process Statement warning at counter_dect.vhd(27): inferring latch(es) for signal or variable "detected", which holds its previous value in one or more paths through the process File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dect.vhd Line: 27
+Info (10041): Inferred latch for "detected" at counter_dect.vhd(27) File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dect.vhd Line: 27
+Info (12128): Elaborating entity "light_controller" for hierarchy "light_controller:ligth_controller1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 201
+Warning (10492): VHDL Process Statement warning at light_controller.vhd(28): signal "reset_n" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Frank/Documents/GitHub/reloj_didi/light_controller.vhd Line: 28
+Info (12128): Elaborating entity "divisor_freq" for hierarchy "light_controller:ligth_controller1|divisor_freq:div" File: C:/Users/Frank/Documents/GitHub/reloj_didi/light_controller.vhd Line: 22
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "reloj:jugador_0|counter_dec:contador1|q_reg[0]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador1|q_reg[0]~_emulated" and latch "reloj:jugador_0|counter_dec:contador1|q_reg[0]~1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
-    Warning (13310): Register "reloj:jugador_0|counter_dec:contador1|q_reg[2]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador1|q_reg[2]~_emulated" and latch "reloj:jugador_0|counter_dec:contador1|q_reg[0]~1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
-    Warning (13310): Register "reloj:jugador_1|counter_dec:contador1|q_reg[0]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador1|q_reg[0]~_emulated" and latch "reloj:jugador_1|counter_dec:contador1|q_reg[0]~1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
-    Warning (13310): Register "reloj:jugador_1|counter_dec:contador1|q_reg[2]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador1|q_reg[2]~_emulated" and latch "reloj:jugador_1|counter_dec:contador1|q_reg[0]~1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
-    Warning (13310): Register "reloj:jugador_0|counter_dec:contador2|q_reg[0]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador2|q_reg[0]~_emulated" and latch "reloj:jugador_0|counter_dec:contador2|q_reg[0]~1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
-    Warning (13310): Register "reloj:jugador_0|counter_dec:contador2|q_reg[2]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador2|q_reg[2]~_emulated" and latch "reloj:jugador_0|counter_dec:contador2|q_reg[2]~5" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
-    Warning (13310): Register "reloj:jugador_0|counter_dec:contador2|q_reg[3]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador2|q_reg[3]~_emulated" and latch "reloj:jugador_0|counter_dec:contador2|q_reg[3]~9" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
-    Warning (13310): Register "reloj:jugador_0|counter_dec:contador2|q_reg[4]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador2|q_reg[4]~_emulated" and latch "reloj:jugador_0|counter_dec:contador2|q_reg[3]~9" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
-    Warning (13310): Register "reloj:jugador_1|counter_dec:contador2|q_reg[0]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador2|q_reg[0]~_emulated" and latch "reloj:jugador_1|counter_dec:contador2|q_reg[0]~1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
-    Warning (13310): Register "reloj:jugador_1|counter_dec:contador2|q_reg[2]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador2|q_reg[2]~_emulated" and latch "reloj:jugador_1|counter_dec:contador2|q_reg[2]~5" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
-    Warning (13310): Register "reloj:jugador_1|counter_dec:contador2|q_reg[3]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador2|q_reg[3]~_emulated" and latch "reloj:jugador_1|counter_dec:contador2|q_reg[3]~9" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
-    Warning (13310): Register "reloj:jugador_1|counter_dec:contador2|q_reg[4]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador2|q_reg[4]~_emulated" and latch "reloj:jugador_1|counter_dec:contador2|q_reg[3]~9" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
-    Warning (13310): Register "reloj:jugador_0|counter_dec:contador3|q_reg[0]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador3|q_reg[0]~_emulated" and latch "reloj:jugador_0|counter_dec:contador3|q_reg[0]~1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
-    Warning (13310): Register "reloj:jugador_0|counter_dec:contador3|q_reg[1]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador3|q_reg[1]~_emulated" and latch "reloj:jugador_0|counter_dec:contador3|q_reg[1]~5" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
-    Warning (13310): Register "reloj:jugador_1|counter_dec:contador3|q_reg[0]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador3|q_reg[0]~_emulated" and latch "reloj:jugador_1|counter_dec:contador3|q_reg[0]~1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
-    Warning (13310): Register "reloj:jugador_1|counter_dec:contador3|q_reg[1]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador3|q_reg[1]~_emulated" and latch "reloj:jugador_1|counter_dec:contador3|q_reg[1]~5" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_0|counter_dec:contador1|q_reg[0]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador1|q_reg[0]~_emulated" and latch "reloj:jugador_0|counter_dec:contador1|q_reg[0]~1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_0|counter_dec:contador1|q_reg[2]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador1|q_reg[2]~_emulated" and latch "reloj:jugador_0|counter_dec:contador1|q_reg[0]~1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_1|counter_dec:contador1|q_reg[0]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador1|q_reg[0]~_emulated" and latch "reloj:jugador_1|counter_dec:contador1|q_reg[0]~1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_1|counter_dec:contador1|q_reg[2]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador1|q_reg[2]~_emulated" and latch "reloj:jugador_1|counter_dec:contador1|q_reg[0]~1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_0|counter_dec:contador2|q_reg[0]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador2|q_reg[0]~_emulated" and latch "reloj:jugador_0|counter_dec:contador2|q_reg[0]~1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_0|counter_dec:contador2|q_reg[2]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador2|q_reg[2]~_emulated" and latch "reloj:jugador_0|counter_dec:contador2|q_reg[2]~5" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_0|counter_dec:contador2|q_reg[3]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador2|q_reg[3]~_emulated" and latch "reloj:jugador_0|counter_dec:contador2|q_reg[3]~9" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_0|counter_dec:contador2|q_reg[4]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador2|q_reg[4]~_emulated" and latch "reloj:jugador_0|counter_dec:contador2|q_reg[3]~9" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_1|counter_dec:contador2|q_reg[0]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador2|q_reg[0]~_emulated" and latch "reloj:jugador_1|counter_dec:contador2|q_reg[0]~1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_1|counter_dec:contador2|q_reg[2]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador2|q_reg[2]~_emulated" and latch "reloj:jugador_1|counter_dec:contador2|q_reg[2]~5" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_1|counter_dec:contador2|q_reg[3]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador2|q_reg[3]~_emulated" and latch "reloj:jugador_1|counter_dec:contador2|q_reg[3]~9" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_1|counter_dec:contador2|q_reg[4]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador2|q_reg[4]~_emulated" and latch "reloj:jugador_1|counter_dec:contador2|q_reg[3]~9" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_0|counter_dec:contador3|q_reg[0]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador3|q_reg[0]~_emulated" and latch "reloj:jugador_0|counter_dec:contador3|q_reg[0]~1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_0|counter_dec:contador3|q_reg[1]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador3|q_reg[1]~_emulated" and latch "reloj:jugador_0|counter_dec:contador3|q_reg[1]~5" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_1|counter_dec:contador3|q_reg[0]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador3|q_reg[0]~_emulated" and latch "reloj:jugador_1|counter_dec:contador3|q_reg[0]~1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_1|counter_dec:contador3|q_reg[1]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador3|q_reg[1]~_emulated" and latch "reloj:jugador_1|counter_dec:contador3|q_reg[1]~5" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -1028,10 +1028,10 @@ Info (21057): Implemented 800 device resources after synthesis - the final resou
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 52 output pins
     Info (21061): Implemented 739 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 21 warnings
-    Info: Peak virtual memory: 4872 megabytes
-    Info: Processing ended: Wed Jun 26 19:46:26 2024
-    Info: Elapsed time: 00:00:09
-    Info: Total CPU time (on all processors): 00:00:11
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 22 warnings
+    Info: Peak virtual memory: 4874 megabytes
+    Info: Processing ended: Wed Jun 26 20:12:33 2024
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:06
 
 

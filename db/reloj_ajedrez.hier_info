@@ -2486,6 +2486,7 @@ f[7] <= q_reg[7].DB_MAX_OUTPUT_PORT_TYPE
 
 |reloj_ajedrez|light_controller:ligth_controller1
 reset_n => divisor_freq:div.reset_n
+reset_n => sel_in.ACLR
 clk => divisor_freq:div.clk
 en => leds.OUTPUTSELECT
 en => leds.OUTPUTSELECT
