@@ -26,613 +26,111 @@
 # vmap work rtl_work
 # Questa Intel Starter FPGA Edition-64 vmap 2023.3 Lib Mapping Utility 2023.07 Jul 17 2023
 # vmap work rtl_work 
-# Copying C:/intelFPGA_lite/23.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
+# Copying c:/intelfpga_lite/23.1std/questa_fse/win64/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vcom -93 -work work {C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dect.vhd}
+# vcom -93 -work work {C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dect.vhd}
 # Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:28 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dect.vhd 
+# Start time: 20:37:05 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dect.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity counter_dect
 # -- Compiling architecture arq of counter_dect
-# End time: 20:20:28 on Jun 26,2024, Elapsed time: 0:00:00
+# End time: 20:37:05 on Jun 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Juanp/Documents/GitHub/reloj_didi/reg.vhd}
+# vcom -93 -work work {C:/Users/Frank/Documents/GitHub/reloj_didi/reg.vhd}
 # Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:29 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/Juanp/Documents/GitHub/reloj_didi/reg.vhd 
+# Start time: 20:37:05 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Frank/Documents/GitHub/reloj_didi/reg.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity reg
 # -- Compiling architecture arq of reg
-# End time: 20:20:29 on Jun 26,2024, Elapsed time: 0:00:00
+# End time: 20:37:05 on Jun 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Juanp/Documents/GitHub/reloj_didi/my_components_reloj.vhd}
+# vcom -93 -work work {C:/Users/Frank/Documents/GitHub/reloj_didi/my_components_reloj.vhd}
 # Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:29 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/Juanp/Documents/GitHub/reloj_didi/my_components_reloj.vhd 
+# Start time: 20:37:05 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Frank/Documents/GitHub/reloj_didi/my_components_reloj.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling package my_components_reloj
-# End time: 20:20:29 on Jun 26,2024, Elapsed time: 0:00:00
+# End time: 20:37:05 on Jun 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Juanp/Documents/GitHub/reloj_didi/my_components.vhd}
+# vcom -93 -work work {C:/Users/Frank/Documents/GitHub/reloj_didi/my_components.vhd}
 # Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:29 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/Juanp/Documents/GitHub/reloj_didi/my_components.vhd 
+# Start time: 20:37:05 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Frank/Documents/GitHub/reloj_didi/my_components.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling package my_components
-# End time: 20:20:29 on Jun 26,2024, Elapsed time: 0:00:00
+# End time: 20:37:05 on Jun 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Juanp/Documents/GitHub/reloj_didi/mux4a1.vhd}
+# vcom -93 -work work {C:/Users/Frank/Documents/GitHub/reloj_didi/mux4a1.vhd}
 # Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:29 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/Juanp/Documents/GitHub/reloj_didi/mux4a1.vhd 
+# Start time: 20:37:05 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Frank/Documents/GitHub/reloj_didi/mux4a1.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity mux4a1
 # -- Compiling architecture structural of mux4a1
-# End time: 20:20:29 on Jun 26,2024, Elapsed time: 0:00:00
+# End time: 20:37:05 on Jun 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Juanp/Documents/GitHub/reloj_didi/hexa.vhd}
+# vcom -93 -work work {C:/Users/Frank/Documents/GitHub/reloj_didi/hexa.vhd}
 # Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:29 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/Juanp/Documents/GitHub/reloj_didi/hexa.vhd 
+# Start time: 20:37:05 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Frank/Documents/GitHub/reloj_didi/hexa.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Compiling entity hexa
 # -- Compiling architecture structural_0 of hexa
-# End time: 20:20:29 on Jun 26,2024, Elapsed time: 0:00:00
+# End time: 20:37:05 on Jun 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Juanp/Documents/GitHub/reloj_didi/fsm.vhd}
+# vcom -93 -work work {C:/Users/Frank/Documents/GitHub/reloj_didi/fsm.vhd}
 # Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:29 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/Juanp/Documents/GitHub/reloj_didi/fsm.vhd 
+# Start time: 20:37:05 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Frank/Documents/GitHub/reloj_didi/fsm.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity fsm
 # -- Compiling architecture strc_1 of fsm
-# End time: 20:20:29 on Jun 26,2024, Elapsed time: 0:00:00
+# End time: 20:37:05 on Jun 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Juanp/Documents/GitHub/reloj_didi/divisor_freq.vhd}
+# vcom -93 -work work {C:/Users/Frank/Documents/GitHub/reloj_didi/divisor_freq.vhd}
 # Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:29 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/Juanp/Documents/GitHub/reloj_didi/divisor_freq.vhd 
+# Start time: 20:37:05 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Frank/Documents/GitHub/reloj_didi/divisor_freq.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity divisor_freq
 # -- Compiling architecture structural of divisor_freq
-# End time: 20:20:29 on Jun 26,2024, Elapsed time: 0:00:00
+# End time: 20:37:06 on Jun 26,2024, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd}
+# vcom -93 -work work {C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd}
 # Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:29 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd 
+# Start time: 20:37:06 on Jun 26,2024
+# vcom -reportprogress 300 -93 -work work C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd 
 # -- Loading package STANDARD
 # -- Loading package TEXTIO
 # -- Loading package std_logic_1164
 # -- Loading package NUMERIC_STD
 # -- Compiling entity counter_dec
 # -- Compiling architecture arq of counter_dec
-# End time: 20:20:29 on Jun 26,2024, Elapsed time: 0:00:00
+# End time: 20:37:06 on Jun 26,2024, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Juanp/Documents/GitHub/reloj_didi/bintobcd255.vhd}
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:29 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/Juanp/Documents/GitHub/reloj_didi/bintobcd255.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity bintobcd255
-# -- Compiling architecture structural of bintobcd255
-# End time: 20:20:30 on Jun 26,2024, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Juanp/Documents/GitHub/reloj_didi/bintobcd.vhd}
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:30 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/Juanp/Documents/GitHub/reloj_didi/bintobcd.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity bintobcd
-# -- Compiling architecture structural of bintobcd
-# End time: 20:20:30 on Jun 26,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Juanp/Documents/GitHub/reloj_didi/comparator.vhd}
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:30 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/Juanp/Documents/GitHub/reloj_didi/comparator.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity comparator
-# -- Compiling architecture arq of comparator
-# End time: 20:20:30 on Jun 26,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd}
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:30 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_components_reloj
-# -- Loading package my_components
-# -- Compiling entity reloj_ajedrez
-# -- Compiling architecture arq of reloj_ajedrez
-# End time: 20:20:30 on Jun 26,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj.vhd}
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:30 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_components
-# -- Compiling entity reloj
-# -- Compiling architecture arq of reloj
-# End time: 20:20:30 on Jun 26,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Juanp/Documents/GitHub/reloj_didi/light_controller.vhd}
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:30 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/Juanp/Documents/GitHub/reloj_didi/light_controller.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_components
-# -- Compiling entity light_controller
-# -- Compiling architecture struct_0 of light_controller
-# End time: 20:20:30 on Jun 26,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_ace.vhd}
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:30 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_ace.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_components_reloj
-# -- Loading package my_components
-# -- Compiling entity counter_ace
-# -- Compiling architecture arq of counter_ace
-# End time: 20:20:30 on Jun 26,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vcom -93 -work work {C:/Users/Juanp/Documents/GitHub/reloj_didi/simulation/questa/reloj_ajedrez.vht}
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:30 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work C:/Users/Juanp/Documents/GitHub/reloj_didi/simulation/questa/reloj_ajedrez.vht 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity reloj_ajedrez_tb
-# -- Compiling architecture reloj_ajedrez_arch of reloj_ajedrez_tb
-# ** Warning: C:/Users/Juanp/Documents/GitHub/reloj_didi/simulation/questa/reloj_ajedrez.vht(35): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 20:20:30 on Jun 26,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# 
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  reloj_ajedrez_tb
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" reloj_ajedrez_tb 
-# Start time: 20:20:31 on Jun 26,2024
-# ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
-# ** Note: (vopt-143) Recognized 1 FSM in architecture body "fsm(strc_1)".
-# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.reloj_ajedrez_tb(reloj_ajedrez_arch)#1
-# Loading ieee.numeric_std(body)
-# Loading work.my_components_reloj
-# Loading work.my_components
-# Loading work.reloj_ajedrez(arq)#1
-# Loading work.divisor_freq(structural)#1
-# Loading work.reloj(arq)#1
-# Loading work.divisor_freq(structural)#2
-# Loading work.counter_dec(arq)#1
-# Loading work.comparator(arq)#1
-# Loading work.bintobcd(structural)#1
-# Loading work.hexa(structural_0)#1
-# Loading work.counter_dec(arq)#2
-# Loading work.mux4a1(structural)#1
-# Loading work.mux4a1(structural)#2
-# Loading work.reg(arq)#1
-# Loading work.fsm(strc_1)#1
-# Loading work.counter_ace(arq)#1
-# Loading work.counter_dect(arq)#1
-# Loading work.bintobcd255(structural)#1
-# Loading work.counter_dect(arq)#2
-# Loading work.light_controller(struct_0)#1
-# 
-# do C:/Users/Juanp/Documents/GitHub/reloj_didi/start.do
-# transcript on
-# if {[file exists rtl_work]} {
-# 	vdel -lib rtl_work -all
-# }
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt".  Locker is u_electro@C081466.
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt1".  Locker is u_electro@C081466.
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt2".  Locker is Juanp@LAPTOP-FHLBCN8O.
-# ** Warning: (vdel-134) Unable to remove locked optimized design "_opt3".  Locker is Juanp@LAPTOP-FHLBCN8O.
-# vlib rtl_work
-# ** Warning: (vlib-34) Library already exists at "rtl_work".
-# Errors: 0, Warnings: 1
-# vmap work rtl_work
-# Questa Intel Starter FPGA Edition-64 vmap 2023.3 Lib Mapping Utility 2023.07 Jul 17 2023
-# vmap work rtl_work 
-# Modifying modelsim.ini
-# 
-# vcom -93 -work work {../../fsm.vhd}
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:35 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work ../../fsm.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity fsm
-# -- Compiling architecture strc_1 of fsm
-# End time: 20:20:35 on Jun 26,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {../../divisor_freq.vhd}
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:36 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work ../../divisor_freq.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity divisor_freq
-# -- Compiling architecture structural of divisor_freq
-# End time: 20:20:36 on Jun 26,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {../../my_components_reloj.vhd}
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:36 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work ../../my_components_reloj.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling package my_components_reloj
-# End time: 20:20:36 on Jun 26,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {../../mux4a1.vhd}
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:36 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work ../../mux4a1.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity mux4a1
-# -- Compiling architecture structural of mux4a1
-# End time: 20:20:36 on Jun 26,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {../../my_components.vhd}
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:36 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work ../../my_components.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling package my_components
-# End time: 20:20:36 on Jun 26,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {../../hexa.vhd}
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:36 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work ../../hexa.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity hexa
-# -- Compiling architecture structural_0 of hexa
-# End time: 20:20:36 on Jun 26,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {../../counter_dec.vhd}
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:36 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work ../../counter_dec.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity counter_dec
-# -- Compiling architecture arq of counter_dec
-# End time: 20:20:37 on Jun 26,2024, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {../../comparator.vhd}
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:37 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work ../../comparator.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity comparator
-# -- Compiling architecture arq of comparator
-# End time: 20:20:37 on Jun 26,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {../../light_controller.vhd}
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:37 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work ../../light_controller.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_components
-# -- Compiling entity light_controller
-# -- Compiling architecture struct_0 of light_controller
-# End time: 20:20:37 on Jun 26,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {../../bintobcd.vhd}
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:37 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work ../../bintobcd.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity bintobcd
-# -- Compiling architecture structural of bintobcd
-# End time: 20:20:37 on Jun 26,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {../../reg.vhd}
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:37 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work ../../reg.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity reg
-# -- Compiling architecture arq of reg
-# End time: 20:20:37 on Jun 26,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {../../reloj_ajedrez.vhd}
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:37 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work ../../reloj_ajedrez.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_components_reloj
-# -- Loading package my_components
-# -- Compiling entity reloj_ajedrez
-# -- Compiling architecture arq of reloj_ajedrez
-# End time: 20:20:37 on Jun 26,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {../../reloj.vhd}
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:37 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work ../../reloj.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_components
-# -- Compiling entity reloj
-# -- Compiling architecture arq of reloj
-# End time: 20:20:37 on Jun 26,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {../../counter_ace.vhd}
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:37 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work ../../counter_ace.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Loading package my_components_reloj
-# -- Loading package my_components
-# -- Compiling entity counter_ace
-# -- Compiling architecture arq of counter_ace
-# End time: 20:20:37 on Jun 26,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {../../counter_dect.vhd}
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:37 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work ../../counter_dect.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Loading package NUMERIC_STD
-# -- Compiling entity counter_dect
-# -- Compiling architecture arq of counter_dect
-# End time: 20:20:38 on Jun 26,2024, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-# vcom -93 -work work {../../bintobcd255.vhd}
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:38 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work ../../bintobcd255.vhd 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity bintobcd255
-# -- Compiling architecture structural of bintobcd255
-# End time: 20:20:38 on Jun 26,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-# 
-# vcom -93 -work work {reloj_ajedrez.vht}
-# Questa Intel Starter FPGA Edition-64 vcom 2023.3 Compiler 2023.07 Jul 17 2023
-# Start time: 20:20:38 on Jun 26,2024
-# vcom -reportprogress 300 -93 -work work reloj_ajedrez.vht 
-# -- Loading package STANDARD
-# -- Loading package TEXTIO
-# -- Loading package std_logic_1164
-# -- Compiling entity reloj_ajedrez_tb
-# -- Compiling architecture reloj_ajedrez_arch of reloj_ajedrez_tb
-# ** Warning: reloj_ajedrez.vht(35): (vcom-1207) An abstract literal and an identifier must have a separator between them.
-# End time: 20:20:38 on Jun 26,2024, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 1
-# 
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs="+acc"  reloj_ajedrez_tb
-# End time: 20:20:39 on Jun 26,2024, Elapsed time: 0:00:08
-# Errors: 0, Warnings: 1
-# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L fiftyfivenm -L rtl_work -L work -voptargs=""+acc"" reloj_ajedrez_tb 
-# Start time: 20:20:39 on Jun 26,2024
-# ** Note: (vsim-8009) Loading existing optimized design _opt3
-# Loading std.standard
-# Loading std.textio(body)
-# Loading ieee.std_logic_1164(body)
-# Loading work.reloj_ajedrez_tb(reloj_ajedrez_arch)#1
-# Loading ieee.numeric_std(body)
-# Loading work.my_components_reloj
-# Loading work.my_components
-# Loading work.reloj_ajedrez(arq)#1
-# Loading work.divisor_freq(structural)#1
-# Loading work.reloj(arq)#1
-# Loading work.divisor_freq(structural)#2
-# Loading work.counter_dec(arq)#1
-# Loading work.comparator(arq)#1
-# Loading work.bintobcd(structural)#1
-# Loading work.hexa(structural_0)#1
-# Loading work.counter_dec(arq)#2
-# Loading work.mux4a1(structural)#1
-# Loading work.mux4a1(structural)#2
-# Loading work.reg(arq)#1
-# Loading work.fsm(strc_1)#1
-# Loading work.counter_ace(arq)#1
-# Loading work.counter_dect(arq)#1
-# Loading work.bintobcd255(structural)#1
-# Loading work.counter_dect(arq)#2
-# Loading work.light_controller(struct_0)#1
-# 
-# do wave.do
-# onerror {resume}
-# quietly WaveActivateNextPane {} 0
-# add wave -noupdate /reloj_ajedrez_tb/clk
-# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
-#           File in use by: Juanp  Hostname: LAPTOP-FHLBCN8O  ProcessID: 5320
-#           Attempting to use alternate WLF file "./wlft8wnxf8".
-# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
-#           Using alternate file: ./wlft8wnxf8
-# add wave -noupdate /reloj_ajedrez_tb/config
-# add wave -noupdate /reloj_ajedrez_tb/display_0
-# add wave -noupdate /reloj_ajedrez_tb/display_1
-# add wave -noupdate /reloj_ajedrez_tb/display_2
-# add wave -noupdate /reloj_ajedrez_tb/display_3
-# add wave -noupdate /reloj_ajedrez_tb/display_4
-# add wave -noupdate /reloj_ajedrez_tb/display_5
-# add wave -noupdate /reloj_ajedrez_tb/ini_pausa
-# add wave -noupdate /reloj_ajedrez_tb/jugador_act
-# add wave -noupdate /reloj_ajedrez_tb/modo
-# add wave -noupdate /reloj_ajedrez_tb/reset_n
-# add wave -noupdate /reloj_ajedrez_tb/ver_disp
-# add wave -noupdate -divider J0
-# add wave -noupdate -radix unsigned /reloj_ajedrez_tb/i1/jugador_0/seg
-# add wave -noupdate -radix unsigned /reloj_ajedrez_tb/i1/jugador_0/min
-# add wave -noupdate -radix unsigned /reloj_ajedrez_tb/i1/jugador_0/hor
-# add wave -noupdate -divider J1
-# add wave -noupdate -radix unsigned /reloj_ajedrez_tb/i1/jugador_1/seg
-# add wave -noupdate -radix unsigned /reloj_ajedrez_tb/i1/jugador_1/min
-# add wave -noupdate -radix unsigned /reloj_ajedrez_tb/i1/jugador_1/hor
-# add wave -noupdate -divider 1
-# add wave -noupdate /reloj_ajedrez_tb/i1/en_j1
-# add wave -noupdate /reloj_ajedrez_tb/i1/gt_16_j1
-# add wave -noupdate /reloj_ajedrez_tb/i1/gt_16_j0
-# add wave -noupdate /reloj_ajedrez_tb/i1/en_j0
-# add wave -noupdate /reloj_ajedrez_tb/i1/time_gt1h_j1
-# add wave -noupdate /reloj_ajedrez_tb/i1/reset_1h_j1
-# add wave -noupdate /reloj_ajedrez_tb/i1/time_gt1h_j0
-# add wave -noupdate /reloj_ajedrez_tb/i1/reset_1h_j0
-# add wave -noupdate /reloj_ajedrez_tb/i1/mov_j0_gt40
-# add wave -noupdate /reloj_ajedrez_tb/i1/mov_j1_gt40
-# add wave -noupdate -radix unsigned /reloj_ajedrez_tb/i1/con_j0/f
-# add wave -noupdate -radix unsigned -childformat {{/reloj_ajedrez_tb/i1/con_j1/f(7) -radix unsigned} {/reloj_ajedrez_tb/i1/con_j1/f(6) -radix unsigned} {/reloj_ajedrez_tb/i1/con_j1/f(5) -radix unsigned} {/reloj_ajedrez_tb/i1/con_j1/f(4) -radix unsigned} {/reloj_ajedrez_tb/i1/con_j1/f(3) -radix unsigned} {/reloj_ajedrez_tb/i1/con_j1/f(2) -radix unsigned} {/reloj_ajedrez_tb/i1/con_j1/f(1) -radix unsigned} {/reloj_ajedrez_tb/i1/con_j1/f(0) -radix unsigned}} -subitemconfig {/reloj_ajedrez_tb/i1/con_j1/f(7) {-height 15 -radix unsigned} /reloj_ajedrez_tb/i1/con_j1/f(6) {-height 15 -radix unsigned} /reloj_ajedrez_tb/i1/con_j1/f(5) {-height 15 -radix unsigned} /reloj_ajedrez_tb/i1/con_j1/f(4) {-height 15 -radix unsigned} /reloj_ajedrez_tb/i1/con_j1/f(3) {-height 15 -radix unsigned} /reloj_ajedrez_tb/i1/con_j1/f(2) {-height 15 -radix unsigned} /reloj_ajedrez_tb/i1/con_j1/f(1) {-height 15 -radix unsigned} /reloj_ajedrez_tb/i1/con_j1/f(0) {-height 15 -radix unsigned}} /reloj_ajedrez_tb/i1/con_j1/f
-# add wave -noupdate /reloj_ajedrez_tb/i1/fsm1/state_reg
-# add wave -noupdate -radix binary /reloj_ajedrez_tb/i1/leds
-# add wave -noupdate /reloj_ajedrez_tb/i1/ligth_controller1/en
-# add wave -noupdate /reloj_ajedrez_tb/i1/ligth_controller1/sel_in
-# TreeUpdate [SetDefaultTree]
-# WaveRestoreCursors {{Cursor 1} {41408656267 ps} 0}
-# quietly wave cursor active 1
-# configure wave -namecolwidth 150
-# configure wave -valuecolwidth 100
-# configure wave -justifyvalue left
-# configure wave -signalnamewidth 1
-# configure wave -snapdistance 10
-# configure wave -datasetprefix 0
-# configure wave -rowmargin 4
-# configure wave -childrowmargin 2
-# configure wave -gridoffset 0
-# configure wave -gridperiod 1
-# configure wave -griddelta 40
-# configure wave -timeline 0
-# configure wave -timelineunits ns
-# update
-# WaveRestoreZoom {38192995104 ps} {44474052890 ps}
-#add wave *
-# view structure
-# .main_pane.structure.interior.cs.body.struct
-# view signals
-# .main_pane.objects.interior.cs.body.tree
-# run -all
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /reloj_ajedrez_tb/i1/ligth_controller1/div
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /reloj_ajedrez_tb/i1/con1_j1
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /reloj_ajedrez_tb/i1/con1_j1
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /reloj_ajedrez_tb/i1/con1_j0
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /reloj_ajedrez_tb/i1/con1_j0
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /reloj_ajedrez_tb/i1/con_j0/counter_1
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /reloj_ajedrez_tb/i1/con_j0/counter_1
-# ** Warning: NUMERIC_STD.">=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /reloj_ajedrez_tb/i1/con_j1/counter_1
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /reloj_ajedrez_tb/i1/con_j1/counter_1
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /reloj_ajedrez_tb/i1/jugador_1/contador3
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /reloj_ajedrez_tb/i1/jugador_1/contador2
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /reloj_ajedrez_tb/i1/jugador_1/contador1
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /reloj_ajedrez_tb/i1/jugador_1/divisor1
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /reloj_ajedrez_tb/i1/jugador_0/contador3
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /reloj_ajedrez_tb/i1/jugador_0/contador2
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /reloj_ajedrez_tb/i1/jugador_0/contador1
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /reloj_ajedrez_tb/i1/jugador_0/divisor1
-# ** Warning: NUMERIC_STD."=": metavalue detected, returning FALSE
-#    Time: 0 ps  Iteration: 0  Instance: /reloj_ajedrez_tb/i1/div
-# ** Failure: Assertion violation.
-#    Time: 44160 us  Iteration: 0  Process: /reloj_ajedrez_tb/always File: C:/Users/Juanp/Documents/GitHub/reloj_didi/simulation/questa/reloj_ajedrez.vht
-# Break in Process always at C:/Users/Juanp/Documents/GitHub/reloj_didi/simulation/questa/reloj_ajedrez.vht line 164
-# End time: 20:26:52 on Jun 26,2024, Elapsed time: 0:06:13
-# Errors: 1, Warnings: 20

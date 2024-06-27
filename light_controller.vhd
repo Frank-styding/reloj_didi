@@ -19,7 +19,7 @@ signal x_in: std_logic_vector(9 downto 0);
 signal sel_next:std_logic;
 signal clk_o:std_logic;
 begin
-div: divisor_freq generic map(N => 10, BUS_WIDTH => 26) port map(clk => clk, clk_o => clk_o, reset_n => reset_n);
+div: divisor_freq generic map(N => 1000, BUS_WIDTH => 26) port map(clk => clk, clk_o => clk_o, reset_n => reset_n);
 
 sel_next <= sel_in;
 process(clk_o,sel_next,sel_in)
