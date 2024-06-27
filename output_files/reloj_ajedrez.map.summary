@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Wed Jun 26 18:42:19 2024
+Analysis & Synthesis Status : Successful - Wed Jun 26 19:46:26 2024
 Quartus Prime Version : 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 Revision Name : reloj_ajedrez
 Top-level Entity Name : reloj_ajedrez
 Family : MAX 10
-Total logic elements : 729
-    Total combinational functions : 727
+Total logic elements : 735
+    Total combinational functions : 733
     Dedicated logic registers : 193
 Total registers : 193
 Total pins : 61

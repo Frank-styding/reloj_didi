@@ -35,8 +35,10 @@ add wave -noupdate /reloj_ajedrez_tb/i1/mov_j1_gt40
 add wave -noupdate -radix unsigned /reloj_ajedrez_tb/i1/con_j0/f
 add wave -noupdate -radix unsigned -childformat {{/reloj_ajedrez_tb/i1/con_j1/f(7) -radix unsigned} {/reloj_ajedrez_tb/i1/con_j1/f(6) -radix unsigned} {/reloj_ajedrez_tb/i1/con_j1/f(5) -radix unsigned} {/reloj_ajedrez_tb/i1/con_j1/f(4) -radix unsigned} {/reloj_ajedrez_tb/i1/con_j1/f(3) -radix unsigned} {/reloj_ajedrez_tb/i1/con_j1/f(2) -radix unsigned} {/reloj_ajedrez_tb/i1/con_j1/f(1) -radix unsigned} {/reloj_ajedrez_tb/i1/con_j1/f(0) -radix unsigned}} -subitemconfig {/reloj_ajedrez_tb/i1/con_j1/f(7) {-height 15 -radix unsigned} /reloj_ajedrez_tb/i1/con_j1/f(6) {-height 15 -radix unsigned} /reloj_ajedrez_tb/i1/con_j1/f(5) {-height 15 -radix unsigned} /reloj_ajedrez_tb/i1/con_j1/f(4) {-height 15 -radix unsigned} /reloj_ajedrez_tb/i1/con_j1/f(3) {-height 15 -radix unsigned} /reloj_ajedrez_tb/i1/con_j1/f(2) {-height 15 -radix unsigned} /reloj_ajedrez_tb/i1/con_j1/f(1) {-height 15 -radix unsigned} /reloj_ajedrez_tb/i1/con_j1/f(0) {-height 15 -radix unsigned}} /reloj_ajedrez_tb/i1/con_j1/f
 add wave -noupdate /reloj_ajedrez_tb/i1/fsm1/state_reg
+add wave -noupdate -radix binary /reloj_ajedrez_tb/i1/leds
+add wave -noupdate /reloj_ajedrez_tb/i1/ligth_controller1/en
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {4030551390 ps} 0}
+WaveRestoreCursors {{Cursor 1} {8647428 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
@@ -52,4 +54,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {3975781031 ps} {4674958894 ps}
+WaveRestoreZoom {0 ps} {133875 ns}

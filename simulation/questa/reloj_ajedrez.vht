@@ -148,10 +148,16 @@ jugador_act <= '1';
 modo <= "10";
 ver_disp <= "00";
 ini_pausa <= '1';
-wait for 100 * 60 * 60 * periodo;
+wait for 100* 40 * periodo;
 end loop;
 
-
+reset_n <= '1';
+config <= '0';
+jugador_act <= '1';
+modo <= "10";
+ver_disp <= "00";
+ini_pausa <= '1';
+wait for 100* 60 *60 * periodo;
 
 
 assert false severity failure;                                                       

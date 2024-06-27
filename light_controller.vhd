@@ -53,7 +53,7 @@ begin
 		x_in<=x_in_2;
 	end if;
 
-	if(en='0') then
+	if(en='1') then
 		leds<=x_in;
 	else
 		leds<="0000000000";
