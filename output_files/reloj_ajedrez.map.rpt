@@ -1,5 +1,5 @@
 Analysis & Synthesis report for reloj_ajedrez
-Wed Jun 26 20:12:33 2024
+Wed Jun 26 20:20:12 2024
 Quartus Prime Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
 
 
@@ -93,15 +93,15 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                        ;
 +------------------------------------+------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Jun 26 20:12:33 2024          ;
+; Analysis & Synthesis Status        ; Successful - Wed Jun 26 20:20:12 2024          ;
 ; Quartus Prime Version              ; 23.1std.0 Build 991 11/28/2023 SC Lite Edition ;
 ; Revision Name                      ; reloj_ajedrez                                  ;
 ; Top-level Entity Name              ; reloj_ajedrez                                  ;
 ; Family                             ; MAX 10                                         ;
-; Total logic elements               ; 735                                            ;
-;     Total combinational functions  ; 733                                            ;
-;     Dedicated logic registers      ; 193                                            ;
-; Total registers                    ; 193                                            ;
+; Total logic elements               ; 686                                            ;
+;     Total combinational functions  ; 683                                            ;
+;     Dedicated logic registers      ; 168                                            ;
+; Total registers                    ; 168                                            ;
 ; Total pins                         ; 61                                             ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 0                                              ;
@@ -204,15 +204,15 @@ https://fpgasoftware.intel.com/eula.
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
 ; Number detected on machine ; 16          ;
-; Maximum allowed            ; 12          ;
+; Maximum allowed            ; 16          ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 12          ;
+; Maximum used               ; 16          ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
-;     Processors 3-12        ;   0.0%      ;
+;     Processors 3-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -221,22 +221,22 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                       ; Library ;
 +----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
-; counter_dect.vhd                 ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dect.vhd        ;         ;
-; reloj_ajedrez.vhd                ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd       ;         ;
-; reloj.vhd                        ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/reloj.vhd               ;         ;
-; reg.vhd                          ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/reg.vhd                 ;         ;
-; my_components_reloj.vhd          ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/my_components_reloj.vhd ;         ;
-; my_components.vhd                ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/my_components.vhd       ;         ;
-; mux4a1.vhd                       ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/mux4a1.vhd              ;         ;
-; light_controller.vhd             ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/light_controller.vhd    ;         ;
-; hexa.vhd                         ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/hexa.vhd                ;         ;
-; fsm.vhd                          ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/fsm.vhd                 ;         ;
-; divisor_freq.vhd                 ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/divisor_freq.vhd        ;         ;
-; counter_dec.vhd                  ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd         ;         ;
-; counter_ace.vhd                  ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/counter_ace.vhd         ;         ;
-; bintobcd255.vhd                  ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/bintobcd255.vhd         ;         ;
-; bintobcd.vhd                     ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/bintobcd.vhd            ;         ;
-; comparator.vhd                   ; yes             ; User VHDL File  ; C:/Users/Frank/Documents/GitHub/reloj_didi/comparator.vhd          ;         ;
+; counter_dect.vhd                 ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dect.vhd        ;         ;
+; reloj_ajedrez.vhd                ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd       ;         ;
+; reloj.vhd                        ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj.vhd               ;         ;
+; reg.vhd                          ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/reg.vhd                 ;         ;
+; my_components_reloj.vhd          ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/my_components_reloj.vhd ;         ;
+; my_components.vhd                ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/my_components.vhd       ;         ;
+; mux4a1.vhd                       ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/mux4a1.vhd              ;         ;
+; light_controller.vhd             ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/light_controller.vhd    ;         ;
+; hexa.vhd                         ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/hexa.vhd                ;         ;
+; fsm.vhd                          ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/fsm.vhd                 ;         ;
+; divisor_freq.vhd                 ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/divisor_freq.vhd        ;         ;
+; counter_dec.vhd                  ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd         ;         ;
+; counter_ace.vhd                  ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_ace.vhd         ;         ;
+; bintobcd255.vhd                  ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/bintobcd255.vhd         ;         ;
+; bintobcd.vhd                     ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/bintobcd.vhd            ;         ;
+; comparator.vhd                   ; yes             ; User VHDL File  ; C:/Users/Juanp/Documents/GitHub/reloj_didi/comparator.vhd          ;         ;
 +----------------------------------+-----------------+-----------------+--------------------------------------------------------------------+---------+
 
 
@@ -245,20 +245,20 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 735       ;
+; Estimated Total logic elements              ; 686       ;
 ;                                             ;           ;
-; Total combinational functions               ; 733       ;
+; Total combinational functions               ; 683       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 384       ;
-;     -- 3 input functions                    ; 114       ;
-;     -- <=2 input functions                  ; 235       ;
+;     -- 4 input functions                    ; 372       ;
+;     -- 3 input functions                    ; 113       ;
+;     -- <=2 input functions                  ; 198       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 576       ;
-;     -- arithmetic mode                      ; 157       ;
+;     -- normal mode                          ; 550       ;
+;     -- arithmetic mode                      ; 133       ;
 ;                                             ;           ;
-; Total registers                             ; 193       ;
-;     -- Dedicated logic registers            ; 193       ;
+; Total registers                             ; 168       ;
+;     -- Dedicated logic registers            ; 168       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 61        ;
@@ -266,9 +266,9 @@ https://fpgasoftware.intel.com/eula.
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 192       ;
-; Total fan-out                               ; 3107      ;
-; Average fan-out                             ; 2.96      ;
+; Maximum fan-out                             ; 167       ;
+; Total fan-out                               ; 2908      ;
+; Average fan-out                             ; 2.99      ;
 +---------------------------------------------+-----------+
 
 
@@ -277,7 +277,7 @@ https://fpgasoftware.intel.com/eula.
 +-----------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------+------------------+--------------+
 ; Compilation Hierarchy Node              ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; UFM Blocks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; ADC blocks ; Full Hierarchy Name                                                ; Entity Name      ; Library Name ;
 +-----------------------------------------+---------------------+---------------------------+-------------+------------+--------------+---------+-----------+------+--------------+------------+--------------------------------------------------------------------+------------------+--------------+
-; |reloj_ajedrez                          ; 733 (4)             ; 193 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 61   ; 0            ; 0          ; |reloj_ajedrez                                                     ; reloj_ajedrez    ; work         ;
+; |reloj_ajedrez                          ; 683 (4)             ; 168 (0)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 61   ; 0            ; 0          ; |reloj_ajedrez                                                     ; reloj_ajedrez    ; work         ;
 ;    |counter_ace:con_j0|                 ; 65 (0)              ; 8 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|counter_ace:con_j0                                  ; counter_ace      ; work         ;
 ;       |bintobcd255:binto1|              ; 38 (38)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|counter_ace:con_j0|bintobcd255:binto1               ; bintobcd255      ; work         ;
 ;       |counter_dect:counter_1|          ; 11 (11)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|counter_ace:con_j0|counter_dect:counter_1           ; counter_dect     ; work         ;
@@ -293,12 +293,12 @@ https://fpgasoftware.intel.com/eula.
 ;    |counter_dect:con1_j0|               ; 10 (10)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|counter_dect:con1_j0                                ; counter_dect     ; work         ;
 ;    |counter_dect:con1_j1|               ; 10 (10)             ; 8 (8)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|counter_dect:con1_j1                                ; counter_dect     ; work         ;
 ;    |divisor_freq:div|                   ; 37 (37)             ; 27 (27)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|divisor_freq:div                                    ; divisor_freq     ; work         ;
-;    |fsm:fsm1|                           ; 32 (32)             ; 15 (15)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|fsm:fsm1                                            ; fsm              ; work         ;
-;    |light_controller:ligth_controller1| ; 51 (5)              ; 27 (1)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|light_controller:ligth_controller1                  ; light_controller ; work         ;
-;       |divisor_freq:div|                ; 46 (46)             ; 26 (26)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|light_controller:ligth_controller1|divisor_freq:div ; divisor_freq     ; work         ;
-;    |mux4a1:mu0|                         ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|mux4a1:mu0                                          ; mux4a1           ; work         ;
+;    |fsm:fsm1|                           ; 30 (30)             ; 15 (15)                   ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|fsm:fsm1                                            ; fsm              ; work         ;
+;    |light_controller:ligth_controller1| ; 5 (5)               ; 2 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|light_controller:ligth_controller1                  ; light_controller ; work         ;
+;       |divisor_freq:div|                ; 0 (0)               ; 1 (1)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|light_controller:ligth_controller1|divisor_freq:div ; divisor_freq     ; work         ;
+;    |mux4a1:mu0|                         ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|mux4a1:mu0                                          ; mux4a1           ; work         ;
 ;    |mux4a1:mu1|                         ; 24 (24)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|mux4a1:mu1                                          ; mux4a1           ; work         ;
-;    |mux4a1:mu2|                         ; 16 (16)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|mux4a1:mu2                                          ; mux4a1           ; work         ;
+;    |mux4a1:mu2|                         ; 15 (15)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|mux4a1:mu2                                          ; mux4a1           ; work         ;
 ;    |mux4a1:mu3|                         ; 25 (25)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|mux4a1:mu3                                          ; mux4a1           ; work         ;
 ;    |mux4a1:mu4|                         ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|mux4a1:mu4                                          ; mux4a1           ; work         ;
 ;    |mux4a1:mu5|                         ; 25 (25)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|mux4a1:mu5                                          ; mux4a1           ; work         ;
@@ -320,7 +320,7 @@ https://fpgasoftware.intel.com/eula.
 ;       |hexa:hexa4|                      ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_0|hexa:hexa4                          ; hexa             ; work         ;
 ;       |hexa:hexa5|                      ; 7 (7)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_0|hexa:hexa5                          ; hexa             ; work         ;
 ;       |hexa:hexa6|                      ; 1 (1)               ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_0|hexa:hexa6                          ; hexa             ; work         ;
-;    |reloj:jugador_1|                    ; 174 (18)            ; 45 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_1                                     ; reloj            ; work         ;
+;    |reloj:jugador_1|                    ; 172 (16)            ; 45 (0)                    ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_1                                     ; reloj            ; work         ;
 ;       |bintobcd:bin1|                   ; 13 (13)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_1|bintobcd:bin1                       ; bintobcd         ; work         ;
 ;       |bintobcd:bin2|                   ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_1|bintobcd:bin2                       ; bintobcd         ; work         ;
 ;       |bintobcd:bin3|                   ; 14 (14)             ; 0 (0)                     ; 0           ; 0          ; 0            ; 0       ; 0         ; 0    ; 0            ; 0          ; |reloj_ajedrez|reloj:jugador_1|bintobcd:bin3                       ; bintobcd         ; work         ;
@@ -391,14 +391,39 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Note: All cells listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
-+------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                   ;
-+--------------------------------------------------------------+---------------------------------------+
-; Register name                                                ; Reason for Removal                    ;
-+--------------------------------------------------------------+---------------------------------------+
-; light_controller:ligth_controller1|divisor_freq:div|q_reg[0] ; Merged with divisor_freq:div|q_reg[0] ;
-; Total Number of Removed Registers = 1                        ;                                       ;
-+--------------------------------------------------------------+---------------------------------------+
++--------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                     ;
++---------------------------------------------------------------+----------------------------------------+
+; Register name                                                 ; Reason for Removal                     ;
++---------------------------------------------------------------+----------------------------------------+
+; light_controller:ligth_controller1|divisor_freq:div|q_reg[25] ; Merged with divisor_freq:div|q_reg[25] ;
+; light_controller:ligth_controller1|divisor_freq:div|q_reg[24] ; Merged with divisor_freq:div|q_reg[24] ;
+; light_controller:ligth_controller1|divisor_freq:div|q_reg[23] ; Merged with divisor_freq:div|q_reg[23] ;
+; light_controller:ligth_controller1|divisor_freq:div|q_reg[22] ; Merged with divisor_freq:div|q_reg[22] ;
+; light_controller:ligth_controller1|divisor_freq:div|q_reg[21] ; Merged with divisor_freq:div|q_reg[21] ;
+; light_controller:ligth_controller1|divisor_freq:div|q_reg[20] ; Merged with divisor_freq:div|q_reg[20] ;
+; light_controller:ligth_controller1|divisor_freq:div|q_reg[19] ; Merged with divisor_freq:div|q_reg[19] ;
+; light_controller:ligth_controller1|divisor_freq:div|q_reg[18] ; Merged with divisor_freq:div|q_reg[18] ;
+; light_controller:ligth_controller1|divisor_freq:div|q_reg[17] ; Merged with divisor_freq:div|q_reg[17] ;
+; light_controller:ligth_controller1|divisor_freq:div|q_reg[16] ; Merged with divisor_freq:div|q_reg[16] ;
+; light_controller:ligth_controller1|divisor_freq:div|q_reg[15] ; Merged with divisor_freq:div|q_reg[15] ;
+; light_controller:ligth_controller1|divisor_freq:div|q_reg[14] ; Merged with divisor_freq:div|q_reg[14] ;
+; light_controller:ligth_controller1|divisor_freq:div|q_reg[13] ; Merged with divisor_freq:div|q_reg[13] ;
+; light_controller:ligth_controller1|divisor_freq:div|q_reg[12] ; Merged with divisor_freq:div|q_reg[12] ;
+; light_controller:ligth_controller1|divisor_freq:div|q_reg[11] ; Merged with divisor_freq:div|q_reg[11] ;
+; light_controller:ligth_controller1|divisor_freq:div|q_reg[10] ; Merged with divisor_freq:div|q_reg[10] ;
+; light_controller:ligth_controller1|divisor_freq:div|q_reg[9]  ; Merged with divisor_freq:div|q_reg[9]  ;
+; light_controller:ligth_controller1|divisor_freq:div|q_reg[8]  ; Merged with divisor_freq:div|q_reg[8]  ;
+; light_controller:ligth_controller1|divisor_freq:div|q_reg[7]  ; Merged with divisor_freq:div|q_reg[7]  ;
+; light_controller:ligth_controller1|divisor_freq:div|q_reg[6]  ; Merged with divisor_freq:div|q_reg[6]  ;
+; light_controller:ligth_controller1|divisor_freq:div|q_reg[5]  ; Merged with divisor_freq:div|q_reg[5]  ;
+; light_controller:ligth_controller1|divisor_freq:div|q_reg[4]  ; Merged with divisor_freq:div|q_reg[4]  ;
+; light_controller:ligth_controller1|divisor_freq:div|q_reg[3]  ; Merged with divisor_freq:div|q_reg[3]  ;
+; light_controller:ligth_controller1|divisor_freq:div|q_reg[2]  ; Merged with divisor_freq:div|q_reg[2]  ;
+; light_controller:ligth_controller1|divisor_freq:div|q_reg[1]  ; Merged with divisor_freq:div|q_reg[1]  ;
+; light_controller:ligth_controller1|divisor_freq:div|q_reg[0]  ; Merged with divisor_freq:div|q_reg[0]  ;
+; Total Number of Removed Registers = 26                        ;                                        ;
++---------------------------------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -406,10 +431,10 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 193   ;
+; Total registers                              ; 168   ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 193   ;
+; Number of registers using Asynchronous Clear ; 168   ;
 ; Number of registers using Asynchronous Load  ; 0     ;
 ; Number of registers using Clock Enable       ; 82    ;
 ; Number of registers using Preset             ; 0     ;
@@ -424,11 +449,11 @@ Note: All cells listed above may not be present at the end of synthesis due to v
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |reloj_ajedrez|light_controller:ligth_controller1|leds[5] ;
 ; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |reloj_ajedrez|light_controller:ligth_controller1|leds[6] ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |reloj_ajedrez|mux4a1:mu2|y[0]                            ;
-; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; No         ; |reloj_ajedrez|mux4a1:mu5|y[2]                            ;
-; 5:1                ; 12 bits   ; 36 LEs        ; 24 LEs               ; 12 LEs                 ; No         ; |reloj_ajedrez|mux4a1:mu2|y[2]                            ;
+; 5:1                ; 10 bits   ; 30 LEs        ; 20 LEs               ; 10 LEs                 ; No         ; |reloj_ajedrez|mux4a1:mu3|y[2]                            ;
+; 5:1                ; 12 bits   ; 36 LEs        ; 24 LEs               ; 12 LEs                 ; No         ; |reloj_ajedrez|mux4a1:mu0|y[2]                            ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |reloj_ajedrez|fsm:fsm1|state_reg                         ;
 ; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |reloj_ajedrez|fsm:fsm1|state_reg                         ;
-; 18:1               ; 6 bits    ; 72 LEs        ; 36 LEs               ; 36 LEs                 ; No         ; |reloj_ajedrez|mux4a1:mu1|y[1]                            ;
+; 18:1               ; 6 bits    ; 72 LEs        ; 36 LEs               ; 36 LEs                 ; No         ; |reloj_ajedrez|mux4a1:mu1|y[6]                            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
 
 
@@ -735,12 +760,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 +--------------------------------------------------------------------------------------------------+
 ; Parameter Settings for User Entity Instance: light_controller:ligth_controller1|divisor_freq:div ;
-+----------------+----------+----------------------------------------------------------------------+
-; Parameter Name ; Value    ; Type                                                                 ;
-+----------------+----------+----------------------------------------------------------------------+
-; n              ; 50000000 ; Signed Integer                                                       ;
-; bus_width      ; 26       ; Signed Integer                                                       ;
-+----------------+----------+----------------------------------------------------------------------+
++----------------+-------+-------------------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                                    ;
++----------------+-------+-------------------------------------------------------------------------+
+; n              ; 10    ; Signed Integer                                                          ;
+; bus_width      ; 26    ; Signed Integer                                                          ;
++----------------+-------+-------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -897,21 +922,20 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 61                          ;
-; cycloneiii_ff         ; 193                         ;
-;     CLR               ; 111                         ;
+; cycloneiii_ff         ; 168                         ;
+;     CLR               ; 86                          ;
 ;     ENA CLR           ; 82                          ;
-; cycloneiii_lcell_comb ; 735                         ;
-;     arith             ; 157                         ;
-;         2 data inputs ; 156                         ;
-;         3 data inputs ; 1                           ;
-;     normal            ; 578                         ;
-;         1 data inputs ; 17                          ;
-;         2 data inputs ; 64                          ;
+; cycloneiii_lcell_comb ; 685                         ;
+;     arith             ; 133                         ;
+;         2 data inputs ; 133                         ;
+;     normal            ; 552                         ;
+;         1 data inputs ; 16                          ;
+;         2 data inputs ; 51                          ;
 ;         3 data inputs ; 113                         ;
-;         4 data inputs ; 384                         ;
+;         4 data inputs ; 372                         ;
 ;                       ;                             ;
 ; Max LUT depth         ; 7.00                        ;
-; Average LUT depth     ; 4.18                        ;
+; Average LUT depth     ; 4.22                        ;
 +-----------------------+-----------------------------+
 
 
@@ -930,108 +954,107 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 23.1std.0 Build 991 11/28/2023 SC Lite Edition
-    Info: Processing started: Wed Jun 26 20:12:26 2024
+    Info: Processing started: Wed Jun 26 20:20:04 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off reloj_ajedrez -c reloj_ajedrez
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file counter_dect.vhd
-    Info (12022): Found design unit 1: counter_dect-arq File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dect.vhd Line: 14
-    Info (12023): Found entity 1: counter_dect File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dect.vhd Line: 4
+    Info (12022): Found design unit 1: counter_dect-arq File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dect.vhd Line: 14
+    Info (12023): Found entity 1: counter_dect File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dect.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file reloj_ajedrez.vhd
-    Info (12022): Found design unit 1: reloj_ajedrez-arq File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 28
-    Info (12023): Found entity 1: reloj_ajedrez File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 7
+    Info (12022): Found design unit 1: reloj_ajedrez-arq File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 28
+    Info (12023): Found entity 1: reloj_ajedrez File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 7
 Info (12021): Found 2 design units, including 1 entities, in source file reloj.vhd
-    Info (12022): Found design unit 1: reloj-arq File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj.vhd Line: 25
-    Info (12023): Found entity 1: reloj File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj.vhd Line: 6
+    Info (12022): Found design unit 1: reloj-arq File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj.vhd Line: 25
+    Info (12023): Found entity 1: reloj File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file reg.vhd
-    Info (12022): Found design unit 1: reg-arq File: C:/Users/Frank/Documents/GitHub/reloj_didi/reg.vhd Line: 13
-    Info (12023): Found entity 1: reg File: C:/Users/Frank/Documents/GitHub/reloj_didi/reg.vhd Line: 4
+    Info (12022): Found design unit 1: reg-arq File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reg.vhd Line: 13
+    Info (12023): Found entity 1: reg File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reg.vhd Line: 4
 Info (12021): Found 1 design units, including 0 entities, in source file my_components_reloj.vhd
-    Info (12022): Found design unit 1: my_components_reloj File: C:/Users/Frank/Documents/GitHub/reloj_didi/my_components_reloj.vhd Line: 5
+    Info (12022): Found design unit 1: my_components_reloj File: C:/Users/Juanp/Documents/GitHub/reloj_didi/my_components_reloj.vhd Line: 5
 Info (12021): Found 1 design units, including 0 entities, in source file my_components.vhd
-    Info (12022): Found design unit 1: my_components File: C:/Users/Frank/Documents/GitHub/reloj_didi/my_components.vhd Line: 5
+    Info (12022): Found design unit 1: my_components File: C:/Users/Juanp/Documents/GitHub/reloj_didi/my_components.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file mux4a1.vhd
-    Info (12022): Found design unit 1: mux4a1-structural File: C:/Users/Frank/Documents/GitHub/reloj_didi/mux4a1.vhd Line: 15
-    Info (12023): Found entity 1: mux4a1 File: C:/Users/Frank/Documents/GitHub/reloj_didi/mux4a1.vhd Line: 5
+    Info (12022): Found design unit 1: mux4a1-structural File: C:/Users/Juanp/Documents/GitHub/reloj_didi/mux4a1.vhd Line: 15
+    Info (12023): Found entity 1: mux4a1 File: C:/Users/Juanp/Documents/GitHub/reloj_didi/mux4a1.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file light_controller.vhd
-    Info (12022): Found design unit 1: light_controller-struct_0 File: C:/Users/Frank/Documents/GitHub/reloj_didi/light_controller.vhd Line: 14
-    Info (12023): Found entity 1: light_controller File: C:/Users/Frank/Documents/GitHub/reloj_didi/light_controller.vhd Line: 6
+    Info (12022): Found design unit 1: light_controller-struct_0 File: C:/Users/Juanp/Documents/GitHub/reloj_didi/light_controller.vhd Line: 14
+    Info (12023): Found entity 1: light_controller File: C:/Users/Juanp/Documents/GitHub/reloj_didi/light_controller.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file hexa.vhd
-    Info (12022): Found design unit 1: hexa-structural_0 File: C:/Users/Frank/Documents/GitHub/reloj_didi/hexa.vhd Line: 28
-    Info (12023): Found entity 1: hexa File: C:/Users/Frank/Documents/GitHub/reloj_didi/hexa.vhd Line: 23
+    Info (12022): Found design unit 1: hexa-structural_0 File: C:/Users/Juanp/Documents/GitHub/reloj_didi/hexa.vhd Line: 28
+    Info (12023): Found entity 1: hexa File: C:/Users/Juanp/Documents/GitHub/reloj_didi/hexa.vhd Line: 23
 Info (12021): Found 2 design units, including 1 entities, in source file fsm.vhd
-    Info (12022): Found design unit 1: fsm-strc_1 File: C:/Users/Frank/Documents/GitHub/reloj_didi/fsm.vhd Line: 41
-    Info (12023): Found entity 1: fsm File: C:/Users/Frank/Documents/GitHub/reloj_didi/fsm.vhd Line: 5
+    Info (12022): Found design unit 1: fsm-strc_1 File: C:/Users/Juanp/Documents/GitHub/reloj_didi/fsm.vhd Line: 41
+    Info (12023): Found entity 1: fsm File: C:/Users/Juanp/Documents/GitHub/reloj_didi/fsm.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file divisor_freq.vhd
-    Info (12022): Found design unit 1: divisor_freq-structural File: C:/Users/Frank/Documents/GitHub/reloj_didi/divisor_freq.vhd Line: 29
-    Info (12023): Found entity 1: divisor_freq File: C:/Users/Frank/Documents/GitHub/reloj_didi/divisor_freq.vhd Line: 21
+    Info (12022): Found design unit 1: divisor_freq-structural File: C:/Users/Juanp/Documents/GitHub/reloj_didi/divisor_freq.vhd Line: 29
+    Info (12023): Found entity 1: divisor_freq File: C:/Users/Juanp/Documents/GitHub/reloj_didi/divisor_freq.vhd Line: 21
 Info (12021): Found 2 design units, including 1 entities, in source file counter_dec.vhd
-    Info (12022): Found design unit 1: counter_dec-arq File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 16
-    Info (12023): Found entity 1: counter_dec File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 5
+    Info (12022): Found design unit 1: counter_dec-arq File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 16
+    Info (12023): Found entity 1: counter_dec File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file counter_ace.vhd
-    Info (12022): Found design unit 1: counter_ace-arq File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_ace.vhd Line: 17
-    Info (12023): Found entity 1: counter_ace File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_ace.vhd Line: 6
+    Info (12022): Found design unit 1: counter_ace-arq File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_ace.vhd Line: 17
+    Info (12023): Found entity 1: counter_ace File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_ace.vhd Line: 6
 Warning (12019): Can't analyze file -- file comparator_gt.vhd is missing
 Info (12021): Found 2 design units, including 1 entities, in source file bintobcd255.vhd
-    Info (12022): Found design unit 1: bintobcd255-structural File: C:/Users/Frank/Documents/GitHub/reloj_didi/bintobcd255.vhd Line: 9
-    Info (12023): Found entity 1: bintobcd255 File: C:/Users/Frank/Documents/GitHub/reloj_didi/bintobcd255.vhd Line: 4
+    Info (12022): Found design unit 1: bintobcd255-structural File: C:/Users/Juanp/Documents/GitHub/reloj_didi/bintobcd255.vhd Line: 9
+    Info (12023): Found entity 1: bintobcd255 File: C:/Users/Juanp/Documents/GitHub/reloj_didi/bintobcd255.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file bintobcd.vhd
-    Info (12022): Found design unit 1: bintobcd-structural File: C:/Users/Frank/Documents/GitHub/reloj_didi/bintobcd.vhd Line: 25
-    Info (12023): Found entity 1: bintobcd File: C:/Users/Frank/Documents/GitHub/reloj_didi/bintobcd.vhd Line: 20
+    Info (12022): Found design unit 1: bintobcd-structural File: C:/Users/Juanp/Documents/GitHub/reloj_didi/bintobcd.vhd Line: 25
+    Info (12023): Found entity 1: bintobcd File: C:/Users/Juanp/Documents/GitHub/reloj_didi/bintobcd.vhd Line: 20
 Info (12021): Found 2 design units, including 1 entities, in source file comparator.vhd
-    Info (12022): Found design unit 1: comparator-arq File: C:/Users/Frank/Documents/GitHub/reloj_didi/comparator.vhd Line: 16
-    Info (12023): Found entity 1: comparator File: C:/Users/Frank/Documents/GitHub/reloj_didi/comparator.vhd Line: 5
+    Info (12022): Found design unit 1: comparator-arq File: C:/Users/Juanp/Documents/GitHub/reloj_didi/comparator.vhd Line: 16
+    Info (12023): Found entity 1: comparator File: C:/Users/Juanp/Documents/GitHub/reloj_didi/comparator.vhd Line: 5
 Info (12127): Elaborating entity "reloj_ajedrez" for the top level hierarchy
-Info (12128): Elaborating entity "divisor_freq" for hierarchy "divisor_freq:div" File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 43
-Info (12128): Elaborating entity "reloj" for hierarchy "reloj:jugador_0" File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 46
-Info (12128): Elaborating entity "divisor_freq" for hierarchy "reloj:jugador_0|divisor_freq:divisor1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj.vhd Line: 63
-Info (12128): Elaborating entity "counter_dec" for hierarchy "reloj:jugador_0|counter_dec:contador1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj.vhd Line: 117
-Info (12128): Elaborating entity "comparator" for hierarchy "reloj:jugador_0|comparator:comporador1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj.vhd Line: 118
-Info (12128): Elaborating entity "bintobcd" for hierarchy "reloj:jugador_0|bintobcd:bin1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj.vhd Line: 120
-Info (12128): Elaborating entity "hexa" for hierarchy "reloj:jugador_0|hexa:hexa1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj.vhd Line: 121
-Info (12128): Elaborating entity "counter_dec" for hierarchy "reloj:jugador_0|counter_dec:contador3" File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj.vhd Line: 134
-Info (12128): Elaborating entity "mux4a1" for hierarchy "mux4a1:mu0" File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 78
-Info (12128): Elaborating entity "reg" for hierarchy "reg:reg0" File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 127
-Info (12128): Elaborating entity "fsm" for hierarchy "fsm:fsm1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 135
-Info (12128): Elaborating entity "counter_ace" for hierarchy "counter_ace:con_j1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 164
-Info (12128): Elaborating entity "counter_dect" for hierarchy "counter_ace:con_j1|counter_dect:counter_1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_ace.vhd Line: 21
-Warning (10631): VHDL Process Statement warning at counter_dect.vhd(27): inferring latch(es) for signal or variable "detected", which holds its previous value in one or more paths through the process File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dect.vhd Line: 27
-Info (10041): Inferred latch for "detected" at counter_dect.vhd(27) File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dect.vhd Line: 27
-Info (12128): Elaborating entity "bintobcd255" for hierarchy "counter_ace:con_j1|bintobcd255:binto1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_ace.vhd Line: 22
-Info (12128): Elaborating entity "counter_dect" for hierarchy "counter_dect:con1_j0" File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 188
-Warning (10631): VHDL Process Statement warning at counter_dect.vhd(27): inferring latch(es) for signal or variable "detected", which holds its previous value in one or more paths through the process File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dect.vhd Line: 27
-Info (10041): Inferred latch for "detected" at counter_dect.vhd(27) File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dect.vhd Line: 27
-Info (12128): Elaborating entity "light_controller" for hierarchy "light_controller:ligth_controller1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 201
-Warning (10492): VHDL Process Statement warning at light_controller.vhd(28): signal "reset_n" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Frank/Documents/GitHub/reloj_didi/light_controller.vhd Line: 28
-Info (12128): Elaborating entity "divisor_freq" for hierarchy "light_controller:ligth_controller1|divisor_freq:div" File: C:/Users/Frank/Documents/GitHub/reloj_didi/light_controller.vhd Line: 22
+Info (12128): Elaborating entity "divisor_freq" for hierarchy "divisor_freq:div" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 43
+Info (12128): Elaborating entity "reloj" for hierarchy "reloj:jugador_0" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 46
+Info (12128): Elaborating entity "divisor_freq" for hierarchy "reloj:jugador_0|divisor_freq:divisor1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj.vhd Line: 63
+Info (12128): Elaborating entity "counter_dec" for hierarchy "reloj:jugador_0|counter_dec:contador1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj.vhd Line: 117
+Info (12128): Elaborating entity "comparator" for hierarchy "reloj:jugador_0|comparator:comporador1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj.vhd Line: 118
+Info (12128): Elaborating entity "bintobcd" for hierarchy "reloj:jugador_0|bintobcd:bin1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj.vhd Line: 120
+Info (12128): Elaborating entity "hexa" for hierarchy "reloj:jugador_0|hexa:hexa1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj.vhd Line: 121
+Info (12128): Elaborating entity "counter_dec" for hierarchy "reloj:jugador_0|counter_dec:contador3" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj.vhd Line: 134
+Info (12128): Elaborating entity "mux4a1" for hierarchy "mux4a1:mu0" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 78
+Info (12128): Elaborating entity "reg" for hierarchy "reg:reg0" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 127
+Info (12128): Elaborating entity "fsm" for hierarchy "fsm:fsm1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 135
+Info (12128): Elaborating entity "counter_ace" for hierarchy "counter_ace:con_j1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 164
+Info (12128): Elaborating entity "counter_dect" for hierarchy "counter_ace:con_j1|counter_dect:counter_1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_ace.vhd Line: 21
+Warning (10631): VHDL Process Statement warning at counter_dect.vhd(27): inferring latch(es) for signal or variable "detected", which holds its previous value in one or more paths through the process File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dect.vhd Line: 27
+Info (10041): Inferred latch for "detected" at counter_dect.vhd(27) File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dect.vhd Line: 27
+Info (12128): Elaborating entity "bintobcd255" for hierarchy "counter_ace:con_j1|bintobcd255:binto1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_ace.vhd Line: 22
+Info (12128): Elaborating entity "counter_dect" for hierarchy "counter_dect:con1_j0" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 188
+Warning (10631): VHDL Process Statement warning at counter_dect.vhd(27): inferring latch(es) for signal or variable "detected", which holds its previous value in one or more paths through the process File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dect.vhd Line: 27
+Info (10041): Inferred latch for "detected" at counter_dect.vhd(27) File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dect.vhd Line: 27
+Info (12128): Elaborating entity "light_controller" for hierarchy "light_controller:ligth_controller1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/reloj_ajedrez.vhd Line: 201
+Warning (10492): VHDL Process Statement warning at light_controller.vhd(28): signal "reset_n" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/Juanp/Documents/GitHub/reloj_didi/light_controller.vhd Line: 28
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "reloj:jugador_0|counter_dec:contador1|q_reg[0]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador1|q_reg[0]~_emulated" and latch "reloj:jugador_0|counter_dec:contador1|q_reg[0]~1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
-    Warning (13310): Register "reloj:jugador_0|counter_dec:contador1|q_reg[2]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador1|q_reg[2]~_emulated" and latch "reloj:jugador_0|counter_dec:contador1|q_reg[0]~1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
-    Warning (13310): Register "reloj:jugador_1|counter_dec:contador1|q_reg[0]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador1|q_reg[0]~_emulated" and latch "reloj:jugador_1|counter_dec:contador1|q_reg[0]~1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
-    Warning (13310): Register "reloj:jugador_1|counter_dec:contador1|q_reg[2]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador1|q_reg[2]~_emulated" and latch "reloj:jugador_1|counter_dec:contador1|q_reg[0]~1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
-    Warning (13310): Register "reloj:jugador_0|counter_dec:contador2|q_reg[0]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador2|q_reg[0]~_emulated" and latch "reloj:jugador_0|counter_dec:contador2|q_reg[0]~1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
-    Warning (13310): Register "reloj:jugador_0|counter_dec:contador2|q_reg[2]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador2|q_reg[2]~_emulated" and latch "reloj:jugador_0|counter_dec:contador2|q_reg[2]~5" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
-    Warning (13310): Register "reloj:jugador_0|counter_dec:contador2|q_reg[3]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador2|q_reg[3]~_emulated" and latch "reloj:jugador_0|counter_dec:contador2|q_reg[3]~9" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
-    Warning (13310): Register "reloj:jugador_0|counter_dec:contador2|q_reg[4]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador2|q_reg[4]~_emulated" and latch "reloj:jugador_0|counter_dec:contador2|q_reg[3]~9" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
-    Warning (13310): Register "reloj:jugador_1|counter_dec:contador2|q_reg[0]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador2|q_reg[0]~_emulated" and latch "reloj:jugador_1|counter_dec:contador2|q_reg[0]~1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
-    Warning (13310): Register "reloj:jugador_1|counter_dec:contador2|q_reg[2]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador2|q_reg[2]~_emulated" and latch "reloj:jugador_1|counter_dec:contador2|q_reg[2]~5" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
-    Warning (13310): Register "reloj:jugador_1|counter_dec:contador2|q_reg[3]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador2|q_reg[3]~_emulated" and latch "reloj:jugador_1|counter_dec:contador2|q_reg[3]~9" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
-    Warning (13310): Register "reloj:jugador_1|counter_dec:contador2|q_reg[4]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador2|q_reg[4]~_emulated" and latch "reloj:jugador_1|counter_dec:contador2|q_reg[3]~9" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
-    Warning (13310): Register "reloj:jugador_0|counter_dec:contador3|q_reg[0]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador3|q_reg[0]~_emulated" and latch "reloj:jugador_0|counter_dec:contador3|q_reg[0]~1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
-    Warning (13310): Register "reloj:jugador_0|counter_dec:contador3|q_reg[1]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador3|q_reg[1]~_emulated" and latch "reloj:jugador_0|counter_dec:contador3|q_reg[1]~5" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
-    Warning (13310): Register "reloj:jugador_1|counter_dec:contador3|q_reg[0]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador3|q_reg[0]~_emulated" and latch "reloj:jugador_1|counter_dec:contador3|q_reg[0]~1" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
-    Warning (13310): Register "reloj:jugador_1|counter_dec:contador3|q_reg[1]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador3|q_reg[1]~_emulated" and latch "reloj:jugador_1|counter_dec:contador3|q_reg[1]~5" File: C:/Users/Frank/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_0|counter_dec:contador1|q_reg[0]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador1|q_reg[0]~_emulated" and latch "reloj:jugador_0|counter_dec:contador1|q_reg[0]~1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_0|counter_dec:contador1|q_reg[2]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador1|q_reg[2]~_emulated" and latch "reloj:jugador_0|counter_dec:contador1|q_reg[0]~1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_1|counter_dec:contador1|q_reg[0]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador1|q_reg[0]~_emulated" and latch "reloj:jugador_1|counter_dec:contador1|q_reg[0]~1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_1|counter_dec:contador1|q_reg[2]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador1|q_reg[2]~_emulated" and latch "reloj:jugador_1|counter_dec:contador1|q_reg[0]~1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_0|counter_dec:contador2|q_reg[0]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador2|q_reg[0]~_emulated" and latch "reloj:jugador_0|counter_dec:contador2|q_reg[0]~1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_0|counter_dec:contador2|q_reg[2]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador2|q_reg[2]~_emulated" and latch "reloj:jugador_0|counter_dec:contador2|q_reg[2]~5" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_0|counter_dec:contador2|q_reg[3]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador2|q_reg[3]~_emulated" and latch "reloj:jugador_0|counter_dec:contador2|q_reg[3]~9" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_0|counter_dec:contador2|q_reg[4]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador2|q_reg[4]~_emulated" and latch "reloj:jugador_0|counter_dec:contador2|q_reg[3]~9" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_1|counter_dec:contador2|q_reg[0]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador2|q_reg[0]~_emulated" and latch "reloj:jugador_1|counter_dec:contador2|q_reg[0]~1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_1|counter_dec:contador2|q_reg[2]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador2|q_reg[2]~_emulated" and latch "reloj:jugador_1|counter_dec:contador2|q_reg[2]~5" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_1|counter_dec:contador2|q_reg[3]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador2|q_reg[3]~_emulated" and latch "reloj:jugador_1|counter_dec:contador2|q_reg[3]~9" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_1|counter_dec:contador2|q_reg[4]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador2|q_reg[4]~_emulated" and latch "reloj:jugador_1|counter_dec:contador2|q_reg[3]~9" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_0|counter_dec:contador3|q_reg[0]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador3|q_reg[0]~_emulated" and latch "reloj:jugador_0|counter_dec:contador3|q_reg[0]~1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_0|counter_dec:contador3|q_reg[1]" is converted into an equivalent circuit using register "reloj:jugador_0|counter_dec:contador3|q_reg[1]~_emulated" and latch "reloj:jugador_0|counter_dec:contador3|q_reg[1]~5" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_1|counter_dec:contador3|q_reg[0]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador3|q_reg[0]~_emulated" and latch "reloj:jugador_1|counter_dec:contador3|q_reg[0]~1" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
+    Warning (13310): Register "reloj:jugador_1|counter_dec:contador3|q_reg[1]" is converted into an equivalent circuit using register "reloj:jugador_1|counter_dec:contador3|q_reg[1]~_emulated" and latch "reloj:jugador_1|counter_dec:contador3|q_reg[1]~5" File: C:/Users/Juanp/Documents/GitHub/reloj_didi/counter_dec.vhd Line: 24
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 800 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 750 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 52 output pins
-    Info (21061): Implemented 739 logic cells
+    Info (21061): Implemented 689 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 22 warnings
-    Info: Peak virtual memory: 4874 megabytes
-    Info: Processing ended: Wed Jun 26 20:12:33 2024
-    Info: Elapsed time: 00:00:07
-    Info: Total CPU time (on all processors): 00:00:06
+    Info: Peak virtual memory: 4872 megabytes
+    Info: Processing ended: Wed Jun 26 20:20:12 2024
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:11
 
 

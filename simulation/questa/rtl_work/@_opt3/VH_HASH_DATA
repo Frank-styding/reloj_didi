@@ -12,12 +12,12 @@
 5 width
 6
 12 counter_dect
-1
-69 C:/Users/Frank/Documents/GitHub/reloj_didi/simulation/questa/rtl_work
 10
 2 x1
 9
 2 x3
+1
+69 C:/Users/Juanp/Documents/GitHub/reloj_didi/simulation/questa/rtl_work
 8
 6 mux4a1
 14
@@ -75,20 +75,6 @@
 1
 2
 3
-3
-4
-0
-0
-50000000
-0
-0 0
-0
-0
-]
-[G
-1
-2
-3
 1
 5
 1
@@ -115,34 +101,6 @@
 ]
 [G
 1
-2
-3
-3
-5
-1
-0
-26
-0
-0 0
-0
-0
-]
-[G
-1
-2
-3
-2
-5
-1
-0
-26
-0
-0 0
-0
-0
-]
-[G
-1
 6
 7
 2
@@ -150,6 +108,20 @@
 0
 0
 16
+0
+0 0
+0
+0
+]
+[G
+1
+2
+3
+2
+5
+1
+0
+26
 0
 0 0
 0

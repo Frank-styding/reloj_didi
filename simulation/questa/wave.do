@@ -37,8 +37,9 @@ add wave -noupdate -radix unsigned -childformat {{/reloj_ajedrez_tb/i1/con_j1/f(
 add wave -noupdate /reloj_ajedrez_tb/i1/fsm1/state_reg
 add wave -noupdate -radix binary /reloj_ajedrez_tb/i1/leds
 add wave -noupdate /reloj_ajedrez_tb/i1/ligth_controller1/en
+add wave -noupdate /reloj_ajedrez_tb/i1/ligth_controller1/sel_in
 TreeUpdate [SetDefaultTree]
-WaveRestoreCursors {{Cursor 1} {8647428 ps} 0}
+WaveRestoreCursors {{Cursor 1} {41408656267 ps} 0}
 quietly wave cursor active 1
 configure wave -namecolwidth 150
 configure wave -valuecolwidth 100
@@ -54,4 +55,4 @@ configure wave -griddelta 40
 configure wave -timeline 0
 configure wave -timelineunits ns
 update
-WaveRestoreZoom {0 ps} {133875 ns}
+WaveRestoreZoom {38192995104 ps} {44474052890 ps}
